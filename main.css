@@ -1,0 +1,43 @@
+div {
+    font-family: sans-serif;
+    font-size: 18px;
+    max-width: 1500px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+a {
+    color: #018ad2;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: #c00;
+}
+
+button {
+    padding: 8px 12px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+ul {
+    padding: 0;
+    margin-left: 20px;
+}
+
+.framelook {
+    color: #ccc;
+    border: 1px dashed red;
+}
+
+.reviews {
+    float: left;
+    margin-right: 16px;
+}
+
+.textstyle {
+    margin-left: 236px;
+}
