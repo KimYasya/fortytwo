@@ -10,19 +10,23 @@
         <!-- 180x180 -->
         <link rel="apple-touch-icon" href="files/apple-touch-icon.png">
 
+        <link rel="stylesheet" href="main.css">
+
         <title>Мой маркет</title>
     </head>
 
     <body>
         <header id="top">
             <div>
-                <img style="display:inline-block;margin:bottom -3px" src="files/apple-touch-icon.png" alt="лого" height="50">
+                <img style="display:inline-block;margin:bottom -3px" src="files/favicon.svg" alt="лого" height="50">
                 <h1 style="display:inline-block"><span style="color: #f52">Мой</span>Маркет</h1>
             </div>
         </header>
 
     <nav>
-        <a href="/index.html">Электроника ></a> <a href="/index.html">Смартфоны и гаджеты ></a> <a href="/index.html">Мобильные телефоны ></a> <a href="/index.html">Apple</a>    
+        <div>
+            <a href="/index.html">Электроника</a> > <a href="/index.html">Смартфоны и гаджеты</a> > <a href="/index.html">Мобильные телефоны</a> > <a href="/index.html">Apple</a>    
+        </div>
     </nav>
 
     <main>
@@ -73,16 +77,16 @@
                 <li>Встроенная память: <b>128 ГБ</b></li>
                 <li>Операционная система: <b>IOS 15</b></li>
                 <li>Беспроводные интерфейсы:<b>NFC, Bluetooth, Wi-Fi</b></li>
-                <li>Процессор:<a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></li>
+                <li>Процессор: <a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></li>
                 <li>Вес: 173 г</li>
 
             </ul>
     </div>
 
     <div>
-        <iframe src="files/Heroes of Might and Magic III — Википедия.html" width="400">
+        <iframe class="framelook" src="files/5 тайн картины «Звездная ночь» Ван Гога.html" width="400">
         </iframe>
-        <iframe src="files/Heroes of Might and Magic III _ Меч и Магия вики _ Fandom.html" width="400">
+        <iframe class="framelook" src="files/5 тайн картины «Звездная ночь» Ван Гога.html" width="400">
         </iframe>
     </div>
 
@@ -161,9 +165,14 @@
             <span style="color:#aaaaaa">431</span>
             <button>Добавить отзыв</button>
         </div>
-        <div>
+
+        <div class="reviews">
+            
+            <img src="files/review-1.jpeg" alt="" height="200">
+        </div>
+
+        <div class="textstyle">
             <p>
-                <img src="files/review-1.jpeg" alt="" height="200">
                 <h4>Марк Г.</h4>
             </p>
 
@@ -171,11 +180,16 @@
             <p><b>Опыт использования:</b> менее месяца</p>
             <p><b>Достоинства:</b><br> это мой первый айфон после после огромного количества телефонов на андроиде. всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая, ширик тоже на высоте.</p>
             <p><b>Недостатки:</b><br> к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное</p>
-                
+        </div> 
+
         <hr>
 
+        <div class="reviews"> 
+            <img src="files/review-2.jpeg" alt="" height="200">
+        </div>
+
+        <div class="textstyle">
             <p>
-                <img src="files/review-2.jpeg" alt="" height="200">
                 <h4>Валерий Коваленко</h4>
             </p>
 
@@ -188,9 +202,11 @@
         </main>
                 
             <footer>
-                <p>Для уточненияинформации звоните по номеру <a href="tel:+79000000000">+7 900 000 0000</a>, а предложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a></p>
-                <p>© ООО «<span style="color: #f52">Мой</span>Маркет», 2018-2022.</p>
-                <p><a href="#top">Наверх</a></p>
+                <div>
+                    <p>Для уточненияинформации звоните по номеру <a href="tel:+79000000000">+7 900 000 0000</a>, а предложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a></p>
+                    <p>© ООО «<span style="color: #f52">Мой</span>Маркет», 2018-2022.</p>
+                    <p><a href="#top">Наверх</a></p>
+                </div>
             </footer>
     </body> 
 </html>
