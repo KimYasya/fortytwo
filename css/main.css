@@ -5,8 +5,7 @@ html {
 
 .container {
     max-width: 1500px;
-    text-align: justify;
-    margin-left: 20px;
+    margin-left: 0;
 }
 
 a {
