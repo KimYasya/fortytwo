@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-     <head>
+    <head>
         <meta charset="utf-8">
         <!-- 32×32 -->
         <link rel="icon" href="files/favicon.ico" sizes="any">
@@ -10,18 +10,19 @@
         <!-- 180x180 -->
         <link rel="apple-touch-icon" href="files/apple-touch-icon.png">
 
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="css/main.css">
 
         <title>Мой маркет</title>
     </head>
 
     <body>
-        <header id="top">
-            <div>
-                <img style="display:inline-block;margin:bottom -3px" src="files/favicon.svg" alt="лого" height="50">
-                <h1 style="display:inline-block"><span style="color: #f52">Мой</span>Маркет</h1>
-            </div>
-        </header>
+        <div class="container">
+            <header id="top">
+                <div>
+                    <img style="display:inline-block;margin:bottom -3px" src="files/favicon.svg" alt="лого" height="50">
+                    <h1 style="display:inline-block"><span style="color: #f52">Мой</span>Маркет</h1>
+                </div>
+            </header>
 
     <nav>
         <div>
@@ -84,9 +85,9 @@
     </div>
 
     <div>
-        <iframe class="framelook" src="files/5 тайн картины «Звездная ночь» Ван Гога.html" width="400">
+        <iframe class="framelook" src="files/VanGog.html" width="400">
         </iframe>
-        <iframe class="framelook" src="files/5 тайн картины «Звездная ночь» Ван Гога.html" width="400">
+        <iframe class="framelook" src="files/VanGog.html" width="400">
         </iframe>
     </div>
 
@@ -108,7 +109,7 @@
    
     <div>
       <h3>Сравнение моделей</h3>
-        <table border="1">
+        <table>
           <thead>
            <tr>
             <th>Модель</th>
@@ -168,37 +169,39 @@
 
         <div class="reviews">
             
-            <img src="files/review-1.jpeg" alt="" height="200">
+            <img class="review-image" src="files/review-1.jpeg" alt="" height="200">
+        
+
+            <div>
+                <p>
+                    <h4>Марк Г.</h4>
+                </p>
+
+                <img src="files/star-5.png" alt="" height="30">
+                <p><b>Опыт использования:</b> менее месяца</p>
+                <p><b>Достоинства:</b><br> это мой первый айфон после после огромного количества телефонов на андроиде. всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая, ширик тоже на высоте.</p>
+                <p><b>Недостатки:</b><br> к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное</p>
+                </div> 
         </div>
-
-        <div class="textstyle">
-            <p>
-                <h4>Марк Г.</h4>
-            </p>
-
-            <img src="files/star-5.png" alt="" height="30">
-            <p><b>Опыт использования:</b> менее месяца</p>
-            <p><b>Достоинства:</b><br> это мой первый айфон после после огромного количества телефонов на андроиде. всё плавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая, ширик тоже на высоте.</p>
-            <p><b>Недостатки:</b><br> к самому устройству мало имеет отношение, но перенос данных с андроида - адская вещь) а если нужно переносить фото с компа, то это только через itunes, который урезает качество фотографий исходное</p>
-        </div> 
 
         <hr>
 
         <div class="reviews"> 
-            <img src="files/review-2.jpeg" alt="" height="200">
+                <img class="review-image" src="files/review-2.jpeg" alt="" height="200">
+            
+
+            <div>
+                <p>
+                    <h4>Валерий Коваленко</h4>
+                </p>
+
+                <img src="files/star-4.png" alt="" height="30">
+                <p><b>Опыт использования:</b> менее месяца</p>
+                <p><b>Достоинства:</b><br> OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</p>
+                <p><b>Недостатки:</b><br> Плохая ремонтопригодность</p>
+                
+            </div>
         </div>
-
-        <div class="textstyle">
-            <p>
-                <h4>Валерий Коваленко</h4>
-            </p>
-
-            <img src="files/star-4.png" alt="" height="30">
-            <p><b>Опыт использования:</b> менее месяца</p>
-            <p><b>Достоинства:</b><br> OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</p>
-            <p><b>Недостатки:</b><br> Плохая ремонтопригодность</p>
-        </div>
-
         </main>
                 
             <footer>
@@ -208,5 +211,6 @@
                     <p><a href="#top">Наверх</a></p>
                 </div>
             </footer>
+        </div>
     </body> 
 </html>

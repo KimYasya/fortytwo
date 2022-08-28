@@ -1,6 +1,9 @@
-div {
+html {
     font-family: sans-serif;
     font-size: 18px;
+}
+
+.container {
     max-width: 1500px;
     text-align: justify;
     margin-left: 20px;
@@ -29,15 +32,22 @@ ul {
 }
 
 .framelook {
-    color: #ccc;
-    border: 1px dashed red;
+    border: 1px dashed #ccc;
 }
 
-.reviews {
-    float: left;
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.review-image {
     margin-right: 16px;
 }
 
-.textstyle {
-    margin-left: 236px;
+.reviews {
+    display: flex;
+    flex-direction: row;
 }
+
+
