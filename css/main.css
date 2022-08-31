@@ -76,6 +76,97 @@ html {
     top: 195px;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 298px;
+    height: 39px;
+    left: 0px;
+    top: 178px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background: #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    width: 94px;
+    height: 39px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
+    width: 1400px;
+    height: 957px;
+    margin-bottom: 80px;
+    margin-left: 51px;
+    font-family: "Inter";
+    font-style: normal;
+}
+
+.char {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 880px;
+    height: 896px;
+    margin-top: 30px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+}
+
+.color-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px; 
+}
+
+.color-choise {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.list-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+li::marker {
+    color:#888888;
+    font-size: 1.2em;
+  }
+
 .buy {
     box-sizing: border-box;
     flex-direction: column;
@@ -172,32 +263,6 @@ html {
     border: 0;
 }
 
-.buttons {
-    display: flex;
-    flex-direction: columns;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    width: 298px;
-    height: 39px;
-    left: 0px;
-    top: 178px;
-    margin-bottom: 20px;
-}
-
-.buttons button {
-    background: #FFFFFF;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    width: 94px;
-    height: 39px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-}
-
 .frame-style {
     font-family: "Inter";
     font-style: normal;
@@ -246,71 +311,6 @@ html {
     background: #F0F0F0;
     border: 1px dashed #888888;
 }
-
-.about {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 100px;
-    width: 1400px;
-    height: 957px;
-    margin-bottom: 80px;
-    margin-left: 51px;
-    font-family: "Inter";
-    font-style: normal;
-}
-
-.char {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 880px;
-    height: 896px;
-    margin-top: 30px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
-}
-
-.color-img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center; 
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px; 
-}
-
-.color-choise {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-}
-
-.list-style {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 10px;
-}
-
-li::marker {
-    color:#888888;
-    font-size: 1.2em;
-  }
 
 a {
     color: #018ad2;
