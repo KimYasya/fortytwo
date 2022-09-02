@@ -1,11 +1,315 @@
 html {
-    font-family: sans-serif;
-    font-size: 18px;
+    font-family: "Inter";
+    font-size: 16px;
 }
 
 .container {
     max-width: 1500px;
     margin: 0 auto;
+}
+
+.header-style {
+    width: 263px;
+    height: 53px;
+    left: -3px;
+    top: 18px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.hstyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 51px;
+    gap: 10px;
+    width: 1500px;
+    height: 80px;
+    left: 0px;
+    top: 1px;
+}
+
+.headers {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px 0px 20px 0px;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 4px;
+    font-family: "Inter";
+    margin-left: 51px;
+}
+
+.product-name {
+    width: 539px;
+    height: 39px;
+    margin-left: 51px;
+    font-family: "Inter";   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.product-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 51px;
+    margin-top: 30px;
+    gap: 10px;
+    width: 1396.83px;
+    height: 387px;
+    left: 50px;
+    top: 195px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 298px;
+    height: 39px;
+    left: 0px;
+    top: 178px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background: #FFFFFF;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    width: 94px;
+    height: 39px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
+    width: 1400px;
+    height: 957px;
+    margin-bottom: 80px;
+    margin-left: 51px;
+    font-family: "Inter";
+    font-style: normal;
+}
+
+.char {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 880px;
+    height: 896px;
+    margin-top: 30px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+}
+
+.color-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px; 
+}
+
+.color-choise {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.list-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+li::marker {
+    color:#888888;
+    font-size: 1.2em;
+  }
+
+.buy {
+    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    width: 420px;
+    height: 275px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    align-self: stretch;
+}
+
+.cost1 {
+    width: 66px;
+    height: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #888888;
+}
+
+.cost2 {
+    font-family: "Inter";    
+    src: "Inter";
+    font-style: normal;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.old {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+    width: 31px;
+    height: 16px;
+    background: #F36223;
+    border-radius: 500px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.button-buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    background: #F36223;
+    border-radius: 4px;
+    align-self: stretch;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.frame-style {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 420px;
+    height: 642px;
+}
+
+.framelook {
+    border: 1px dashed #ccc;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 420px;
+    height: 300px;
+    background: #F0F0F0;
+    border: 1px dashed #888888;
+}
+
+.framelook1 {
+    border: 1px dashed #ccc;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 420px;
+    height: 300px;
+    background: #F0F0F0;
+    border: 1px dashed #888888;
 }
 
 a {
@@ -17,21 +321,10 @@ a:hover {
     color: #c00;
 }
 
-button {
-    padding: 8px 12px;
-}
-
-p {
-    margin-bottom: 16px;
-}
 
 ul {
     padding: 0;
     margin-left: 20px;
-}
-
-.framelook {
-    border: 1px dashed #ccc;
 }
 
 table,
