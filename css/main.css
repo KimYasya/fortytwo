@@ -1,6 +1,7 @@
 html {
     font-family: "Inter";
     font-size: 16px;
+    font-style: normal;
 }
 
 .container {
@@ -20,6 +21,16 @@ html {
     line-height: 53px;
 }
 
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 4px;
+    font-family: "Inter";
+    margin-left: 51px;
+}
+
 .hstyle {
     display: flex;
     flex-direction: row;
@@ -33,30 +44,16 @@ html {
 }
 
 .headers {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     padding: 0px 0px 20px 0px;
 }
 
-.breadcrumbs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 0px;
-    gap: 4px;
-    font-family: "Inter";
-    margin-left: 51px;
-}
-
 .product-name {
     width: 539px;
     height: 39px;
     margin-left: 51px;
-    font-family: "Inter";   
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -89,14 +86,17 @@ html {
     margin-bottom: 20px;
 }
 
-.buttons button {
+button:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+}
+
+button {
     background: #FFFFFF;
     border: 1px solid #888888;
     border-radius: 4px;
     width: 94px;
     height: 39px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -112,8 +112,6 @@ html {
     height: 957px;
     margin-bottom: 80px;
     margin-left: 51px;
-    font-family: "Inter";
-    font-style: normal;
 }
 
 .char {
@@ -124,8 +122,6 @@ html {
     width: 880px;
     height: 896px;
     margin-top: 30px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 500;
 }
 
@@ -151,6 +147,15 @@ html {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+}
+
+.color-choise:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+}
+
+.button_selected {
+    border: 1px solid #F36223;
 }
 
 .list-style {
@@ -186,8 +191,6 @@ li::marker {
 .cost1 {
     width: 66px;
     height: 16px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
@@ -196,9 +199,6 @@ li::marker {
 }
 
 .cost2 {
-    font-family: "Inter";    
-    src: "Inter";
-    font-style: normal;
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 32px;
@@ -226,8 +226,6 @@ li::marker {
     height: 16px;
     background: #F36223;
     border-radius: 500px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
@@ -239,8 +237,6 @@ li::marker {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 0px 20px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
 }
@@ -251,11 +247,12 @@ li::marker {
     justify-content: center;
     align-items: center;
     padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
     background: #F36223;
     border-radius: 4px;
     align-self: stretch;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -263,9 +260,12 @@ li::marker {
     border: 0;
 }
 
+.button-buy:hover {
+    background: #DA4A0C;
+    cursor: pointer;
+}
+
 .frame-style {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -318,7 +318,8 @@ a {
 }
 
 a:hover {
-    color: #c00;
+    color: #F36223;
+    cursor: pointer;
 }
 
 
