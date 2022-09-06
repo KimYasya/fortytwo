@@ -31,6 +31,11 @@ html {
     margin-left: 51px;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .hstyle {
     display: flex;
     flex-direction: row;
@@ -77,10 +82,7 @@ html {
     display: flex;
     flex-direction: columns;
     align-items: center;
-    padding: 0px;
     gap: 10px;
-    width: 298px;
-    height: 39px;
     left: 0px;
     top: 178px;
     margin-bottom: 20px;
@@ -95,21 +97,19 @@ button {
     background: #FFFFFF;
     border: 1px solid #888888;
     border-radius: 4px;
-    width: 94px;
-    height: 39px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    padding: 10px 20px;
 }
 
 .about {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
     align-items: flex-start;
     padding: 0px;
     gap: 100px;
-    width: 1400px;
-    height: 957px;
     margin-bottom: 80px;
     margin-left: 51px;
 }
@@ -117,10 +117,9 @@ button {
 .char {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: flex-start;
     padding: 0px;
-    width: 880px;
-    height: 896px;
     margin-top: 30px;
     font-weight: 500;
 }
@@ -155,7 +154,7 @@ button {
 }
 
 .button_selected {
-    border: 1px solid #F36223;
+    border: 2px solid #F36223;
 }
 
 .list-style {
@@ -163,7 +162,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0px 0px 20px 0px;
     gap: 10px;
 }
 
@@ -312,6 +311,98 @@ li::marker {
     border: 1px dashed #888888;
 }
 
+.table-block {
+    margin-left: 51px;
+    margin-bottom: 30px;
+}
+
+.reviews-block {
+    margin-left: 51px;
+    width: 880px;
+}
+
+.reviews-block__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.reviews-block__head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviews-block__header {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.reviews-block__count {
+    font-weight: 700;
+    font-size: 24px;
+    color: #888888;
+}
+
+.review-button {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    gap: 10px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 30px;
+}
+
+.reviews-border:not(:last-child) {
+    border-bottom: 2px solid #888888;
+    margin-bottom: 40px;
+}
+
+.review-image {
+    height: 140px;
+    flex-shrink: no;
+}
+
+.review-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h4 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+
+.review-reit {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.review-star {
+    height: 30px;
+    border-radius: 1px;
+}
+
+/* .review-star:hover {
+    border: 2px solid violet;
+} */
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin: 0px 0px 40px 0px;
+}
+
 a {
     color: #018ad2;
     text-decoration-line: none;
@@ -332,15 +423,6 @@ table,
 th,
 td {
     border: 1px solid black;
-}
-
-.review-image {
-    margin-right: 16px;
-}
-
-.reviews {
-    display: flex;
-    flex-direction: row;
 }
 
 
