@@ -4,6 +4,11 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Inter";
+    src: url("/files/fonts/Inter-Regular.woff2");
+}
+
 .container {
     max-width: 1500px;
     margin: 0 auto;
@@ -14,8 +19,6 @@ html {
     height: 53px;
     left: -3px;
     top: 18px;
-    font-family: "Inter";
-    font-style: normal;
     font-weight: 700;
     font-size: 44px;
     line-height: 53px;
@@ -27,7 +30,6 @@ html {
     align-items: center;
     padding: 8px 0px;
     gap: 4px;
-    font-family: "Inter";
     margin-left: 51px;
 }
 
