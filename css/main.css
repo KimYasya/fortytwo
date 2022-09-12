@@ -132,7 +132,7 @@ button {
     align-items: flex-start;
     padding: 0px;
     gap: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     margin-left: 51px;
 }
 
@@ -161,7 +161,7 @@ button {
     gap: 10px; 
 }
 
-.product-info__color_choise {
+.product-info__choice {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@ button {
     height: 80px;
 }
 
-.product-info__color_choise:hover {
+.product-info__choice:hover {
     background: #F2F2F2;
     cursor: pointer;
 }
@@ -215,7 +215,7 @@ li::marker {
     margin-top: 30px;
 }
 
-  .sidebar__buy {
+.sidebar__buy {
     box-sizing: border-box;
     flex-direction: column;
     display: flex;
@@ -230,7 +230,7 @@ li::marker {
     align-self: stretch;
 }
 
-.sidebar__buy__cost1 {
+.sidebar__cost1 {
     width: 66px;
     height: 16px;
     font-weight: 500;
@@ -240,7 +240,7 @@ li::marker {
     color: #888888;
 }
 
-.sidebar__buy__cost2 {
+.sidebar__cost2 {
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 32px;
@@ -248,7 +248,7 @@ li::marker {
     color: #000000;
 }
 
-.sidebar__buy__old-price {
+.sidebar__old-price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -257,7 +257,7 @@ li::marker {
     margin-bottom: 14px;
 }
 
-.sidebar__buy__discount {
+.sidebar__discount {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +274,7 @@ li::marker {
     color: #FFFFFF;
 }
 
-.sidebar__buy__delivery {
+.sidebar__delivery {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -283,7 +283,7 @@ li::marker {
     font-size: 16px;
 }
 
-.sidebar__buy__button_buy {
+.sidebar__button_buy {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -302,7 +302,7 @@ li::marker {
     border: 0;
 }
 
-.sidebar__buy__button_buy:hover {
+.sidebar__button_buy:hover {
     background: #DA4A0C;
     cursor: pointer;
 }
@@ -324,7 +324,7 @@ li::marker {
     height: 642px;
 }
 
-.sidebar__frame__framelook {
+.sidebar__framelook {
     border: 1px dashed #ccc;
     width: 400px;
     box-sizing: border-box;
@@ -340,7 +340,7 @@ li::marker {
     border: 1px dashed #888888;
 }
 
-.sidebar__frame__framelook1 {
+.sidebar__framelook1 {
     border: 1px dashed #ccc;
     width: 400px;
     box-sizing: border-box;
@@ -358,14 +358,41 @@ li::marker {
 
 /* Таблица */
 
-.table {
-    border: 1px solid black;
-}
-
 .table-block {
     margin-left: 51px;
     margin-bottom: 30px;
 }
+  
+.table-block__table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border: 1px solid black;
+    gap: 15px;
+}
+  
+.table-block__title {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+  
+.table-block__elements {
+    border: 1px solid black;
+    padding: 10px;
+    border-spacing: 0px;
+    text-align: center;
+}
+  
+.table-bottom {
+    border-bottom: none;
+    border-top: none;
+}
+  
+.table-block__tr_selection:hover {
+    background: #F2F2F2;
+}
+  
 
 /* Отзывы */
 
@@ -446,5 +473,33 @@ li::marker {
     margin: 0px 0px 40px 0px;
 }
 
+/* Подвал */
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F2F2;
+    padding: 0px 50px;
+    margin-top: 50px;
+  }
+  
+  .footer__info {
+    margin: 30px 0px;
+    font-size: 14px;
+  }
+  
+  .footer__page-name {
+    color: #f52
+  }
+  
+  .footer__copyright {
+    margin: 0px;
+  }
+  
+  .copyright-bold {
+    font-weight: 700;
+  }
+  
 
