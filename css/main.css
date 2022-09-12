@@ -1,3 +1,5 @@
+/* Общее */
+
 html {
     font-family: "Inter";
     font-size: 16px;
@@ -9,86 +11,21 @@ html {
     src: url("/files/fonts/Inter-Regular.woff2");
 }
 
-.container {
-    max-width: 1500px;
-    margin: 0 auto;
+.link {
+    color: #018ad2;
+    text-decoration-line: none;
 }
 
-.header-style {
-    width: 263px;
-    height: 53px;
-    left: -3px;
-    top: 18px;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 53px;
+.link:hover {
+    color: #F36223;
+    cursor: pointer;
 }
 
-.breadcrumbs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 0px;
-    gap: 4px;
-    margin-left: 51px;
+h4 {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.hstyle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px 51px;
-    gap: 10px;
-    width: 1500px;
-    height: 80px;
-    left: 0px;
-    top: 1px;
-}
-
-.headers {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    padding: 0px 0px 20px 0px;
-}
-
-.product-name {
-    width: 539px;
-    height: 39px;
-    margin-left: 51px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
-    color: #000000;
-}
-
-.product-image {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 51px;
-    margin-top: 30px;
-    gap: 10px;
-    width: 1396.83px;
-    height: 387px;
-    left: 50px;
-    top: 195px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: columns;
-    align-items: center;
-    gap: 10px;
-    left: 0px;
-    top: 178px;
-    margin-bottom: 20px;
-}
 
 button:hover {
     background: #F2F2F2;
@@ -105,7 +42,90 @@ button {
     padding: 10px 20px;
 }
 
-.about {
+.headers {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 0px 0px 20px 0px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Заголовок */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 51px;
+    gap: 10px;
+    width: 1500px;
+    height: 80px;
+    left: 0px;
+    top: 1px;
+}
+
+.header_style {
+    width: 263px;
+    height: 53px;
+    left: -3px;
+    top: 18px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+/* Навигация */
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 0px;
+    gap: 4px;
+    margin-left: 51px;
+}
+
+/* Основная страница */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок и фото товара */
+
+.product-preview {
+    margin-left: 51px;
+}
+
+.product-preview__name {
+    width: 539px;
+    height: 39px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.product-preview__image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+    width: 1396.83px;
+    height: 387px;
+    left: 50px;
+    top: 195px;
+}
+
+/* Информация о товаре */
+
+.product-about {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -116,7 +136,7 @@ button {
     margin-left: 51px;
 }
 
-.char {
+.product-info {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -126,7 +146,13 @@ button {
     font-weight: 500;
 }
 
-.color-img {
+/* Выбор цвета */
+
+.product-info__subsection {
+    margin-bottom: 20px;
+}
+
+.product-info__color {
     display: flex;
     flex-direction: row;
     justify-content: center; 
@@ -135,7 +161,7 @@ button {
     gap: 10px; 
 }
 
-.color-choise {
+.product-info__color_choise {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -147,24 +173,34 @@ button {
     border-radius: 4px;
     width: 80px;
     height: 80px;
-    margin-bottom: 20px;
 }
 
-.color-choise:hover {
+.product-info__color_choise:hover {
     background: #F2F2F2;
     cursor: pointer;
 }
 
-.button_selected {
+
+.product-info__buttons {
+    display: flex;
+    flex-direction: columns;
+    align-items: center;
+    gap: 10px;
+    left: 0px;
+    top: 178px;
+}
+
+.product-info__button_selected {
     border: 2px solid #F36223;
 }
+
+/* Список характеристик */
 
 .list-style {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px 0px 20px 0px;
     gap: 10px;
 }
 
@@ -173,10 +209,15 @@ li::marker {
     font-size: 1.2em;
   }
 
-.buy {
+/* Сайдбар  */
+
+.sidebar {
+    margin-top: 30px;
+}
+
+  .sidebar__buy {
     box-sizing: border-box;
     flex-direction: column;
-    margin-top: 30px;
     display: flex;
     align-items: flex-start;
     padding: 20px;
@@ -189,7 +230,7 @@ li::marker {
     align-self: stretch;
 }
 
-.cost1 {
+.sidebar__buy__cost1 {
     width: 66px;
     height: 16px;
     font-weight: 500;
@@ -199,7 +240,7 @@ li::marker {
     color: #888888;
 }
 
-.cost2 {
+.sidebar__buy__cost2 {
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 32px;
@@ -207,7 +248,7 @@ li::marker {
     color: #000000;
 }
 
-.old {
+.sidebar__buy__old-price {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -216,7 +257,7 @@ li::marker {
     margin-bottom: 14px;
 }
 
-.discount {
+.sidebar__buy__discount {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -233,7 +274,7 @@ li::marker {
     color: #FFFFFF;
 }
 
-.delivery {
+.sidebar__buy__delivery {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -242,7 +283,7 @@ li::marker {
     font-size: 16px;
 }
 
-.button-buy {
+.sidebar__buy__button_buy {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -261,17 +302,19 @@ li::marker {
     border: 0;
 }
 
-.button-buy:hover {
+.sidebar__buy__button_buy:hover {
     background: #DA4A0C;
     cursor: pointer;
 }
 
-.frame-style {
+/* Реклама */
+
+.sidebar__frame {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    color: #888888;
     margin-top: 30px;
+    color: #888888;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -281,7 +324,7 @@ li::marker {
     height: 642px;
 }
 
-.framelook {
+.sidebar__frame__framelook {
     border: 1px dashed #ccc;
     width: 400px;
     box-sizing: border-box;
@@ -297,7 +340,7 @@ li::marker {
     border: 1px dashed #888888;
 }
 
-.framelook1 {
+.sidebar__frame__framelook1 {
     border: 1px dashed #ccc;
     width: 400px;
     box-sizing: border-box;
@@ -311,12 +354,20 @@ li::marker {
     height: 300px;
     background: #F0F0F0;
     border: 1px dashed #888888;
+}
+
+/* Таблица */
+
+.table {
+    border: 1px solid black;
 }
 
 .table-block {
     margin-left: 51px;
     margin-bottom: 30px;
 }
+
+/* Отзывы */
 
 .reviews-block {
     margin-left: 51px;
@@ -346,58 +397,48 @@ li::marker {
     color: #888888;
 }
 
-.review-button {
+.reviews-block__button {
     font-weight: 500;
     font-size: 16px;
     padding: 10px 20px;
     gap: 10px;
 }
 
-.reviews {
+.reviews-block__reviews {
     display: flex;
     flex-direction: row;
     padding: 0px;
     gap: 30px;
 }
 
-.reviews-border:not(:last-child) {
+.reviews-block__border:not(:last-child) {
     border-bottom: 2px solid #888888;
     margin-bottom: 40px;
 }
 
-.review-image {
+.reviews-block__review-image {
     height: 140px;
     flex-shrink: no;
 }
 
-.review-name {
+.reviews-block__review-name {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
 }
 
-h4 {
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-}
-
-
-.review-reit {
+.reviews-block__review-reiting {
     display: flex;
     margin-bottom: 20px;
 
 }
 
-.review-star {
+.reviews-block__review-star {
     height: 30px;
     border-radius: 1px;
 }
 
-/* .review-star:hover {
-    border: 2px solid violet;
-} */
-
-.review-content {
+.reviews-block__review-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -405,26 +446,5 @@ h4 {
     margin: 0px 0px 40px 0px;
 }
 
-a {
-    color: #018ad2;
-    text-decoration-line: none;
-}
-
-a:hover {
-    color: #F36223;
-    cursor: pointer;
-}
-
-
-ul {
-    padding: 0;
-    margin-left: 20px;
-}
-
-table,
-th,
-td {
-    border: 1px solid black;
-}
 
 
