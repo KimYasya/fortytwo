@@ -17,86 +17,90 @@
 
     <body>
         <div class="container">
-            <header class ="hstyle">
+            <header class ="header">
                 <div>
                     <img src="files/img/favicon.svg" alt="лого" height="35">
                 </div>
-                <div class="header-style">
+                <div class="header_style">
                     <span style="color: #f52">Мой</span>Маркет
                 </div>
             </header>
 
             <nav>
                 <div class="breadcrumbs">
-                    <a href="/index.html">Электроника</a>
+                    <a class="link" href="/index.html">Электроника</a>
                     <span>></span> 
-                    <a href="/index.html">Смартфоны и гаджеты</a>
+                    <a class="link" href="/index.html">Смартфоны и гаджеты</a>
                     <span>></span>
-                    <a href="/index.html">Мобильные телефоны</a>
+                    <a class="link" href="/index.html">Мобильные телефоны</a>
                     <span>></span>
-                    <a href="/index.html">Apple</a>    
+                    <a class="link" href="/index.html">Apple</a>    
                 </div>
             </nav>
 
             <main class="main-container">
-                <div class="product-name"> 
-                    <span>Cмартфон Apple iPhone 13, синий</span>
-                </div>
-                  
-                <div class="product-image">
-                    <img src="files/img/image-1.webp" alt="изображение айфона анфас" height="400">
-                    <img src="files/img/image-2.webp" alt="изображение айфона три четверти" height="400">
-                    <img src="files/img/image-3.webp" alt="изображение айфона три четвертых" height="400">
-                    <img src="files/img/image-4.webp" alt="изображение айфона камера" height="400">
-                    <img src="files/img/image-5.webp" alt="изображение айфона анфас" height="400">
-                </div>
+                <div class="product-preview">
+                    <div class="product-preview__name"> 
+                        <span>Cмартфон Apple iPhone 13, синий</span>
+                    </div>
+                    
+                    <div class="product-preview__image">
+                        <img src="files/img/image-1.webp" alt="изображение айфона анфас" height="400">
+                        <img src="files/img/image-2.webp" alt="изображение айфона три четверти" height="400">
+                        <img src="files/img/image-3.webp" alt="изображение айфона три четвертых" height="400">
+                        <img src="files/img/image-4.webp" alt="изображение айфона камера" height="400">
+                        <img src="files/img/image-5.webp" alt="изображение айфона анфас" height="400">
+                    </div>
+                </div>    
 
-                <div class="about">
+                <div class="product-about">
                            
-                    <div class="char">
-                      <div>
+                    <div class="product-info">
+                      <div class="product-info__subsection">
                         <div class="headers">
                             <h4>Цвет товара: Синий</h4>
                         </div>
-                        <div class="color-img">
-                            <div class="color-choise">
+                        <div class="product-info__color">
+                            <div class="product-info__color_choise">
                                 <img src="files/img/color-1.webp" alt="" height="60">
                             </div>
 
-                            <div class="color-choise">
+                            <div class="product-info__color_choise">
                                 <img src="files/img/color-2.webp" alt="" height="60">
                             </div>
 
-                            <div class="color-choise">
+                            <div class="product-info__color_choise">
                                 <img src="files/img/color-3.webp" alt="" height="60">
                             </div>
 
-                            <div class="color-choise button_selected">
+                            <div class="product-info__color_choise product-info__button_selected">
                                 <img src="files/img/color-4.webp" alt="" height="60">
                             </div>
 
-                            <div class="color-choise">
+                            <div class="product-info__color_choise">
                                 <img src="files/img/color-5.webp" alt="" height="60">
                             </div>
 
-                            <div class="color-choise">
+                            <div class="product-info__color_choise">
                                 <img src="files/img/color-6.webp" alt="" height="60">
                             </div>
                         </div>
 
                       </div>
 
+                      <div class="product-info__subsection">
                         <div class="headers">
                             <h4>Конфигурация памяти: 128 ГБ</h4>
                         </div>
 
-                            <div class="buttons">
-                                <button class="button_selected">128 ГБ</button>
+                            <div class="product-info__buttons">
+                                <button class="product-info__button_selected">128 ГБ</button>
                                 <button>256 ГБ</button>
                                 <button>512 ГБ</button>
                             </div>
-                       
-                        <div>
+                      </div>
+
+                      <div class="product-info__subsection">
                           <div class="headers">
                             <h4>Характеристики товара</h4>
                           </div>
@@ -105,60 +109,60 @@
                             <li>Экран: <b>6.1</b></li>
                             <li>Встроенная память: <b>128 ГБ</b></li>
                             <li>Операционная система: <b>IOS 15</b></li>
-                            <li>Беспроводные интерфейсы:<b>NFC, Bluetooth, Wi-Fi</b></li>
-                            <li>Процессор: <a href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></li>
+                            <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
+                            <li>Процессор: <a class="link" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></li>
                             <li>Вес: 173 г</li>                           
                           </div>
 
+                      </div>
+
+                      <div  class="product-info__subsection"> 
+                        <h4 class="headers">Описание</h4>
+
+                        <div>
+                            Наша самая совершенная система двух камер.<br>
+                            Особый взгляд на прочность дисплея.<br>
+                            Чип, с которым всё супербыстро.<br>
+                            Аккумулятор держится заметно дольше.<br>
+                            <i>iPhone 13 - сильный мира всего.</i><br>
                         </div>
-
-                            <div> 
-                                <h4 class="headers">Описание</h4>
-
-                                <div>
-                                    Наша самая совершенная система двух камер.<br>
-                                    Особый взгляд на прочность дисплея.<br>
-                                    Чип, с которым всё супербыстро.<br>
-                                    Аккумулятор держится заметно дольше.<br>
-                                    <i>iPhone 13 - сильный мира всего.</i><br>
-                                </div>
                                             
-                                <p>Мы разработали совершенно новую схему расположения и развернули объективы на 45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двух камер с увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место для системы оптической стабилизации изображения сдвигом матрицы. И повысили скорость работы матрицы на сверхширокоугольной камере. Новая сверхширокоугольная камера видит больше деталей в тёмных областях снимков. Новая широкоугольная камера улавливает на 47% больше света для более качественных фотографий и видео.</p>
-                                <p>Новая оптическая стабилизация со сдвигом матрицы обеспечит чёткие кадры даже в неустойчивом положении.</p>
-                                <p>Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект, который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.</p>
-                            </div> 
+                            <p>Мы разработали совершенно новую схему расположения и развернули объективы на 45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двух камер с увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место для системы оптической стабилизации изображения сдвигом матрицы. И повысили скорость работы матрицы на сверхширокоугольной камере. Новая сверхширокоугольная камера видит больше деталей в тёмных областях снимков. Новая широкоугольная камера улавливает на 47% больше света для более качественных фотографий и видео.</p>
+                            <p>Новая оптическая стабилизация со сдвигом матрицы обеспечит чёткие кадры даже в неустойчивом положении.</p>
+                            <p>Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект, который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.</p>
+                      </div> 
                     </div>
 
-                    <div>
+                    <div class="sidebar">
 
-                        <div class="buy">
+                        <div class="sidebar__buy">
     
-                            <div class="old">
-                                <div class="cost1">
+                            <div class="sidebar__buy__old-price">
+                                <div class="sidebar__buy__cost1">
                                   <span>75 990₽</span>
                                 </div>
     
-                                <div class="discount">
+                                <div class="sidebar__buy__discount">
                                   <span>-8%</span>
                                 </div>
                             </div>  
     
-                            <div class="cost2">
+                            <div class="sidebar__buy__cost2">
                                 <span>67 990₽</span>
                             </div>
                                 
-                            <div class="delivery">
+                            <div class="sidebar__buy__delivery">
                                 <span>Самовывоз в четверг, 1 сентября — <b>бесплатно</b></span>
                                 <p>Курьером в четверг, 1 сентября — <b>бесплатно</b></p>
-                                <button class="button-buy">Добавить в корзину</button>
+                                <button class="sidebar__buy__button_buy">Добавить в корзину</button>
                             </div>
                         </div>
     
-                        <div class="frame-style">
+                        <div class="sidebar__frame">
                             <span>Реклама</span>
-                            <iframe class="framelook" src="files/frames/VanGog.html">
+                            <iframe class="sidebar__frame__framelook" src="files/frames/VanGog.html">
                             </iframe>
-                            <iframe class="framelook1" src="files/frames/VanGog.html">
+                            <iframe class="sidebar__frame__framelook1" src="files/frames/VanGog.html">
                             </iframe>
                         </div>
     
@@ -169,53 +173,53 @@
             
                 <div class="table-block">
                     <h3>Сравнение моделей</h3>
-                        <table>
+                        <table class="table">
                         <thead>
                             <tr>
-                            <th>Модель</th>
-                            <th>Вес</th>
-                            <th>Высота</th>
-                            <th>Ширина</th>
-                            <th>Толщина</th>
-                            <th>Чип</th>
-                            <th>Объём памяти</th>
-                            <th>Беспроводная зарядка</th>
-                            <th>Аккумулятор</th>
+                            <th class="table">Модель</th>
+                            <th class="table">Вес</th>
+                            <th class="table">Высота</th>
+                            <th class="table">Ширина</th>
+                            <th class="table">Толщина</th>
+                            <th class="table">Чип</th>
+                            <th class="table">Объём памяти</th>
+                            <th class="table">Беспроводная зарядка</th>
+                            <th class="table">Аккумулятор</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                            <td>Iphone11</td>
-                            <td>194 грамма</td>
-                            <td>150.9 мм</td>
-                            <td>75.7 мм</td>
-                            <td>8.3 мм</td>
-                            <td>A13 Bionicchip</td>
-                            <td>до 128 Гб</td>
-                            <td>Нет</td>
-                            <td>До 17 часов</td>
+                            <td class="table">Iphone11</td>
+                            <td class="table">194 грамма</td>
+                            <td class="table">150.9 мм</td>
+                            <td class="table">75.7 мм</td>
+                            <td class="table">8.3 мм</td>
+                            <td class="table">A13 Bionicchip</td>
+                            <td class="table">до 128 Гб</td>
+                            <td class="table">Нет</td>
+                            <td class="table">До 17 часов</td>
                             </tr>
                             <tr>
-                            <td>Iphone12</td>
-                            <td>164 грамма</td>
-                            <td>146.7 мм</td>
-                            <td>71.5 мм</td>
-                            <td>7.4 мм</td>
-                            <td>A14 Bionicchip</td>
-                            <td>до 256 Гб</td>
-                            <td>Да</td>
-                            <td>До 19 часов</td>
+                            <td class="table">Iphone12</td>
+                            <td class="table">164 грамма</td>
+                            <td class="table">146.7 мм</td>
+                            <td class="table">71.5 мм</td>
+                            <td class="table">7.4 мм</td>
+                            <td class="table">A14 Bionicchip</td>
+                            <td class="table">до 256 Гб</td>
+                            <td class="table">Да</td>
+                            <td class="table">До 19 часов</td>
                             </tr>
                             <tr>
-                            <td>Iphone13</td>
-                            <td>174 грамма</td>
-                            <td>146.7 мм</td>
-                            <td>71.5 мм</td>
-                            <td>7.65 мм</td>
-                            <td>A15 Bionicchip</td>
-                            <td>до 512 Гб</td>
-                            <td>Да</td>
-                            <td>До 19 часов</td>
+                            <td class="table">Iphone13</td>
+                            <td class="table">174 грамма</td>
+                            <td class="table">146.7 мм</td>
+                            <td class="table">71.5 мм</td>
+                            <td class="table">7.65 мм</td>
+                            <td class="table">A15 Bionicchip</td>
+                            <td class="table">до 512 Гб</td>
+                            <td class="table">Да</td>
+                            <td class="table">До 19 часов</td>
                             </tr>
                         </tbody>
                         </table>    
@@ -229,24 +233,24 @@
                             <span class="reviews-block__count">431</span>
                     </div>
 
-                    <button class="review-button">Добавить отзыв</button>
+                    <button class="reviews-block__button">Добавить отзыв</button>
                   </div>
 
-                  <div class="reviews-border">
-                    <div class="reviews"> 
-                            <img class="review-image" src="files\img\photo1.png" alt="">
+                  <div class="reviews-block__border">
+                    <div class="reviews-block__reviews"> 
+                            <img class="reviews-block__review-image" src="files\img\photo1.png" alt="">
                                 
-                            <div class="review-content">
-                                <div class="review-name">
+                            <div class="reviews-block__review-content">
+                                <div class="reviews-block__review-name">
                                     <h4>Марк Г.</h4>
                                 </div>
 
-                            <div class="review-reit">
-                                <img class="review-star" src="files\img\star.png" alt="">
-                                <img class="review-star" src="files\img\star.png" alt="">
-                                <img class="review-star" src="files\img\star.png" alt="">
-                                <img class="review-star" src="files\img\star.png" alt="">
-                                <img class="review-star" src="files\img\star.png" alt="">
+                            <div class="reviews-block__review-reiting">
+                                <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                <img class="reviews-block__review-star" src="files\img\star.png" alt="">
                             </div>    
 
                             <div><strong>Опыт использования:</strong> менее месяца</div>
@@ -256,21 +260,21 @@
                     </div>
                   </div>
 
-                  <div class="reviews-border">
-                    <div class="reviews"> 
-                            <img class="review-image" src="files\img\photo2.png" alt="">
+                  <div class="reviews-block__border">
+                    <div class="reviews-block__reviews"> 
+                            <img class="reviews-block__review-image" src="files\img\photo2.png" alt="">
                                         
-                            <div class="review-content">
-                                <div class="review-name">
+                            <div class="eviews-block__review-content">
+                                <div class="reviews-block__review-name">
                                     <h4>Валерий Коваленко</h4>
                                 </div>
 
-                                <div class="review-reit">
-                                    <img class="review-star" src="files\img\star.png" alt="">
-                                    <img class="review-star" src="files\img\star.png" alt="">
-                                    <img class="review-star" src="files\img\star.png" alt="">
-                                    <img class="review-star" src="files\img\star.png" alt="">
-                                    <img class="review-star" src="files\img\g star.png" alt="">
+                                <div class="review__reiting">
+                                    <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                    <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                    <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                    <img class="reviews-block__review-star" src="files\img\star.png" alt="">
+                                    <img class="reviews-block__review-star" src="files\img\g star.png" alt="">
                                 </div>    
     
 
@@ -288,9 +292,9 @@
                 
             <footer>
                 <div>
-                    <p>Для уточнения информации звоните по номеру <a href="tel:+79000000000">+7 900 000 0000</a>, а предложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a></p>
+                    <p>Для уточнения информации звоните по номеру <a class="link" href="tel:+79000000000">+7 900 000 0000</a>, а предложения по сотрудничеству отправляйте на почту <a class="link" href="mailto:partner@mymarket.com">partner@mymarket.com</a></p>
                     <p>© ООО «<span style="color: #f52">Мой</span>Маркет», 2018-2022.</p>
-                    <p><a href="#top">Наверх</a></p>
+                    <p><a class="link" href="#top">Наверх</a></p>
                 </div>
             </footer>
         </div>
