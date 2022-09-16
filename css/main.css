@@ -94,6 +94,7 @@ button {
 .main-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 /* Заголовок и фото товара */
@@ -132,7 +133,7 @@ button {
     align-items: flex-start;
     padding: 0px;
     gap: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-left: 51px;
 }
 
@@ -359,7 +360,6 @@ li::marker {
 /* Таблица */
 
 .table-block {
-    margin-left: 51px;
     margin-bottom: 30px;
 }
   
@@ -399,6 +399,7 @@ li::marker {
 .reviews-block {
     margin-left: 51px;
     width: 880px;
+    margin-bottom: 60px;
 }
 
 .reviews-block__title {
@@ -439,7 +440,7 @@ li::marker {
 }
 
 .reviews-block__border:not(:last-child) {
-    border-bottom: 2px solid #888888;
+    border-bottom: 2px dashed #888888;
     margin-bottom: 40px;
 }
 
@@ -471,6 +472,86 @@ li::marker {
     gap: 10px;
     font-size: 14px;
     margin: 0px 0px 40px 0px;
+}
+
+/* Форма ввода отзыва */
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 40px;
+    margin-left: 51px;
+    align-items: flex-start;
+    padding: 0px 0px 0px 170px;
+    gap: 15px;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+.review-form__header {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.review-form__first {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 752px;
+    height: 49px;
+
+}
+
+.review-form__name {
+    border: 1px solid #888888;
+    padding: 0px;
+    text-indent: 20px;
+    flex-grow: 1;
+}
+
+.review-form__name:hover {
+    border: 1px solid #000000;
+}
+
+.review-form__reiting {
+    width: 175px;
+    border: 1px solid #888888;
+    padding: 0px;
+    text-indent: 20px;
+}
+
+.review-form__reiting:hover {
+    border: 1px solid #000000;
+}
+
+.review-form__text {
+    height: 190px;
+    width: 710px;
+    resize: none;
+    border: 1px solid #888888;
+    font-family: "Inter";
+    padding: 10px 20px;
+
+}
+
+.review-form__text:hover {
+    border: 1px solid #000000; 
+}
+
+.review-form__btn {
+    padding: 10px 20px;
+    gap: 10px;
+    background: #F36223;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 16px;
+}
+
+.review-form__btn:hover {
+    background: #DA4A0C;
+    cursor: pointer;  
 }
 
 /* Подвал */
