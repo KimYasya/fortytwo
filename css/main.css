@@ -129,7 +129,7 @@ button {
 .product-about {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    width: 100%;
     align-items: flex-start;
     padding: 0px;
     gap: 100px;
@@ -397,7 +397,7 @@ li::marker {
 /* Отзывы */
 
 .reviews-block {
-    width: 880px;
+    width: 100%;
     margin-bottom: 60px;
 }
 
@@ -476,13 +476,13 @@ li::marker {
 /* Форма ввода отзыва */
 
 .review-form {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    padding: 0px;
     gap: 40px;
     align-items: flex-start;
+    width: 100%;
     padding: 0px 0px 0px 170px;
-    gap: 15px;
     font-family: "Inter";
     font-size: 16px;
 }
@@ -501,11 +501,17 @@ li::marker {
 
 }
 
+.review-form__second {
+    display: flex;
+    width: 100%;
+    height: 190px;
+}    
+
 .review-form__name {
     border: 1px solid #888888;
     padding: 0px;
     text-indent: 20px;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .review-form__name:hover {
@@ -524,13 +530,11 @@ li::marker {
 }
 
 .review-form__text {
-    height: 190px;
-    width: 100%;
     resize: none;
     border: 1px solid #888888;
     font-family: "Inter";
     padding: 10px 20px;
-
+    width: 100%;
 }
 
 .review-form__text:hover {
