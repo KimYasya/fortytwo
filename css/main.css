@@ -91,15 +91,16 @@ button {
         background: #F8FAFE;
         left: 0px;
         top: 0px;
-     }
+    }
 
-     .header__container {
+    .header__container {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-     }
+        gap: 5px;
+    }
  
     .header {
          display: flex;
@@ -118,6 +119,47 @@ button {
          font-size: 2rem;
          line-height: 53px;
     }
+
+    .header__like {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        background: #888888;
+        border-radius: 50%;
+        border: 1px solid #888888;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 20px;
+        width: 20px; 
+    }
+
+    .header__like-circle {
+        position: absolute;
+        top: 10%;
+        left: 60%;
+   }
+
+   .header__like-count {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 2px 2px;
+       width: 8px;
+       height: 8px;
+       background: #F36223;
+       border-radius: 50%;
+       color: #FFFFFF;
+       font-size: 10px;
+    }
+
+   .header__like-style svg {
+       fill: #FFFFFF;  
+       height: 20px;
+       width: 20px; 
+     
+   }
      
     .header__cart {
         position: relative;
@@ -670,12 +712,13 @@ button {
         top: 0px;
      }
 
-     .header__container {
+    .header__container {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        gap: 10px;
      }
 
     .header {
@@ -695,6 +738,47 @@ button {
         font-size: 44px;
         line-height: 53px;
     }
+
+    .header__like {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: #888888;
+        border-radius: 50%;
+        border: 1px solid #888888;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 30px;
+        width: 30px; 
+    }
+
+    .header__like-circle {
+        position: absolute;
+        top: 10%;
+        left: 60%;
+   }
+
+   .header__like-count {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 4px 4px;
+       width: 10px;
+       height: 10px;
+       background: #F36223;
+       border-radius: 50%;
+       color: #FFFFFF;
+       font-size: 10px;
+    }
+
+   .header__like-style svg {
+       fill: #FFFFFF;  
+       height: 30px;
+       width: 30px; 
+     
+   }
     
     .header__cart {
         position: relative;
@@ -1293,6 +1377,7 @@ button {
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        gap: 10px;
      }
  
      .header {
@@ -1313,6 +1398,47 @@ button {
          font-size: 44px;
          line-height: 53px;
      }
+
+     .header__like {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background: #888888;
+        border-radius: 50%;
+        border: 1px solid #888888;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 38px;
+        width: 38px; 
+    }
+
+    .header__like-circle {
+        position: absolute;
+        top: 15%;
+        left: 60%;
+   }
+
+   .header__like-count {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 4px 4px;
+       width: 14px;
+       height: 14px;
+       background: #F36223;
+       border-radius: 50%;
+       color: #FFFFFF;
+       font-size: 12px;
+    }
+
+   .header__like-style svg {
+       fill: #FFFFFF;  
+       height: 38px;
+       width: 38px; 
+     
+   }
      
      .header__cart {
          position: relative;
