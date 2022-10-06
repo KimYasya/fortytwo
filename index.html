@@ -16,16 +16,33 @@
     </head>
 
     <body>
-        <div class="container">
-            <header class ="header">
+        
+        <header class ="header-container">
+          <div class="container header__container">
+            <div class="header">
                 <div>
                     <img src="files/img/favicon.svg" alt="лого" height="35">
                 </div>
                 <div class="header_style">
                     <span style="color: #f52">Мой</span>Маркет
                 </div>
-            </header>
+            </div>
 
+            <div class="header__cart">
+                <div class="header__cart-style">
+                  <svg viewBox="0 0 21 20">
+                    <path d="M0.799683 0.839233H4.30233H5.12213L5.28291 1.61096L5.74024 3.80618H19.3431H20.5235L20.3295 4.924L19.2993 10.8579L19.16 11.66H18.3129H7.37647L7.80062 13.696H18.3129V15.616H6.98081H6.16101L6.00023 14.8443L3.93985 4.95445L4.92044 4.76618L3.93985 4.95445L3.48252 2.75923H0.799683V0.839233ZM6.14024 5.72618L6.97647 9.74005H17.4658L18.1626 5.72618H6.14024ZM9.6758 18.0054C9.6758 18.8889 8.9316 19.6034 8.01119 19.6034C7.09075 19.6034 6.34656 18.8889 6.34656 18.0054C6.34656 17.1218 7.09075 16.4261 8.01119 16.4261C8.9316 16.4261 9.6758 17.1218 9.6758 18.0054ZM16.2534 19.6034C17.1738 19.6034 17.918 18.8889 17.918 18.0054C17.918 17.1218 17.1738 16.4261 16.2534 16.4261C15.3329 16.4261 14.5887 17.1218 14.5887 18.0054C14.5887 18.8889 15.3329 19.6034 16.2534 19.6034Z"/>
+                  </svg>
+                </div>
+                   
+                <div class="header__cart-circle">
+                    <span class="header__cart-count">3</span>
+                </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="container">
             <nav>
                 <div class="breadcrumbs">
                     <a class="link" href="/index.html">Электроника</a>
@@ -62,27 +79,27 @@
                         </div>
                         <div class="product-info__color">
                             <div class="product-info__choice">
-                                <img src="files/img/color-1.webp" alt="" height="60">
+                                <img class="product-info__img" src="files/img/color-1.webp" alt="">
                             </div>
 
                             <div class="product-info__choice">
-                                <img src="files/img/color-2.webp" alt="" height="60">
+                                <img class="product-info__img" src="files/img/color-2.webp" alt="">
                             </div>
 
                             <div class="product-info__choice">
-                                <img src="files/img/color-3.webp" alt="" height="60">
+                                <img class="product-info__img" src="files/img/color-3.webp" alt="">
                             </div>
 
                             <div class="product-info__choice product-info__button_selected">
-                                <img src="files/img/color-4.webp" alt="" height="60">
+                                <img class="product-info__img" src="files/img/color-4.webp" alt="">
                             </div>
 
                             <div class="product-info__choice">
-                                <img src="files/img/color-5.webp" alt="" height="60">
+                                <img class="product-info__img " src="files/img/color-5.webp" alt="">
                             </div>
 
                             <div class="product-info__choice">
-                                <img src="files/img/color-6.webp" alt="" height="60">
+                                <img class="product-info__img" src="files/img/color-6.webp" alt="">
                             </div>
                         </div>
 
@@ -117,7 +134,9 @@
                       </div>
 
                       <div  class="product-info__subsection"> 
-                        <h4 class="headers">Описание</h4>
+                        <div class="headers">
+                            <h4>Описание</h4>
+                          </div>
 
                         <div>
                             Наша самая совершенная система двух камер.<br>
@@ -312,9 +331,11 @@
      
                                 
             </main>
+        </div>
                 
             <footer>
                 <div class="footer">
+                  <div class="container footer__container">
                     <div class="footer__info">
                         <p class="footer__copyright copyright-bold">© ООО «<span class="footer__page-name">Мой</span>Маркет», 2018-2022.</p>
                         <p class="footer__copyright">Для уточнения информации звоните по номеру <a class="link" href="tel:+79000000000">+7 900 000 0000</a>, <br>
@@ -322,7 +343,7 @@
                     </div>
                     
                     <div><a class="link" href="#top">Наверх</a></div>
-                </div>
+                  </div>  
             </footer>
         </div>
     </body> 
