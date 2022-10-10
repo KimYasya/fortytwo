@@ -6,9 +6,9 @@ console.group("Упражнение 1");
 let a = "$100";
 let b = "300$";
 
-let summ = Number(a.slice(1)) + Number(b.slice(0 , 3));
+let sum = Number(a.slice(1)) + Number(b.slice(0 , 3));
 
-console.log(summ);
+console.log(sum);
 
 console.groupEnd();
 
