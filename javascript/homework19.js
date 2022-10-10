@@ -6,7 +6,7 @@ console.group("Упражнение 1");
 let a = "$100";
 let b = "300$";
 
-let summ = Number(a.slice( 1 )) + Number(b.slice( 0 , 3 ));
+let summ = Number(a.slice(1)) + Number(b.slice(0 , 3));
 
 console.log(summ);
 
@@ -18,7 +18,7 @@ console.group("Упражнение 2");
 let message = "    привет, медвед     ";
 
 message = message.trim()
-message = message[0].toUpperCase( "п" ) + message.slice( 1 );
+message = message[0].toUpperCase("п") + message.slice(1);
 
 console.log(message);
 
@@ -57,7 +57,7 @@ let message2 = "Я работаю со строками как професси�
 
 // let count = message2.split(/\s+/).length; Более точный вариант, защищает от использования двойных пробелов
 
-let count = message2.split( " " ).length;
+let count = message2.split(" ").length;
 
 console.log(count);
 
