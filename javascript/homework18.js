@@ -12,7 +12,7 @@ let result= parseInt(a) + parseInt(b);
 
 console.log(result);
 
-console.groupEnd("Упражнение 1");
+console.groupEnd();
 
 
 // Упражнение 2
@@ -21,7 +21,7 @@ console.group("Упражнение 2");
 
 console.log(Math.max(10, -45, 102, 36, 12, 0, -1));
 
-console.groupEnd("Упражнение 2");
+console.groupEnd();
 
 
 // Упражнение 3
@@ -43,7 +43,7 @@ console.log(g);
 let h = "1" !== 1;
 console.log(h);
 
-console.groupEnd("Упражнение 3");
+console.groupEnd();
 
 
 // Дополнительное упражнение
@@ -57,4 +57,4 @@ let r = 0.1;
 let t = 0.2;
 console.log(r + t);
 
-console.groupEnd("Дополнительное упражнение");
+console.groupEnd();
