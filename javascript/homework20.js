@@ -62,10 +62,8 @@ function getNameOfMonth(monthNumber) {
 //   return monthsArr[monthNumber];
 // };
 
-
 console.log("getNameOfMonth(6)", getNameOfMonth(6)) // возвращает нам название месяца по его порядковому номеру
 // тут же мы передаем параметру monthNumber его значение, в нашем случае цифры от 0 до 11 - которые соответствуют месяцам
-
 
 for (let i = 0; i < monthsArr.length; i++) {
   if (getNameOfMonth(i) !== "Октябрь") console.log(getNameOfMonth(i));
