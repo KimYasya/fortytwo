@@ -5,11 +5,16 @@ console.group("Упражнение 1");
 
 function isEmpty(obj) {
   for (let key in obj) {
-    // если цикл выполняется - в объекте есть свойства
     return false;
   }
   return true;
 }
+
+/** 
+ * Проверяет, есть ли свойства у объекта.
+ *
+ * @return возвращает true, если у обхъекта нет свойств, иначе возвращает false
+ */
 
 let user = {};
   console.log(isEmpty(user));
@@ -38,16 +43,30 @@ function raiseSalary(persent) {
   return newSalaries;
 }
 
+/**
+ * высчитывает повышение зарплаты на %
+ * 
+ * @param {salaries[key]} изначальный уровень зп
+ * @param {persent} процент повышения зп
+ * @return {newSalaries} зарплата, повышенная на указанный процент * 
+ */
+
 console.log(raiseSalary(3));
 
 
 let sum = 0;
-for (let key in newSalaries) {
-  sum += newSalaries[key];
-}
+  for (let key in newSalaries) {
+    sum += newSalaries[key];
+  }
 
-console.log(sum);
+/**
+ * считает сумму новых зарплат
+ * 
+ * @param {newSalaries} повышенные разрплаты
+ * @param {sum} сумма новых зарплат
+ */
 
+console.log("Общая зарплата: " + sum);
 
 
 console.groupEnd();
