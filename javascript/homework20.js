@@ -71,6 +71,21 @@ for (let i = 0; i < monthsArr.length; i++) {
 
 console.groupEnd();
 
+/* или еще вариант:
+function getNameOfMonth(n) {
+  if (n === 0) return "Январь";
+  if (n === 1) return "Февраль";
+  if (n === 2) return "Март";
+}
+
+for (let n = 0; n < 12; n++) {
+  const month = getNameOfMonth(n);
+
+  if ( n === 1) continue;
+
+  console.log(month);
+}
+*/
 
 // Дополнительное упражнение
 console.group("Дополнительное упражнение");
