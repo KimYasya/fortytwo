@@ -54,15 +54,7 @@ console.group("Товар")
 console.log("Цвет товара: " + product.color);
 console.log("Конфигурация памяти: " + product.memoryConfigGb);
 console.log("Фото товара: " + product.productPhoto);
-console.group("Варианты доставки:", product.delivery); 
-console.groupEnd();
-
-console.group("Отзыв 1")
-console.log(firstReview);
-console.groupEnd();
-
-console.group("Отзыв 2")
-console.log(secondReview);
+console.log("Варианты доставки:", product.delivery); 
 console.groupEnd();
 
 console.groupEnd();
