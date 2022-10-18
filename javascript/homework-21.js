@@ -38,7 +38,7 @@ let newSalaries = { };
 
 function raiseSalary(persent) {
   for (let key in salaries) {
-   newSalaries[key] = (salaries[key] / 100 * persent) + salaries[key];   
+   newSalaries[key] = Math.floor((salaries[key] / 100 * persent) + salaries[key]);   
   }
   return newSalaries;
 }
@@ -51,7 +51,7 @@ function raiseSalary(persent) {
  * @return {newSalaries} зарплата, повышенная на указанный процент * 
  */
 
-console.log(raiseSalary(3));
+console.log(raiseSalary(1,11234454));
 
 
 let sum = 0;
