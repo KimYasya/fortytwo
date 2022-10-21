@@ -1,15 +1,23 @@
 "use strict"
 
+export { product, firstReview, secondReview }
 
 // Упражнение 2
 console.group("Упражнение 2");
 let product = {
   name: "Apple Iphone 13",
-  color: "синий",
-  memoryConfigGb: 128,
+  productPhoto: [
+     "url(files/img/image-1.webp)", 
+     "url(files/img/image-2.webp)", 
+     "url(files/img/image-3.webp)", 
+     "url(files/img/image-4.webp)", 
+     "url(files/img/image-5.webp)", 
+  ],
+  color: [ "синий", "красный", "розовый", "зеленый", "белый", "черный" ],
+  memoryConfigGb: [ 128, 256, 512 ],
   screen: 6.1,
   OS: "IOS 15",
-  wirelessInterfaces: "NFC,Bluetooth, Wi-Fi",
+  wirelessInterfaces: ["NFC", "Bluetooth", "Wi-Fi"],
   CPU: "Apple A15 Bionic",
   weightGram: 173,
   Description: `Наша самая совершенная система двух камер. Особый взгляд на прочность дисплея.
@@ -33,6 +41,18 @@ let product = {
   oldPriceInRubles: 75990,
   newPriceInRubles: 67990,
   discountPercent: 8,
+  delivery: [
+    {
+      name: "Самовывоз",
+      date: "четверг, 1 сентября",
+      cost: 0,
+    },
+    {
+      name: "Курьер",
+      date: "четверг, 1 сентября",
+      cost: 0,
+    },
+  ],
 }
 
 console.log(product);
