@@ -541,7 +541,7 @@ button {
         font-size: 0,8rem;
     }
 
-    .reviews-block__review-reiting {
+    .reviews-block__review-raiting {
         display: flex;
         margin-bottom: 10px;
 
@@ -593,6 +593,30 @@ button {
         height: 150px;
     }    
 
+    .review-form__name-block {
+        width: 70%;
+    }
+    
+    .review-form__raiting-block {
+        width: 30%;
+    }
+    
+    .review-form__error {
+        left: 0;
+        right: 0;
+        height: 25px;
+        background: #f36223;
+        display: none;
+        color: white;
+        padding: 2px 4px;
+        font-size: 14px;
+    }
+      
+    .review-form__error-active {
+        display: block;
+       
+    }
+
     .review-form__name {
         background: transparent;
         border: 1px solid #888888;
@@ -607,7 +631,7 @@ button {
         border: 1px solid #000000;
     }
 
-    .review-form__reiting {
+    .review-form__raiting {
         background: transparent;
         width: 33%;
         border: 1px solid #888888;
@@ -617,7 +641,7 @@ button {
         font-size: 10px;
     }
 
-    .review-form__reiting:hover {
+    .review-form__raiting:hover {
         border: 1px solid #000000;
     }
 
@@ -1214,7 +1238,7 @@ button {
         line-height: 24px;
     }
     
-    .reviews-block__review-reiting {
+    .reviews-block__review-raiting {
         display: flex;
         margin-bottom: 20px;
     
@@ -1265,7 +1289,31 @@ button {
         width: 100%;
         height: 190px;
     }    
+
+    .review-form__name-block {
+        width: 70%;
+    }
     
+    .review-form__raiting-block {
+        width: 30%;
+    }
+    
+    .review-form__error {
+        left: 0;
+        right: 0;
+        height: 25px;
+        background: #f36223;
+        display: none;
+        color: white;
+        padding: 2px 4px;
+        font-size: 14px;
+      }
+      
+    .review-form__error-active {
+        display: block;
+       
+      }
+
     .review-form__name {
         background: transparent;
         border: 1px solid #888888;
@@ -1278,7 +1326,7 @@ button {
         border: 1px solid #000000;
     }
     
-    .review-form__reiting {
+    .review-form__raiting {
         background: transparent;
         width: 175px;
         border: 1px solid #888888;
@@ -1286,7 +1334,7 @@ button {
         text-indent: 20px;
     }
     
-    .review-form__reiting:hover {
+    .review-form__raiting:hover {
         border: 1px solid #000000;
     }
     
@@ -1386,7 +1434,6 @@ button {
         display: flex;
         flex-direction: row;
         position: sticky;
-        background: #F8FAFE;
         left: 0px;
         top: 0px;
      }
@@ -1398,6 +1445,7 @@ button {
         justify-content: space-between;
         width: 100%;
         gap: 10px;
+        background: #F8FAFE;
      }
  
      .header {
@@ -1930,7 +1978,7 @@ button {
         line-height: 24px;
     }
     
-    .reviews-block__review-reiting {
+    .reviews-block__review-raiting {
         display: flex;
         margin-bottom: 20px;
     
@@ -1982,28 +2030,54 @@ button {
         width: 100%;
         height: 190px;
     }    
+
+    .review-form__name-block {
+        width: 70%;
+    }
     
+    .review-form__raiting-block {
+        width: 30%;
+    }
+
     .review-form__name {
         background: transparent;
         border: 1px solid #888888;
         padding: 0px;
         text-indent: 20px;
         width: 100%;
+        height: 50px;
     }
+
+    .review-form__error {
+        left: 0;
+        right: 0;
+        height: 25px;
+        background: #f36223;
+        display: none;
+        color: white;
+        padding: 2px 4px;
+        font-size: 14px;
+      }
+      
+    .review-form__error-active {
+        display: block;
+       
+      }
     
     .review-form__name:hover {
         border: 1px solid #000000;
     }
     
-    .review-form__reiting {
+    .review-form__raiting {
         background: transparent;
-        width: 175px;
+        width: 100%;
         border: 1px solid #888888;
         padding: 0px;
         text-indent: 20px;
+        height: 50px;
     }
     
-    .review-form__reiting:hover {
+    .review-form__raiting:hover {
         border: 1px solid #000000;
     }
     

@@ -266,7 +266,7 @@
                                           <h4>Марк Г.</h4>
                                       </div>
       
-                                  <div class="reviews-block__review-reiting">
+                                  <div class="reviews-block__review-raiting">
                                       <img class="reviews-block__review-star" src="files\img\star.png" alt="">
                                       <img class="reviews-block__review-star" src="files\img\star.png" alt="">
                                       <img class="reviews-block__review-star" src="files\img\star.png" alt="">
@@ -290,7 +290,7 @@
                                           <h4>Валерий Коваленко</h4>
                                       </div>
       
-                                      <div class="reviews-block__review-reiting">
+                                      <div class="reviews-block__review-raiting">
                                           <img class="reviews-block__review-star" src="files\img\star.png" alt="">
                                           <img class="reviews-block__review-star" src="files\img\star.png" alt="">
                                           <img class="reviews-block__review-star" src="files\img\star.png" alt="">
@@ -312,8 +312,15 @@
                       <form class="review-form">
                         <legend class="review-form__header">Добавить свой отзыв</legend>
                           <div class="review-form__first">
+                            <div class="review-form__name-block">
                               <input class="review-form__name" type="text" name="Имя и фамилия" placeholder="Имя и фамилия">
-                              <input class="review-form__reiting" type="number" min="1" max="5" step="1" name="Оценка" placeholder="Оценка">
+                              <div class="review-form__error" id="review-form-name-error"></div>
+                            </div>
+
+                            <div class="review-form__raiting-block">
+                              <input class="review-form__raiting" type="text" name="Оценка" placeholder="Оценка">
+                              <div class="review-form__error" id="review-form-raiting-error"></div>
+                            </div>
                           </div>
       
                           <div class="review-form__second">
@@ -321,7 +328,7 @@
                           </div>
       
                           <div>
-                              <button class="review-form__btn"> Отправить отзыв</button>
+                              <button class="review-form__btn">Отправить отзыв</button>
                           </div>
                               
                       </form>
@@ -391,7 +398,7 @@
             </footer>
         </div>
 
-      <script type="module" src="javascript/homework23.js"></script>
+      <script type="module" src="javascript/page-product.js"></script>
 
     </body> 
 </html>

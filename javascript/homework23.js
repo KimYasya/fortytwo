@@ -35,29 +35,23 @@ console.group("Упражнение 2");
 
 let start = performance.now();
 
-
-const promise = fetch("https://reqres.in/api/users") 
-
-promise
+fetch("https://reqres.in/api/users") 
 .then((response) => {
   return response.json()
 })
 
 .then((response) => {
-
-let users = response.data
-  console.log("Количество пользователей: " + users.length)
-  
-  users.forEach((user) => {
-    console.log("-", user.first_name, user.last_name, "(" + user.email + ")")
-  })
+  let users = response.data
+    console.log("Количество пользователей: " + users.length)
+    
+    users.forEach((user) => {
+      console.log(`- ${user.first_name} ${user.last_name} (${user.email})`)
+    })
 })
 
 .catch(() => {
   console.log("Что-то пошло не так")
 });
-
-
 
 
 let result = performance.now() - start;
