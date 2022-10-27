@@ -34,7 +34,7 @@ btnForm.addEventListener("click", (e) => {
   if (!formRaiting.value) { 
     raitingErrorStr = "Оценка должна быть от 1 до 5";
   } else if (!formRaiting.value.match(/^\d+$/)) {
-    raitingErrorStr = "Оценка должна быть от 1 до 5";
+    raitingErrorStr = "Вы ввели не то число. Оценка должна быть от 1 до 5";
   } else if (!formRaiting.value.match(/^[1-5]$/)) {
     raitingErrorStr = "Оценка должна быть от 1 до 5";
   } else {
@@ -60,8 +60,6 @@ btnForm.addEventListener("click", (e) => {
     formRaiting.style.border = "";
     formRaitingError.classList.remove("review-form__error-active");
   }
-
- 
 })
 
 
