@@ -56,7 +56,7 @@ class AddReviewForm extends Form {
   validateName = (nameValue) => {
       if (nameValue.value === "") { 
         this.nameErrorStr = "Поле не заполнено";
-      } else if (nameValue.length < 2 ) { 
+      } else if (nameValue.length <= 2 ) { 
         this.nameErrorStr = "Имя не может быть короче 2-х символов";
       } else {
         this.nameErrorStr = "";
