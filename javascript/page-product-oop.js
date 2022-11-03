@@ -21,16 +21,16 @@ class AddReviewForm extends Form {
   nameErrorStr = "";
   raitingErrorStr = "";
 
-  constructor(querySelector) {
+  constructor(formQuerySelector) {
     super();
 
 // Создание ссылок на html элементы
-    this.form = document.querySelector(".review-form");
-    this.formName = document.querySelector(".review-form__name");
-    this.formNameError = document.getElementById("review-form-name-error");
-    this.formRaiting = document.querySelector(".review-form__raiting");
-    this.formRaitingError = document.getElementById("review-form-raiting-error");
-    this.formText = document.querySelector(".review-form__text");
+    this.form = document.querySelector(formQuerySelector);
+    this.formName = document.querySelector(`${formQuerySelector} input[name="formName"]`);
+    this.formNameError = document.querySelector(`${formQuerySelector} input[name="formName"] + div`);
+    this.formRaiting = document.querySelector(`${formQuerySelector} input[name="formRaiting"]`);
+    this.formRaitingError = document.querySelector(`${formQuerySelector} input[name="formRaiting"] + div`);
+    this.formText = document.querySelector(`${formQuerySelector} textarea[name="formText"]`);
 
 // localStorage
 
@@ -130,5 +130,5 @@ class AddReviewForm extends Form {
 }
 
 // Создание экземпляра класса
-const addForm = new AddReviewForm("form");
+const addForm = new AddReviewForm(".review-form");
 addForm.submitForm();
