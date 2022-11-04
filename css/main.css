@@ -247,7 +247,7 @@ button {
     .product-about {
         box-sizing: border-box;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         align-items: flex-start;
         padding: 0px;
@@ -357,7 +357,7 @@ button {
     /* Сайдбар  */
 
     .sidebar {
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .sidebar__buy {
