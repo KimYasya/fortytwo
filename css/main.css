@@ -144,6 +144,10 @@ button {
        font-size: 12px;
     }
 
+    .header-count__first-visit {
+        visibility: hidden;
+    }
+
    .header__like-style svg {
        fill: #FFFFFF;  
        height: 30px;
@@ -151,7 +155,7 @@ button {
      
    }
      
-     .header__cart {
+    .header__cart {
          position: relative;
          display: flex;
          justify-content: center;
@@ -164,9 +168,9 @@ button {
          margin-bottom: 5px;
          height: 30px;
          width: 30px; 
-     }
+    }
  
-     .header__cart-circle {
+    .header__cart-circle {
          position: absolute;
          top: 15%;
          left: 60%;
@@ -184,6 +188,10 @@ button {
         color: #FFFFFF;
         font-size: 12px;
      }
+
+    .header-count__first-visit {
+        visibility: hidden;
+    }
  
     .header__cart-style svg {
         fill: #FFFFFF;  
@@ -859,6 +867,10 @@ button {
        border-radius: 50%;
        color: #FFFFFF;
        font-size: 10px;
+    }
+
+    .header-count__first-visit {
+        visibility: hidden;
     }
 
    .header__cart-style svg {

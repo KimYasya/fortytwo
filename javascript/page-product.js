@@ -21,12 +21,15 @@ let raitingErrorStr = "";
 
 // Аттестация. Корзина и добавление в корзину
 
-document.getElementById("header-count").classList.add("header-count__first-visit");
+const cartCount = document.getElementById("header-count");
+
+cartCount.classList.add("header-count__first-visit");
 
 localStorage.getItem("headerCount", headerCount.innerHTML)
 
-if (headerCount.innerHTML !== 0) {
-  headerCount.innerHTML = localStorage.getItem("headerCount", headerCount.innerHTML)
+if (localStorage.getItem("headerCount") === "1") {
+
+  headerCount.innerHTML = localStorage.getItem("headerCount")
 
   addToCartBtn.innerHTML = "Товар уже в корзине";
   addToCartBtn.style.background = "#888888";
@@ -37,7 +40,7 @@ if (headerCount.innerHTML !== 0) {
 addToCartBtn.addEventListener("click", (event) => {
   event.preventDefault();
   
-  if (headerCount.innerHTML = localStorage.getItem("headerCount", headerCount.innerHTML)) {
+  if (headerCount.innerHTML === localStorage.getItem("headerCount")) {
 
     headerCount.innerHTML--;
     addToCartBtn.innerHTML = "Добавить в корзину";
@@ -56,6 +59,8 @@ addToCartBtn.addEventListener("click", (event) => {
     localStorage.setItem("headerCount", headerCount.innerHTML)
   }
   });
+
+
 
 
 
