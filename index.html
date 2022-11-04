@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        
+      <!-- Шапка страницы -->
         <header class ="header-container">
           <div class="container header__container">
             <div class="header">
@@ -47,14 +47,15 @@
                   </svg>
                 </div>
                    
-                <div class="header__cart-circle">
-                    <span class="header__cart-count">3</span>
+                <div class="header__cart-circle" id="header-count">
+                    <span class="header__cart-count">0</span>
                 </div>
             </div>
           </div>
         </header>
 
         <div class="container">
+      <!-- Хлебные крошки -->
             <nav>
                 <div class="breadcrumbs">
                     <a class="link" href="/index.html">Электроника</a>
@@ -68,6 +69,7 @@
             </nav>
 
             <main>
+      <!-- Заголовок и фото товара -->
                 <div class="product-preview">
                     <div class="product-preview__name"> 
                         <span>Cмартфон Apple iPhone 13, синий</span>
@@ -81,10 +83,10 @@
                         <img class="product-preview__image-s" src="files/img/image-5.webp" alt="изображение айфона анфас">
                     </div>
                 </div>    
-
+      <!-- Информация о товаре  -->
                 <div class="product-about">
-                           
                     <div class="product-info">
+      <!-- Выбор цвета товара  -->
                       <div class="product-info__subsection">
                         <div class="headers">
                             <h4>Цвет товара: Синий</h4>
@@ -116,39 +118,8 @@
                         </div>
 
                       </div>
-
-                      <div class="sidebar small-screen">
-                        <div class="sidebar__buy">
-                            <div class="sidebar__first-line">
-                              <div class="sidebar__old-price">
-                                  <div class="sidebar__cost1">
-                                    <span>75 990₽</span>
-                                  </div>
-      
-                                  <div class="sidebar__discount">
-                                    <span>-8%</span>
-                                  </div>
-                              </div>  
-  
-                              <div class="sidebar__like">
-                                  <svg width="28" height="22" viewBox="0 0 28 22">
-                                      <path d="M2.78502 2.57269C5.17872 0.27474 9.04661 0.27474 11.4403 2.57269L14.0001 5.03017L16.56 2.57269C18.9537 0.27474 22.8216 0.27474 25.2154 2.57269C27.609 4.87064 27.609 8.5838 25.2154 10.8818L14.0001 21.6483L2.78502 10.8818C0.391321 8.5838 0.391321 4.87064 2.78502 2.57269ZM9.67253 4.26974C8.25515 2.90905 5.97018 2.90905 4.55278 4.26974C3.1354 5.63044 3.1354 7.82401 4.55278 9.18476L14.0001 18.2542L23.4476 9.18476C24.865 7.82401 24.865 5.63044 23.4476 4.26974C22.0302 2.90905 19.7452 2.90905 18.3279 4.26974L14.0001 8.42432L9.67253 4.26974Z"/>
-                                  </svg>
-                              </div>
-                            </div>
-    
-                            <div class="sidebar__cost2">
-                                <span>67 990₽</span>
-                            </div>
-                                
-                            <div class="sidebar__delivery">
-                                <span>Самовывоз в четверг, 1 сентября — <b>бесплатно</b></span>
-                                <p>Курьером в четверг, 1 сентября — <b>бесплатно</b></p>
-                                <button class="sidebar__button_buy">Добавить в корзину</button>
-                            </div>
-                        </div>
-                      </div>
-
+     
+      <!-- Конфигурация памяти -->
                       <div class="product-info__subsection">
                         <div class="headers">
                             <h4>Конфигурация памяти: 128 ГБ</h4>
@@ -160,7 +131,7 @@
                                 <button>512 ГБ</button>
                             </div>
                       </div>
-
+      <!-- Характеристики товара -->
                       <div class="product-info__subsection">
                           <div class="headers">
                             <h4>Характеристики товара</h4>
@@ -176,12 +147,12 @@
                           </div>
 
                       </div>
-
+      <!-- Описание товара -->
                       <div  class="product-info__subsection"> 
                         <div class="headers">
                             <h4>Описание</h4>
                         </div>
-
+      
                         <div class="product-info__description">
                             <div>
                                 Наша самая совершенная система двух камер.<br>
@@ -196,7 +167,7 @@
                                 <p>Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект, который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.</p>
                         </div> 
                       </div>
-
+      <!-- Таблица с характеристиками -->
                       <div class="table-block">
                         <table class="table-block__table">
                         <caption class="table-block__title">Сравнение моделей</caption> 
@@ -249,7 +220,7 @@
                             </tbody>
                         </table>
                       </div>
-
+      <!-- Блок с уже добавленными отзывами -->
                       <div class="reviews-block">
 
                         <div class="reviews-block__title">  
@@ -317,7 +288,7 @@
                         </div>
         
                       </div>
-      
+      <!-- Форма "Добавить отзыв"  -->
                       <form class="review-form">
                         <legend class="review-form__header">Добавить свой отзыв</legend>
                           <div class="review-form__first">
@@ -343,8 +314,8 @@
                       </form>
 
                     </div>
-
-                    <div class="sidebar big-screen">
+      <!-- Сайдбар для больших версий кранов -->
+                    <div class="sidebar">
 
                         <div class="sidebar__buy">
                             <div class="sidebar__first-line">
@@ -372,7 +343,7 @@
                             <div class="sidebar__delivery">
                                 <span>Самовывоз в четверг, 1 сентября — <b>бесплатно</b></span>
                                 <p>Курьером в четверг, 1 сентября — <b>бесплатно</b></p>
-                                <button class="sidebar__button_buy">Добавить в корзину</button>
+                                <button type="submit" class="sidebar__button_buy" id="sidebar-button-buy">Добавить в корзину</button>
                             </div>
                         </div>
     
@@ -385,14 +356,10 @@
                         </div>
     
                     </div>  
-
                 </div>
-   
-     
-                                
-            </main>
+             </main>
         </div>
-                
+      <!-- Футер -->
             <footer>
                 <div class="footer">
                   <div class="container footer__container">
@@ -407,7 +374,7 @@
             </footer>
         </div>
 
-      <script type="module" src="javascript/page-product-oop.js"></script>
+      <script type="module" src="javascript/page-product.js"></script>
 
     </body> 
 </html>
