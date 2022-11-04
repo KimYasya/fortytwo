@@ -121,8 +121,8 @@ button {
         border: 1px solid #888888;
         margin-top: 5px;
         margin-bottom: 5px;
-        height: 38px;
-        width: 38px; 
+        height: 30px;
+        width: 30px; 
     }
 
     .header__like-circle {
@@ -136,8 +136,8 @@ button {
        justify-content: center;
        align-items: center;
        padding: 4px 4px;
-       width: 14px;
-       height: 14px;
+       width: 10px;
+       height: 10px;
        background: #F36223;
        border-radius: 50%;
        color: #FFFFFF;
@@ -146,8 +146,8 @@ button {
 
    .header__like-style svg {
        fill: #FFFFFF;  
-       height: 38px;
-       width: 38px; 
+       height: 30px;
+       width: 30px; 
      
    }
      
@@ -162,8 +162,8 @@ button {
          border: 1px solid #888888;
          margin-top: 5px;
          margin-bottom: 5px;
-         height: 38px;
-         width: 38px; 
+         height: 30px;
+         width: 30px; 
      }
  
      .header__cart-circle {
@@ -177,8 +177,8 @@ button {
         justify-content: center;
         align-items: center;
         padding: 4px 4px;
-        width: 14px;
-        height: 14px;
+        width: 10px;
+        height: 10px;
         background: #F36223;
         border-radius: 50%;
         color: #FFFFFF;
@@ -187,8 +187,8 @@ button {
  
     .header__cart-style svg {
         fill: #FFFFFF;  
-        height: 38px;
-        width: 38px; 
+        height: 30px;
+        width: 30px; 
       
     }
 
@@ -1546,7 +1546,11 @@ button {
          height: 38px;
          width: 38px; 
      }
- 
+
+    .header-count__first-visit {
+        visibility: hidden;
+    }
+
      .header__cart-circle {
          position: absolute;
          top: 15%;

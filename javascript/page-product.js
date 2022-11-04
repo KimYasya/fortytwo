@@ -1,5 +1,7 @@
 "use strict"
 
+// Переменные
+
 const form = document.querySelector(".review-form");
 
 const formName = document.querySelector(".review-form__name");
@@ -10,12 +12,56 @@ const formRaitingError = document.getElementById("review-form-raiting-error");
 
 const formText = document.querySelector(".review-form__text");
 
-const formBtn = document.querySelector("review-form__btn");
+const addToCartBtn = document.getElementById("sidebar-button-buy");
 
+const headerCount = document.querySelector(".header__cart-count");
 
 let nameErrorStr = "";
 let raitingErrorStr = "";
 
+// Аттестация. Корзина и добавление в корзину
+
+document.getElementById("header-count").classList.add("header-count__first-visit");
+
+localStorage.getItem("headerCount", headerCount.innerHTML)
+
+if (headerCount.innerHTML !== 0) {
+  headerCount.innerHTML = localStorage.getItem("headerCount", headerCount.innerHTML)
+
+  addToCartBtn.innerHTML = "Товар уже в корзине";
+  addToCartBtn.style.background = "#888888";
+  
+  document.getElementById("header-count").classList.remove("header-count__first-visit");
+}
+
+addToCartBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  
+  if (headerCount.innerHTML = localStorage.getItem("headerCount", headerCount.innerHTML)) {
+
+    headerCount.innerHTML--;
+    addToCartBtn.innerHTML = "Добавить в корзину";
+    addToCartBtn.style.background = "";
+
+    localStorage.removeItem("headerCount", headerCount.innerHTML)
+    
+  } else {
+
+    headerCount.innerHTML++;
+
+    document.getElementById("header-count").classList.remove("header-count__first-visit");
+    addToCartBtn.innerHTML = "Товар уже в корзине"
+    addToCartBtn.style.background = "#888888";
+
+    localStorage.setItem("headerCount", headerCount.innerHTML)
+  }
+  });
+
+
+
+
+
+// Форма добавления отзыва
 
 formName.value = localStorage.getItem("formName");
 formName.oninput = () => {
@@ -37,7 +83,7 @@ form.addEventListener("submit", (event) => {
   
     if (!formName.value) { 
       nameErrorStr = "Поле не заполнено";
-    } else if (formName.value.length <= 2 ) { 
+    } else if (formName.value.length < 2 ) { 
       nameErrorStr = "Имя не может быть короче 2-х символов";
     } else {
       nameErrorStr = "";
