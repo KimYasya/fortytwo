@@ -25,7 +25,7 @@ const cartCount = document.getElementById("header-count");
 
 cartCount.classList.add("header-count__first-visit");
 
-localStorage.getItem("headerCount", headerCount.innerHTML)
+localStorage.getItem("headerCount")
 
 if (localStorage.getItem("headerCount") === "1") {
 
