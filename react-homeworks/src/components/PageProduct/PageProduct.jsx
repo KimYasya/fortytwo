@@ -45,11 +45,11 @@ export default function PageProduct() {
         <nav>
           <div className="breadcrumbs">
             <a className="link" href="http://localhost:3000">Электроника</a>
-            <span> > </span>
+            <span> {">"} </span>
             <a className="link" href="http://localhost:3000">Смартфоны и гаджеты</a>
-            <span> > </span>
+            <span> {">"} </span>
             <a className="link" href="http://localhost:3000">Мобильные телефоны</a>
-            <span> > </span>
+            <span> {">"} </span>
             <a className="link" href="http://localhost:3000">Apple</a>
           </div>
         </nav>

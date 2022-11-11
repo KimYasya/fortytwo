@@ -4,16 +4,15 @@ import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <body>
-
+    <>
       <Header />
 
       <PageProduct />
-      
-  </body>
+    </>
   )
 }
 
+export default App;
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -42,5 +41,3 @@ function App() {
 //     </div>
 //   );
 // }
-
-export default App;
