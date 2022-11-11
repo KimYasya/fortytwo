@@ -9,7 +9,7 @@ html {
 
 @font-face {
   font-family: "Inter";
-  src: url("/files/fonts/Inter-Regular.woff2");
+  src: url("./fonts/Inter-Regular.woff2");
 }
 
 .link {
@@ -71,7 +71,7 @@ button {
       font-size: 10px;
   }
 
-  /* Заголовок */
+  /* Заголовок
 
   .header-container {
       display: flex;
@@ -198,7 +198,7 @@ button {
       height: 30px;
       width: 30px; 
     
-  }
+  } */
 
   /* Навигация */
 
@@ -471,7 +471,7 @@ button {
       display: inline-block;
       width: 24px;
       height: 24px;
-      background-image: url(/homeworks/files/img/cart.svg);
+      background-image: url(./img/cart.svg);
       background-repeat: no-repeat;
       background-position: center center;
   }
@@ -756,7 +756,7 @@ button {
       padding: 0px 15px 0px 15px;
   }
   
-  /* Заголовок */
+  /* Заголовок
   
   .header-container {
       display: flex;
@@ -878,7 +878,7 @@ button {
      height: 30px;
      width: 30px; 
    
- }
+ } */
 
   /* Навигация */
   
@@ -1130,7 +1130,7 @@ button {
       display: inline-block;
       width: 24px;
       height: 24px;
-      background-image: url(/homeworks/files/img/cart.svg);
+      background-image: url(./img/cart.svg);
       background-repeat: no-repeat;
       background-position: center center;
   }
@@ -1464,7 +1464,7 @@ button {
       font-size: 1em;
   }
   
-  /* Заголовок */
+  /* Заголовок
   
   .header-container {
       display: flex;
@@ -1587,7 +1587,7 @@ button {
       height: 38px;
       width: 38px; 
     
-  }
+  } */
 
   
   /* Навигация */
@@ -1851,7 +1851,7 @@ button {
       display: inline-block;
       width: 24px;
       height: 24px;
-      background-image: url(/homeworks/files/img/cart.svg);
+      background-image: url(./img/cart.svg);
       background-repeat: no-repeat;
       background-position: center center;
   }

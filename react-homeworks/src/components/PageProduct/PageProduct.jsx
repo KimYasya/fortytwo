@@ -2,71 +2,71 @@ import "./PageProduct.css";
 
 export default function PageProduct() {
   return (
-    <body>
-      <header classNameclassName="header-container">
-        <div classNameclassName="container header__container">
-          <div classNameclassName="header">
+    <div>
+      {/* <header className="header-container">
+        <div className="container header__container">
+          <div className="header">
             <div>
-              <img src="/homeworks/files/img/favicon.svg" alt="лого" height="35" /> 
+              <img src="./img/favicon.svg" alt="лого" height="35" /> 
             </div>
-            <div classNameclassName="header_style">
-              <span style="color: #f52">Мой</span>Маркет
+            <div className="header_style">
+              <span style={{color: "#f52"}}>Мой</span>Маркет
             </div>
           </div>
 
-          <div classNameclassName="header__like">
-            <div classNameclassName="header__like-style">
+          <div className="header__like">
+            <div className="header__like-style">
               <svg viewBox="0 0 28 22">
                 <path d="M2.78502 2.57269C5.17872 0.27474 9.04661 0.27474 11.4403 2.57269L14.0001 5.03017L16.56 2.57269C18.9537 0.27474 22.8216 0.27474 25.2154 2.57269C27.609 4.87064 27.609 8.5838 25.2154 10.8818L14.0001 21.6483L2.78502 10.8818C0.391321 8.5838 0.391321 4.87064 2.78502 2.57269ZM9.67253 4.26974C8.25515 2.90905 5.97018 2.90905 4.55278 4.26974C3.1354 5.63044 3.1354 7.82401 4.55278 9.18476L14.0001 18.2542L23.4476 9.18476C24.865 7.82401 24.865 5.63044 23.4476 4.26974C22.0302 2.90905 19.7452 2.90905 18.3279 4.26974L14.0001 8.42432L9.67253 4.26974Z" />
               </svg>
             </div>
 
-            <div classNameclassName="header__like-circle">
-              <span classNameclassName="header__like-count">10</span>
+            <div className="header__like-circle">
+              <span className="header__like-count">10</span>
             </div>
           </div>
 
-          <div classNameclassName="header__cart">
-            <div classNameclassName="header__cart-style">
+          <div className="header__cart">
+            <div className="header__cart-style">
               <svg viewBox="0 0 21 20">
                 <path d="M0.799683 0.839233H4.30233H5.12213L5.28291 1.61096L5.74024 3.80618H19.3431H20.5235L20.3295 4.924L19.2993 10.8579L19.16 11.66H18.3129H7.37647L7.80062 13.696H18.3129V15.616H6.98081H6.16101L6.00023 14.8443L3.93985 4.95445L4.92044 4.76618L3.93985 4.95445L3.48252 2.75923H0.799683V0.839233ZM6.14024 5.72618L6.97647 9.74005H17.4658L18.1626 5.72618H6.14024ZM9.6758 18.0054C9.6758 18.8889 8.9316 19.6034 8.01119 19.6034C7.09075 19.6034 6.34656 18.8889 6.34656 18.0054C6.34656 17.1218 7.09075 16.4261 8.01119 16.4261C8.9316 16.4261 9.6758 17.1218 9.6758 18.0054ZM16.2534 19.6034C17.1738 19.6034 17.918 18.8889 17.918 18.0054C17.918 17.1218 17.1738 16.4261 16.2534 16.4261C15.3329 16.4261 14.5887 17.1218 14.5887 18.0054C14.5887 18.8889 15.3329 19.6034 16.2534 19.6034Z" />
               </svg>
             </div>
 
-            <div classNameclassName="header__cart-circle" id="header-count">
-              <span classNameclassName="header__cart-count">0</span>
+            <div className="header__cart-circle" id="header-count">
+              <span className="header__cart-count">0</span>
             </div>
           </div>
         </div>
-      </header>
+      </header> */}
 
       <div className="container">
 
         <nav>
           <div className="breadcrumbs">
-            <a className="link" href="/homeworks/index.html">Электроника</a>
-            <span> - </span>
-            <a className="link" href="/homeworks/index.html">Смартфоны и гаджеты</a>
-            <span> - </span>
-            <a className="link" href="/homeworks/index.html">Мобильные телефоны</a>
-            <span> - </span>
-            <a className="link" href="/homeworks/index.html">Apple</a>
+            <a className="link" href="http://localhost:3000">Электроника</a>
+            <span> > </span>
+            <a className="link" href="http://localhost:3000">Смартфоны и гаджеты</a>
+            <span> > </span>
+            <a className="link" href="http://localhost:3000">Мобильные телефоны</a>
+            <span> > </span>
+            <a className="link" href="http://localhost:3000">Apple</a>
           </div>
         </nav>
 
         <main>
 
           <div className="product-preview">
-            <div className="product-preview__classname">
+            <div className="product-preview__name">
               <span>Cмартфон Apple iPhone 13, синий</span>
             </div>
 
             <div className="product-preview__image">
-              <img className="product-preview__image-s" src="/homeworks/files/img/image-1.webp" alt="изображение айфона анфас" />
-              <img className="product-preview__image-s" src="/homeworks/files/img/image-2.webp" alt="изображение айфона три четверти" />
-              <img className="product-preview__image-s" src="/homeworks/files/img/image-3.webp" alt="изображение айфона три четвертых" />
-              <img className="product-preview__image-s" src="/homeworks/files/img/image-4.webp" alt="изображение айфона камера" />
-              <img className="product-preview__image-s" src="/homeworks/files/img/image-5.webp" alt="изображение айфона анфас" />
+              <img className="product-preview__image-s" src="./img/image-1.webp" alt="изображение айфона анфас" />
+              <img className="product-preview__image-s" src="./img/image-2.webp" alt="изображение айфона три четверти" />
+              <img className="product-preview__image-s" src="./img/image-3.webp" alt="изображение айфона три четвертых" />
+              <img className="product-preview__image-s" src="./img/image-4.webp" alt="изображение айфона камера" />
+              <img className="product-preview__image-s" src="./img/image-5.webp" alt="изображение айфона анфас" />
             </div>
           </div>
 
@@ -80,27 +80,27 @@ export default function PageProduct() {
 
                 <div className="product-info__color">
                   <div className="product-info__choice">
-                    <img className="product-info__img" src="/homeworks/files/img/color-1.webp" alt="" />
+                    <img className="product-info__img" src="./img/color-1.webp" alt="" />
                   </div>
 
                   <div className="product-info__choice">
-                    <img className="product-info__img" src="/homeworks/files/img/color-2.webp" alt="" />
+                    <img className="product-info__img" src="./img/color-2.webp" alt="" />
                   </div>
 
                   <div className="product-info__choice">
-                    <img className="product-info__img" src="/homeworks/files/img/color-3.webp" alt="" />
+                    <img className="product-info__img" src="./img/color-3.webp" alt="" />
                   </div>
 
                   <div className="product-info__choice product-info__button_selected">
-                    <img className="product-info__img" src="/homeworks/files/img/color-4.webp" alt="" />
+                    <img className="product-info__img" src="./img/color-4.webp" alt="" />
                   </div>
 
                   <div className="product-info__choice">
-                    <img className="product-info__img " src="/homeworks/files/img/color-5.webp" alt="" />
+                    <img className="product-info__img " src="./img/color-5.webp" alt="" />
                   </div>
 
                   <div className="product-info__choice">
-                    <img className="product-info__img" src="/homeworks/files/img/color-6.webp" alt="" />
+                    <img className="product-info__img" src="./img/color-6.webp" alt="" />
                   </div>
                 </div>
 
@@ -128,7 +128,7 @@ export default function PageProduct() {
                   <li>Встроенная память: <b>128 ГБ</b></li>
                   <li>Операционная система: <b>IOS 15</b></li>
                   <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-                  <li>Процессор: <a className="link" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank">Apple A15 Bionic</a></li>
+                  <li>Процессор: <a className="link" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank" rel="noreferrer">Apple A15 Bionic</a></li>
                   <li>Вес: 173 г</li>
                 </div>
 
@@ -219,7 +219,7 @@ export default function PageProduct() {
                 <div className="reviews-block__border">
                   <div className="reviews-block__reviews">
                     <div className="reviews-block__screen-size">
-                      <img className="reviews-block__review-image" src="/homeworks/files/img/photo1.png" alt="" />
+                      <img className="reviews-block__review-image" src="./img/photo1.png" alt="" />
 
                       <div className="reviews-block__reviews reviews-block__l">
                         <div className="reviews-block__review-classname">
@@ -227,11 +227,11 @@ export default function PageProduct() {
                         </div>
 
                         <div className="reviews-block__review-raiting">
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
                         </div>
                       </div>
                     </div>
@@ -247,7 +247,7 @@ export default function PageProduct() {
                 <div className="reviews-block__border">
                   <div className="reviews-block__reviews">
                     <div className="reviews-block__screen-size">
-                      <img className="reviews-block__review-image" src="/homeworks/files/img/photo2.png" alt="" />
+                      <img className="reviews-block__review-image" src="./img/photo2.png" alt="" />
 
                       <div className="reviews-block__reviews">
                         <div className="reviews-block__review-classname">
@@ -255,11 +255,11 @@ export default function PageProduct() {
                         </div>
 
                         <div className="reviews-block__review-raiting">
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/star.png" alt="" />
-                          <img className="reviews-block__review-star" src="/homeworks/files/img/g star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/star.png" alt="" />
+                          <img className="reviews-block__review-star" src="./img/g star.png" alt="" />
                         </div>
                       </div>
                     </div>
@@ -278,8 +278,8 @@ export default function PageProduct() {
               <form className="review-form">
                 <legend className="review-form__header">Добавить свой отзыв</legend>
                 <div className="review-form__first">
-                  <div className="review-form__classname-block">
-                    <input className="review-form__classname" type="text" classname="formclassName" placeholder="Имя и фамилия" />
+                  <div className="review-form__name-block">
+                    <input className="review-form__name" type="text" classname="formclassName" placeholder="Имя и фамилия" />
                     <div className="review-form__error" id="review-form-classname-error"></div>
                   </div>
 
@@ -335,9 +335,9 @@ export default function PageProduct() {
 
               <div className="sidebar__frame">
                 <span>Реклама</span>
-                <iframe className="sidebar__framelook" src="/homeworks/files/frames/VanGog.html">
+                <iframe className="sidebar__framelook" src="../frames/VanGog.html" title="add-frame-one">
                 </iframe>
-                <iframe className="sidebar__framelook1" src="/homeworks/files/frames/VanGog.html">
+                <iframe className="sidebar__framelook1" src="../frames/VanGog.html" title="add-frame-two">
                 </iframe>
               </div>
 
@@ -360,6 +360,6 @@ export default function PageProduct() {
         </div>
       </footer>
 
-    </body>
+    </div>
   )
 }

@@ -1,9 +1,16 @@
 import PageProduct from "./components/PageProduct/PageProduct";
+import Header from "./components/Header/Header";
 
 
 function App() {
   return (
-    <PageProduct />
+    <body>
+
+      <Header />
+
+      <PageProduct />
+      
+  </body>
   )
 }
 
