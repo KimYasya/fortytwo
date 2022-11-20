@@ -2,7 +2,7 @@ export default function ColorButton(props) {
 
   const { id, color, src, actived, ...restProps } = props;
 
-  const className = `img ${actived ? "actived" : ""}`;
+  const className = `img ${actived ? "selected" : ""}`;
   
 
   return (

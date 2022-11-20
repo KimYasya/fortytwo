@@ -29,11 +29,13 @@ export default function ConfigList() {
 
       <div className="product-info__buttons">
         {memoryButtons.map(function (memoryButton) {
+
           const actived = memoryButton.memory === activedButton;
+          const className = `btn ${actived ? "activedBtn" : ""}`
 
           return <ConfigButton
-                    key={memoryButton.id}
-                    className={`btn ${actived ? "actived" : ""}`}
+                    key={ memoryButton.id }
+                    className={ className }
                     onClick={() => { setActivedButton(memoryButton.memory) }}
                     memory= { memoryButton.memory }
                  />

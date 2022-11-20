@@ -51,7 +51,7 @@ export default function ColorChoise() {
           const actived = img.color === activedButton;
           return <ColorButton
             key={ img.id }
-            className={ `img ${actived ? "actived" : ""}` }
+            className={ `img ${actived ? "selected" : ""}` }
             onClick={ () => { setActivedButton(img.color) } }
             src={ img.src }
           />

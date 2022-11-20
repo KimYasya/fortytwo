@@ -125,6 +125,41 @@
     cursor: pointer;
   }
 
+  .active-sidebar_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
+    background: #888888;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+
+  }
+
+  .active-sidebar_btn:hover {
+    background-color: #adadad;
+  }
+
+  .active-sidebar_btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   .sidebar__button_buy:active {
     background: #A93A09;
   }
@@ -253,6 +288,41 @@
   .sidebar__button_buy:hover {
     background: #DA4A0C;
     cursor: pointer;
+  }
+
+  .active-sidebar_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
+    background: #888888;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+
+  }
+
+  .active-sidebar_btn:hover {
+    background-color: #adadad;
+  }
+
+  .active-sidebar_btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .sidebar__button_buy:active {
@@ -449,6 +519,10 @@
     border: 0;
     gap: 15px;
 
+  }
+
+  .active-sidebar_btn:hover {
+    background-color: #adadad;
   }
 
   .active-sidebar_btn::before {

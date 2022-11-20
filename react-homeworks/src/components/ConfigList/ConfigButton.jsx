@@ -2,7 +2,7 @@ export default function ConfigButton(props) {
 
   const { id, memory, actived, ...restProps } = props;
 
-  const className = `btn ${actived ? "actived" : ""}`;
+  const className = `btn ${actived ? "activedBtn" : ""}`;
 
   return (
 

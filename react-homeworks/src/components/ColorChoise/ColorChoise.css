@@ -31,7 +31,7 @@
     padding: 10px 20px;
   }
 
-  .img.actived {
+  .img.selected {
     border: 2px solid #F36223;
     background: transparent;
   }
@@ -80,7 +80,7 @@
     padding: 10px 20px;
   }
 
-  .img.actived {
+  .img.selected {
     border: 2px solid #F36223;
     background: transparent;
   }
@@ -129,7 +129,7 @@
     padding: 10px 20px;
   }
 
-  .img.actived {
+  .img.selected{
     border: 2px solid #F36223;
     background: transparent;
   }
