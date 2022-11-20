@@ -1,103 +1,45 @@
 import { useState } from "react";
 import "./ConfigList.css";
+import ConfigButton from "./ConfigButton";
 
 export default function ConfigList() {
-  let [activedButton, setActivedButton] = useState("");
-  const numbers = [ "128 Гб", "256 Гб", "512 Гб"];
+  const [activedButton, setActivedButton] = useState("");
+  
+  const memoryButtons = [ 
+    {
+      id: 1,
+      memory: "128 Гб",
+    },
+
+    {
+      id: 2,
+      memory: "256 Гб",
+    },
+    {
+      id: 3,
+      memory: "512 Гб",
+    },
+  ];
 
   return (
     <div className="product-info__subsection">
       <div className="headers">
-        <h4> {`Конфигурация памяти: ${activedButton}`}</h4>
+        <h4> {`Конфигурация памяти: ${ activedButton }`}</h4>
       </div>
 
       <div className="product-info__buttons">
-        {numbers.map(function (number) {
-          let actived = number === activedButton;
-          let className = `btn ${actived ? "actived" : ""}`;
+        {memoryButtons.map(function (memoryButton) {
+          const actived = memoryButton.memory === activedButton;
 
-          return (
-            <button className = { className } onClick = { () => {
-              setActivedButton(number);
-            }}
-            >
-              {number}
-            </button>
-          );
+          return <ConfigButton
+                    key={memoryButton.id}
+                    className={`btn ${actived ? "actived" : ""}`}
+                    onClick={() => { setActivedButton(memoryButton.memory) }}
+                    memory= { memoryButton.memory }
+                 />
         })}
       </div>
     </div>
   )
 }  
-
-      
-//   Button();
-
-//   function Button(props) {
-
-//   let [selectedButton, setSelectedButton] = useState(0);
-//   const { button } = props;
-
-//   return (
-    
-
-//       <div className="product-info__buttons">
-//         <button>
-//               {`${button.memConfig} ${button.uom}`}
-//         </button>
-//        </div>
-  
-//   );
-
-//   function Buttons() {
-//     const buttons = [ 
-//       { 
-//         memConfig: 128, 
-//         uom: "Гб", 
-//       },
-//       {
-//         memConfig: 256,
-//         uom: "Гб",
-//       },
-//       {
-//         memConfig: 512,
-//         uom: "Гб",
-//       },
-//     ];
-
-//     return (
-//       <>
-//       {buttons.map((button) => (
-//         <Button button = {button} />
-//       ))}
-//       </>
-//     )
-//   }
-// }
-// }
-
-  // return (
-  //   <div className="product-info__subsection">
-  //     <div className="headers">
-  //       <h4> {`Конфигурация памяти: ${selectedButton}`}</h4>
-  //     </div>
-
-  //     <div className="product-info__buttons">
-  //       {buttons.map(function (selectedButton) {
-       
-  //         let selected = buttons.memConfig === selectedButton;
-  //         let className = `button ${selected ? "selected" : ""}`;
-
-  //         return (
-  //           <button className = {className} onClick = {() => {
-  //             setSelectedButton(buttons.memConfig);
-  //           }}
-  //           >
-  //             {`${buttons.memConfig}`}
-  //           </button>
-  //         );
-  //       })}
-  //     </div>
-  //   </div>
-  // );
 

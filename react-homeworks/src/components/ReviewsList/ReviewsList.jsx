@@ -1,5 +1,5 @@
 import RaitingList from "../RaitingList/RaitingList";
-import RaitingList4 from "../RaitingList4/RaitingList4";
+import RaitingList4 from "../RaitingList/RaitingList4";
 import "./ReviewsList.css";
 
 export default function ReviewsList() {
