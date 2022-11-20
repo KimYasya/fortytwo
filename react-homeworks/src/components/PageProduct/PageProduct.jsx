@@ -1,3 +1,6 @@
+import ColorChoise from "../ColorChoise/ColorChoise";
+import ConfigList from "../ConfigList/ConfigList";
+import ReviewsList from "../ReviewsList/ReviewsList";
 import "./PageProduct.css";
 
 export default function PageProduct() {
@@ -73,7 +76,9 @@ export default function PageProduct() {
           <div className="product-about">
             <div className="product-info">
 
-              <div className="product-info__subsection">
+              <ColorChoise />
+              
+              {/* <div className="product-info__subsection">
                 <div className="headers">
                   <h4>Цвет товара: Синий</h4>
                 </div>
@@ -104,9 +109,11 @@ export default function PageProduct() {
                   </div>
                 </div>
 
-              </div>
+              </div> */}
 
-              <div className="product-info__subsection">
+              <ConfigList />
+
+              {/* <div className="product-info__subsection">
                 <div className="headers">
                   <h4>Конфигурация памяти: 128 ГБ</h4>
                 </div>
@@ -116,7 +123,7 @@ export default function PageProduct() {
                   <button>256 ГБ</button>
                   <button>512 ГБ</button>
                 </div>
-              </div>
+              </div> */}
 
               <div className="product-info__subsection">
                 <div className="headers">
@@ -207,7 +214,9 @@ export default function PageProduct() {
                 </table>
               </div>
 
-              <div className="reviews-block">
+              <ReviewsList />
+
+              {/* <div className="reviews-block">
 
                 <div className="reviews-block__title">
                   <div className="reviews-block__head">
@@ -273,7 +282,7 @@ export default function PageProduct() {
                   </div>
                 </div>
 
-              </div>
+              </div> */}
 
               <form className="review-form">
                 <legend className="review-form__header">Добавить свой отзыв</legend>
@@ -346,7 +355,7 @@ export default function PageProduct() {
         </main>
       </div>
 
-      <footer>
+      {/* <footer>
         <div className="footer">
           <div className="container footer__container">
             <div className="footer__info">
@@ -358,7 +367,7 @@ export default function PageProduct() {
             <div><a classclassName="link" href="#top">Наверх</a></div>
           </div>
         </div>
-      </footer>
+      </footer> */}
 
     </div>
   )
