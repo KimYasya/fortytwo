@@ -1,10 +1,8 @@
-
-import Review from "./Review";
-import "./ReviewsList.css";
+import "./ReviewPhoto.css";
 import RaitingList from "../RaitingList/RaitingList";
 import RaitingList4 from "../RaitingList/RaitingList4";
 
-export default function ReviewsList() {
+export default function ReviewPhoto() {
 
   const reviews = [
     {
@@ -31,28 +29,12 @@ export default function ReviewsList() {
       limitations: `Плохая ремонтопригодность`,
     },
   ];
-
+  
   return (
-    <div className="reviews-block">
-
-      <div className="reviews-block__title">
-        <div className="reviews-block__head">
-          <h4 className="reviews-block__header">Отзывы</h4>
-          <span className="reviews-block__count">431</span>
-        </div>
-      </div>
-
-     
-        <div className="reviews-block__reviews">
-
-          <div className="reviews-block__border">
-            Здесь скоро будут отзывы
-            <Review />
-          </div>
-        </div>
-      
+    <div>
+      {reviews.map(function (review) {
+        <img className="review-image" src={review.photoUrl} alt="фото автора" />
+      })}
     </div>
   )
 }
-
-

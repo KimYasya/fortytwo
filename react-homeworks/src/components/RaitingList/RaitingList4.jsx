@@ -4,7 +4,7 @@ export default function RaitingList() {
 
   return (
     
-      <img classList="raiting__img" src="./img/g star.png" alt="звезда" />
+      <img className="raiting__img" src="./img/g star.png" alt="звезда" />
    
   )
 }  
