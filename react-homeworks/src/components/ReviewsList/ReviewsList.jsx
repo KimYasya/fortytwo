@@ -20,8 +20,10 @@ export default function ReviewsList() {
   )
 
  function Review() {
-    const reviews = [
+
+      const reviews = [
       {
+        id: 111,
         authorName: "Марк Г.",
         photoUrl: "./img/photo1.png",
         raiting: [<RaitingList />, <RaitingList />, <RaitingList />, <RaitingList />, <RaitingList />,],
@@ -35,6 +37,7 @@ export default function ReviewsList() {
           который урезает качество фотографий исходное`,
       },
       {
+        id: 112,
         authorName: "Валерий Коваленко",
         photoUrl: "./img/photo2.png",
         raiting: [<RaitingList />, <RaitingList />, <RaitingList />, <RaitingList />, <RaitingList4 /> ],

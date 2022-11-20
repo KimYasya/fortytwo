@@ -295,10 +295,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 49px;
-    flex-grow: 1;
-    width: 380px;
-    height: 64px;
+    padding: 20px;
+    width: 100%;
     background: #888888;
     border-radius: 4px;
     align-self: stretch;

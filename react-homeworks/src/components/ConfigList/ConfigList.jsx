@@ -1,10 +1,10 @@
+import React from "react";
 import { useState } from "react";
 import "./ConfigList.css";
 import ConfigButton from "./ConfigButton";
 
 export default function ConfigList() {
-  const [activedButton, setActivedButton] = useState("");
-  
+
   const memoryButtons = [ 
     {
       id: 1,
@@ -21,6 +21,8 @@ export default function ConfigList() {
     },
   ];
 
+  const [activedButton, setActivedButton] = useState("");
+
   return (
     <div className="product-info__subsection">
       <div className="headers">
@@ -31,8 +33,8 @@ export default function ConfigList() {
         {memoryButtons.map(function (memoryButton) {
 
           const actived = memoryButton.memory === activedButton;
-          const className = `btn ${actived ? "activedBtn" : ""}`
-
+          const className = actived ? "activedBtn" : "btn";
+          
           return <ConfigButton
                     key={ memoryButton.id }
                     className={ className }

@@ -4,36 +4,36 @@ import ColorButton from "./ColorButton";
 
 export default function ColorChoise() {
 
-  const [activedButton, setActivedButton] = useState("");
+  const [selectedButton, setSelectedButton] = useState("");
 
   const imgs = [
     {
-      id: 1,
+      id: 11,
       color: "Красный",
       src: "./img/color-1.webp",
     },
     {
-      id: 2,
+      id: 12,
       color: "Зеленый",
       src: "./img/color-2.webp",
     },
     {
-      id: 3,
+      id: 13,
       color: "Розовый",
       src: "./img/color-3.webp",
     },
     {
-      id: 4,
+      id: 14,
       color: "Синий",
       src: "./img/color-4.webp",
     },
     {
-      id: 5,
+      id: 15,
       color: "Белый",
       src: "./img/color-5.webp",
     },
     {
-      id: 6,
+      id: 16,
       color: "Черный",
       src: "./img/color-6.webp",
     },
@@ -43,16 +43,19 @@ export default function ColorChoise() {
 
     <div className="subsection">
       <div className="headers">
-        <h4> Цвет товара: { activedButton } </h4>
+        <h4> Цвет товара: { selectedButton } </h4>
       </div>
 
       <div className="color">
         {imgs.map(function (img) {
-          const actived = img.color === activedButton;
+
+          const selected = img.color === selectedButton;
+          const className = selected ? "img_selected" : "img";
+
           return <ColorButton
             key={ img.id }
-            className={ `img ${actived ? "selected" : ""}` }
-            onClick={ () => { setActivedButton(img.color) } }
+            className={ className }
+            onClick={ () => { setSelectedButton(img.color) } }
             src={ img.src }
           />
         })}
