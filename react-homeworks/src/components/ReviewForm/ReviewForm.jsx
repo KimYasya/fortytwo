@@ -14,7 +14,7 @@ export default function ReviewForm() {
 
   // Сброс информеров ошибок при повторном вводе после неуспешной валидации
   const handleFocusFormName = () => {
-    setFormName("");
+    setFormNameErrorStr("");
   };
 
   const handleFocusFormRaiting = () => {
@@ -31,7 +31,6 @@ export default function ReviewForm() {
     localStorage.setItem("formRaiting", event.target.value);
     setFormRaiting(event.target.value);
   };
-
 
   const handleInputFormText = (event) => {
     localStorage.setItem("formText", event.target.value);
@@ -85,8 +84,6 @@ export default function ReviewForm() {
     }
   };
 
-
-
   return (
     <form className="review-form" onSubmit={handleSubmitForm} >
       <legend className="review-form__header">Добавить свой отзыв</legend>
@@ -123,7 +120,6 @@ export default function ReviewForm() {
       </div>
 
       <div>
-        {/* onClick={ handleClickButton }  Этот код из кнопки*/}
         <button type="submit" className="review-form__btn">Отправить отзыв</button>
       </div>
 

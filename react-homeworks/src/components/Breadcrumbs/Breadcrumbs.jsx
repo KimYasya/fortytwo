@@ -33,8 +33,8 @@ export default function Breadcrumbs() {
       <div className="breadcrumbs">
        
         {Links.map(function (link) {
-          return <div> 
-            <Link key={ link.id }
+          return <div key={ link.id }> 
+            <Link 
               className={ className }
               href={ link.href }
               name={ link.name }

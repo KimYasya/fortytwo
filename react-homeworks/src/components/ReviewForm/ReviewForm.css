@@ -113,6 +113,26 @@
     background: #A93A09;
   }
 
+  .formName-error {
+    min-height: 25px;
+    background: #f36223;
+    color: white;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
+  .active {
+    border: 2px solid #F36223;
+  }
+  
+  .formRaiting-error {
+    min-height: 25px;
+    background: #f36223;
+    color: white;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1024px) {
@@ -225,6 +245,26 @@
   .review-form__btn:active {
     background: #A93A09;
   }
+
+  .formName-error {
+    min-height: 25px;
+    background: #f36223;
+    color: white;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
+
+  .active {
+    border: 2px solid #F36223;
+  }
+  
+  .formRaiting-error {
+    min-height: 25px;
+    background: #f36223;
+    color: white;
+    padding: 2px 4px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1500px) {
@@ -251,6 +291,7 @@
     flex-direction: row;
     gap: 40px;
     width: 100%;
+    height: 50px;
     margin-bottom: 40px;
   }
 

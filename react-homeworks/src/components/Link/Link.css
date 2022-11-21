@@ -20,14 +20,3 @@
 } */
 
 
-li {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 16px;
-}
-
-li::after {
-  content: ">";
-  color: #F36223;
-}
-
