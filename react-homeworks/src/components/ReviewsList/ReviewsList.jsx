@@ -1,5 +1,5 @@
 import RaitingList from "../RaitingList/RaitingList";
-import RaitingList4 from "../RaitingList4/RaitingList4";
+import RaitingList4 from "../RaitingList/RaitingList4";
 import "./ReviewsList.css";
 
 export default function ReviewsList() {
@@ -20,8 +20,10 @@ export default function ReviewsList() {
   )
 
  function Review() {
-    const reviews = [
+
+      const reviews = [
       {
+        id: 111,
         authorName: "Марк Г.",
         photoUrl: "./img/photo1.png",
         raiting: [<RaitingList />, <RaitingList />, <RaitingList />, <RaitingList />, <RaitingList />,],
@@ -35,6 +37,7 @@ export default function ReviewsList() {
           который урезает качество фотографий исходное`,
       },
       {
+        id: 112,
         authorName: "Валерий Коваленко",
         photoUrl: "./img/photo2.png",
         raiting: [<RaitingList />, <RaitingList />, <RaitingList />, <RaitingList />, <RaitingList4 /> ],
@@ -76,14 +79,4 @@ export default function ReviewsList() {
 }
 
 
-    //     <div className="reviews-block__review-raiting">
-    //       <img className="reviews-block__review-star" src="./img/star.png" alt="" />
-    //       <img className="reviews-block__review-star" src="./img/star.png" alt="" />
-    //       <img className="reviews-block__review-star" src="./img/star.png" alt="" />
-    //       <img className="reviews-block__review-star" src="./img/star.png" alt="" />
-    //       <img className="reviews-block__review-star" src="./img/star.png" alt="" />
-    //     </div>
-    //   </div>
-    // </div>
-
-  
+   

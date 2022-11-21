@@ -1,34 +1,7 @@
 @media screen and (max-width: 1023px) and (min-width: 360px) {
-
-  .headers {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
-    width: 100%;
-  }
-
-  .subsection {
-    margin-bottom: 20px;
-    width: 100%;
-
-  }
-
-  .color {
+  .choice {
     box-sizing: border-box;
-    padding: 0px;
-    gap: 10px;
     display: flex;
-    flex-direction: row;
-  }
-
-  .button {
-    background: transparent;
-    border: 1px solid #888888;
-    border-radius: 4px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    padding: 10px 20px;
   }
 
   .img {
@@ -41,39 +14,37 @@
     height: 80px;
   }
 
-  .img_selected {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .choice:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+  }
+
+  .choice:active {
+    border: 2px solid #A93A09;
     border-radius: 4px;
-    width: 80px;
-    height: 80px;
+  }
+
+  .button {
+    background: transparent;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 20px;
+  }
+
+  .img_selected {
     border: 2px solid #F36223;
     background: transparent;
-}
+  }
 }
 
 @media screen and (max-width: 1499px) and (min-width: 1024px) {
 
-  .headers {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
-    width: 100%;
-  }
-
-  .subsection {
-    margin-bottom: 20px;
-    width: 100%;
-
-  }
-
-  .color {
+  .choice {
     box-sizing: border-box;
-    padding: 0px;
-    gap: 10px;
     display: flex;
-    flex-direction: row;
   }
 
   .img {
@@ -84,6 +55,16 @@
     border-radius: 4px;
     width: 80px;
     height: 80px;
+  }
+
+  .choice:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+  }
+
+  .choice:active {
+    border: 2px solid #A93A09;
+    border-radius: 4px;
   }
 
   .button {
@@ -97,12 +78,6 @@
   }
 
   .img_selected {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    width: 80px;
-    height: 80px;
     border: 2px solid #F36223;
     background: transparent;
   }
@@ -110,25 +85,9 @@
 
 @media screen and (min-width: 1500px) {
 
-  .headers {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
-    width: 100%;
-  }
-
-  .subsection {
-    margin-bottom: 20px;
-    width: 100%;
-
-  }
-
-  .color {
+  .choice {
     box-sizing: border-box;
-    padding: 0px;
-    gap: 10px;
     display: flex;
-    flex-direction: row;
   }
 
   .img {
@@ -139,6 +98,16 @@
     border-radius: 4px;
     width: 80px;
     height: 80px;
+  }
+
+  .choice:hover {
+    background: #F2F2F2;
+    cursor: pointer;
+  }
+
+  .choice:active {
+    border: 2px solid #A93A09;
+    border-radius: 4px;
   }
 
   .button {
@@ -152,12 +121,6 @@
   }
 
   .img_selected {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    width: 80px;
-    height: 80px;
     border: 2px solid #F36223;
     background: transparent;
   }

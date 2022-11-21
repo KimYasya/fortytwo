@@ -1,10 +1,12 @@
 import "./RaitingList.css";
 
-export default function RaitingList() {
+export default function RaitingList(props) {
+
+  const { id } = props;
 
   return (
     
-      <img classList="rait__img" src="./img/star.png" alt="звезда" />
+      <img id={id} className="rait__img" src="./img/star.png" alt="звезда" />
    
   )
 }  

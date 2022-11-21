@@ -1,0 +1,595 @@
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+
+  .sidebar {
+    margin-top: 20px;
+  }
+
+  .sidebar__buy {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 420px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    align-self: stretch;
+  }
+
+  .sidebar__first-line {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sidebar__like svg {
+    fill: #888888;
+  }
+
+  .sidebar__like:hover svg {
+    cursor: pointer;
+    fill: #DA4A0C;
+  }
+
+  .sidebar__like:active svg {
+    cursor: pointer;
+    fill: #A93A09;
+  }
+
+  .sidebar__cost1 {
+    width: 66px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #888888;
+  }
+
+  .sidebar__cost2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+  }
+
+  .sidebar__old-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .sidebar__discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+    width: 31px;
+    height: 16px;
+    background: #F36223;
+    border-radius: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+
+  .sidebar__delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .sidebar__button_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
+    background: #F36223;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+  }
+
+  .sidebar__button_buy::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .sidebar__button_buy:hover {
+    background: #DA4A0C;
+    cursor: pointer;
+  }
+
+  .active-sidebar_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
+    background: #888888;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+
+  }
+
+  .active-sidebar_btn:hover {
+    background-color: #adadad;
+  }
+
+  .active-sidebar_btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .sidebar__button_buy:active {
+    background: #A93A09;
+  }
+
+  /* Реклама */
+
+  .sidebar__frame {
+    visibility: hidden;
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+
+  .sidebar {
+    margin-top: 30px;
+  }
+
+  .sidebar__buy {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 360px;
+    padding: 20px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    align-self: stretch;
+  }
+
+  .sidebar__first-line {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sidebar__like svg {
+    fill: #888888;
+  }
+
+  .sidebar__like:hover svg {
+    cursor: pointer;
+    fill: #DA4A0C;
+  }
+
+  .sidebar__like:active svg {
+    cursor: pointer;
+    fill: #A93A09;
+  }
+
+  .sidebar__cost1 {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: line-through;
+    color: #888888;
+  }
+
+  .sidebar__cost2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+  }
+
+  .sidebar__old-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .sidebar__discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+    background: #F36223;
+    border-radius: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+
+  .sidebar__delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .sidebar__button_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background: #F36223;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+  }
+
+  .sidebar__button_buy::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .sidebar__button_buy:hover {
+    background: #DA4A0C;
+    cursor: pointer;
+  }
+
+  .active-sidebar_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background: #888888;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+
+  }
+
+  .active-sidebar_btn:hover {
+    background-color: #adadad;
+  }
+
+  .active-sidebar_btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .sidebar__button_buy:active {
+    background: #A93A09;
+  }
+
+  /* Реклама */
+
+  .sidebar__frame {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 30px;
+    color: #888888;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .sidebar__framelook {
+    border: 1px dashed #ccc;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 360px;
+    height: 300px;
+    background: #F0F0F0;
+    border: 1px dashed #888888;
+  }
+
+  .sidebar__framelook1 {
+    border: 1px dashed #ccc;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 360px;
+    height: 300px;
+    background: #F0F0F0;
+    border: 1px dashed #888888;
+  }
+
+}
+
+@media screen and (min-width: 1500px) {
+
+  .sidebar {
+    margin-top: 30px;
+  }
+
+  .sidebar__buy {
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    width: 420px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    align-self: stretch;
+  }
+
+  .sidebar__first-line {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .sidebar__like svg {
+    fill: #888888;
+  }
+
+  .sidebar__like:hover svg {
+    cursor: pointer;
+    fill: #DA4A0C;
+  }
+
+  .sidebar__like:active svg {
+    cursor: pointer;
+    fill: #A93A09;
+  }
+
+  .sidebar__cost1 {
+    width: 66px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #888888;
+  }
+
+  .sidebar__cost2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+  }
+
+  .sidebar__old-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .sidebar__discount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 10px;
+    width: 31px;
+    height: 16px;
+    background: #F36223;
+    border-radius: 500px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+
+  .sidebar__delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .sidebar__button_buy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
+    background: #F36223;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+  }
+
+  .sidebar__button_buy::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .active-sidebar_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 49px;
+    flex-grow: 1;
+    width: 380px;
+    height: 64px;
+    background: #888888;
+    border-radius: 4px;
+    align-self: stretch;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 0;
+    gap: 15px;
+
+  }
+
+  .active-sidebar_btn:hover {
+    background-color: #adadad;
+  }
+
+  .active-sidebar_btn::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/public/img/cart.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .sidebar__button_buy:hover {
+    background: #DA4A0C;
+    cursor: pointer;
+  }
+
+  .sidebar__button_buy:active {
+    background: #A93A09;
+  }
+
+  /* Реклама */
+
+  .sidebar__frame {
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 30px;
+    color: #888888;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 420px;
+    height: 642px;
+  }
+
+  .sidebar__framelook {
+    border: 1px dashed #ccc;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 420px;
+    height: 300px;
+    background: #F0F0F0;
+    border: 1px dashed #888888;
+  }
+
+  .sidebar__framelook1 {
+    border: 1px dashed #ccc;
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 420px;
+    height: 300px;
+    background: #F0F0F0;
+    border: 1px dashed #888888;
+  }
+
+}

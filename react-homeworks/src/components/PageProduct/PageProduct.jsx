@@ -1,6 +1,9 @@
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import ColorChoise from "../ColorChoise/ColorChoise";
 import ConfigList from "../ConfigList/ConfigList";
+import ReviewForm from "../ReviewForm/ReviewForm";
 import ReviewsList from "../ReviewsList/ReviewsList";
+import Sidebar from "../Sidebar/Sidebar";
 import "./PageProduct.css";
 
 export default function PageProduct() {
@@ -45,7 +48,9 @@ export default function PageProduct() {
 
       <div className="container">
 
-        <nav>
+        <Breadcrumbs />
+
+        {/* <nav>
           <div className="breadcrumbs">
             <a className="link" href="http://localhost:3000">Электроника</a>
             <span> {">"} </span>
@@ -55,7 +60,7 @@ export default function PageProduct() {
             <span> {">"} </span>
             <a className="link" href="http://localhost:3000">Apple</a>
           </div>
-        </nav>
+        </nav> */}
 
         <main>
 
@@ -284,7 +289,9 @@ export default function PageProduct() {
 
               </div> */}
 
-              <form className="review-form">
+              <ReviewForm />
+              
+              {/* <form className="review-form">
                 <legend className="review-form__header">Добавить свой отзыв</legend>
                 <div className="review-form__first">
                   <div className="review-form__name-block">
@@ -306,11 +313,13 @@ export default function PageProduct() {
                   <button type="submit" className="review-form__btn">Отправить отзыв</button>
                 </div>
 
-              </form>
+              </form> */}
 
             </div>
 
-            <div className="sidebar">
+            <Sidebar />
+
+            {/* <div className="sidebar">
 
               <div className="sidebar__buy">
                 <div className="sidebar__first-line">
@@ -350,7 +359,7 @@ export default function PageProduct() {
                 </iframe>
               </div>
 
-            </div>
+            </div> */}
           </div>
         </main>
       </div>
