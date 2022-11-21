@@ -1,0 +1,33 @@
+.link {
+  color: #018ad2;
+  text-decoration-line: none;
+}
+
+.link:hover {
+  color: #F36223;
+  cursor: pointer;
+}
+
+.link:active {
+  color: #A93A09;
+}
+
+/* .link::before {
+  content: ">";
+  display: inline-block;
+  align-items: center;
+
+} */
+
+
+li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+li::after {
+  content: ">";
+  color: #F36223;
+}
+

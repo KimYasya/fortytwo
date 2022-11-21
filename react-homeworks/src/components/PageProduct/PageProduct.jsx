@@ -1,3 +1,4 @@
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 import ColorChoise from "../ColorChoise/ColorChoise";
 import ConfigList from "../ConfigList/ConfigList";
 import ReviewForm from "../ReviewForm/ReviewForm";
@@ -47,7 +48,9 @@ export default function PageProduct() {
 
       <div className="container">
 
-        <nav>
+        <Breadcrumbs />
+
+        {/* <nav>
           <div className="breadcrumbs">
             <a className="link" href="http://localhost:3000">Электроника</a>
             <span> {">"} </span>
@@ -57,7 +60,7 @@ export default function PageProduct() {
             <span> {">"} </span>
             <a className="link" href="http://localhost:3000">Apple</a>
           </div>
-        </nav>
+        </nav> */}
 
         <main>
 
