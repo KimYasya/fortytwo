@@ -1,26 +1,27 @@
+import React from "react";
 import "./Breadcrumbs.css";
-import Link from "../Link/Link";
+import Breadcrumb from "../Breadcrumb/Breadcrumb";
 
 export default function Breadcrumbs() {
 
-  const Links = [
+  const links = [
     {
-      id: 1111,
+      id: 1,
       name: "Электроника",
       href: "http://localhost:3000",
     },
     {
-      id: 1112,
+      id: 2,
       name: "Смартфоны и гаджеты",
       href: "http://localhost:3000",
     },
     {
-      id: 1113,
+      id: 3,
       name: "Мобильные телефоны",
       href: "http://localhost:3000",
     },
     {
-      id: 1114,
+      id: 4,
       name: "Apple",
       href: "http://localhost:3000",
     },
@@ -32,19 +33,16 @@ export default function Breadcrumbs() {
     <nav>
       <div className="breadcrumbs">
        
-        {Links.map(function (link) {
+        {links.map(function (link) {
           return <div key={ link.id }> 
-            <Link 
+            <Breadcrumb 
               className={ className }
               href={ link.href }
               name={ link.name }
-            >{link.name}</Link>
-            <span className={`separator ${link.name === "Apple" ? "hidden" : ""}`}>{">"}</span>  
+            />
+            <span className={`separator ${link.id === links.length ? "hidden" : ""}`}>{">"}</span>  
             </div>
            })}
-        
-       
-
       </div>
     </nav>
 

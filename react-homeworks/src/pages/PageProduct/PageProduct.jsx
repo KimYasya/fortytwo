@@ -1,14 +1,21 @@
-import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
-import ColorChoise from "../ColorChoise/ColorChoise";
-import ConfigList from "../ConfigList/ConfigList";
-import ReviewForm from "../ReviewForm/ReviewForm";
-import ReviewsList from "../ReviewsList/ReviewsList";
-import Sidebar from "../Sidebar/Sidebar";
+import React from "react";
+
+import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import ColorChoise from "../../components/ColorChoise/ColorChoise";
+import ConfigList from "../../components/ConfigList/ConfigList";
+import ReviewForm from "../../components/ReviewForm/ReviewForm";
+import ReviewsList from "../../components/ReviewsList/ReviewsList";
+import Sidebar from "../../components/Sidebar/Sidebar";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import "./PageProduct.css";
 
 export default function PageProduct() {
   return (
     <div>
+
+      <Header />
+
       {/* <header className="header-container">
         <div className="container header__container">
           <div className="header">
@@ -140,7 +147,7 @@ export default function PageProduct() {
                   <li>Встроенная память: <b>128 ГБ</b></li>
                   <li>Операционная система: <b>IOS 15</b></li>
                   <li>Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
-                  <li>Процессор: <a className="link" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank" rel="noreferrer">Apple A15 Bionic</a></li>
+                  <li>Процессор: <a className="link" href="https://ru.wikipedia.org/wiki/Apple_A15" target="_blank" rel="noopener noreferrer">Apple A15 Bionic</a></li>
                   <li>Вес: 173 г</li>
                 </div>
 
@@ -364,6 +371,8 @@ export default function PageProduct() {
         </main>
       </div>
 
+
+      <Footer />
       {/* <footer>
         <div className="footer">
           <div className="container footer__container">

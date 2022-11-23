@@ -1,17 +1,25 @@
-import Header from "./components/Header/Header";
-import PageProduct from "./components/PageProduct/PageProduct";
-import Footer from "./components/Footer/Footer";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import PageProduct from "./pages/PageProduct/PageProduct";
+
 
 
 
 function App() {
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Routes>
 
-      <PageProduct />
+          <Route path="/" element={<HomePage />} />
+          <Route path="product" element={<PageProduct />} />
+          <Route path="404" element={<PageNotFound />} />
 
-      <Footer />
+        </Routes>
+
+      </BrowserRouter>
     </>
   )
 }

@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ConfigButton(props) {
 
   const { id, memory, actived, ...restProps } = props;
