@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ColorButton(props) {
 
   const { id, color, src, selected, ...restProps } = props;

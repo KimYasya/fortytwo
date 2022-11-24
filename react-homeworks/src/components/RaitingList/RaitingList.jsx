@@ -1,3 +1,4 @@
+import React from "react";
 import "./RaitingList.css";
 
 export default function RaitingList(props) {

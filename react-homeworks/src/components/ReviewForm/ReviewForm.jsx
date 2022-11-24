@@ -80,7 +80,7 @@ export default function ReviewForm() {
       localStorage.removeItem("formRaiting");
       localStorage.removeItem("formText");
 
-      console.log("Форма успешно отправлена");
+      alert("Ваш отзыв был успешно отправлен и будет отображён после модерации");
     }
   };
 

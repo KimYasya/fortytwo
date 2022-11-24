@@ -1,6 +1,7 @@
-import "./Link.css";
+import React from "react";
+import "./Breadcrumb.css";
 
-export default function Link(props) {
+export default function Breadcrumb(props) {
 
   const { href, id, name } = props;
 

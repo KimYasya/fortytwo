@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    width: 420px;
+    width: 350px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -97,13 +97,13 @@
     align-items: center;
     padding: 20px 49px;
     flex-grow: 1;
-    width: 380px;
+    width: 100%;
     height: 64px;
     background: #F36223;
     border-radius: 4px;
     align-self: stretch;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     border: 0;
@@ -115,7 +115,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/public/img/cart.svg);
+    background-image: url(/img/cart.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -132,13 +132,13 @@
     align-items: center;
     padding: 20px 49px;
     flex-grow: 1;
-    width: 380px;
+    width: 100%;
     height: 64px;
     background: #888888;
     border-radius: 4px;
     align-self: stretch;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
     border: 0;
@@ -155,7 +155,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/public/img/cart.svg);
+    background-image: url(/img/cart.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -280,7 +280,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/public/img/cart.svg);
+    background-image: url(/img/cart.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -318,7 +318,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/public/img/cart.svg);
+    background-image: url(/img/cart.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -493,7 +493,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/public/img/cart.svg);
+    background-image: url(/img/cart.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -528,7 +528,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url(/public/img/cart.svg);
+    background-image: url(/img/cart.svg);
     background-repeat: no-repeat;
     background-position: center center;
   }

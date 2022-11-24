@@ -1,4 +1,6 @@
 
+
+
 /* Mobile */
 
 @media screen and (max-width: 1023px) and (min-width: 360px) {
@@ -40,15 +42,30 @@
       top: 0px;
       width: 100%;
    }
+
+   
+   .header_link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 53px;
+    text-decoration-line: none;
+   }
+
+
+   .header_link:visited {
+    text-decoration: none;
+    color:#000000;
+   }
+
+   .header_text {
+    color: "#f52"
+ }
    
    .header_style {
        left: -3px;
        top: 18px;
-       font-weight: 700;
-       font-size: 44px;
-       line-height: 53px;
-   }
-
+    }
+   
    .header__like {
       position: relative;
       display: flex;
@@ -60,8 +77,8 @@
       border: 1px solid #888888;
       margin-top: 5px;
       margin-bottom: 5px;
-      height: 30px;
-      width: 30px; 
+      height: 20px;
+      width: 20px; 
   }
 
   .header__like-circle {
@@ -89,8 +106,8 @@
 
  .header__like-style svg {
      fill: #FFFFFF;  
-     height: 30px;
-     width: 30px; 
+     height: 20px;
+     width: 20px; 
    
  }
    
@@ -105,8 +122,8 @@
        border: 1px solid #888888;
        margin-top: 5px;
        margin-bottom: 5px;
-       height: 30px;
-       width: 30px; 
+       height: 20px;
+       width: 20px; 
   }
 
   .header__cart-circle {
@@ -168,6 +185,31 @@
       gap: 10px;
    }
 
+ 
+   .header_link {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    text-decoration-line: none;
+   }
+
+
+   .header_link:visited {
+    text-decoration: none;
+    color:#000000;
+   }
+
+   .header_text {
+    color: "#f52"
+ }
+   
+   .header_style {
+       left: -3px;
+       top: 18px;
+    }
+    
+   
+
   .header {
       display: flex;
       flex-direction: row;
@@ -178,14 +220,7 @@
       width: 100%;
   }
   
-  .header_style {
-      left: -3px;
-      top: 18px;
-      font-weight: 700;
-      font-size: 44px;
-      line-height: 53px;
-  }
-
+  
   .header__like {
       position: relative;
       display: flex;
@@ -291,7 +326,7 @@
       position: sticky;
       left: 0px;
       top: 0px;
-   }
+    }
 
    .header__container {
       display: flex;
@@ -314,13 +349,29 @@
       width: 100%;
    }
    
+
+
+   .header_link {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    text-decoration-line: none;
+   }
+
+
+   .header_link:visited {
+    text-decoration: none;
+    color:#000000;
+   }
+
+   .header_text {
+    color: "#f52"
+ }
+   
    .header_style {
        left: -3px;
        top: 18px;
-       font-weight: 700;
-       font-size: 44px;
-       line-height: 53px;
-   }
+    }
 
    .header__like {
       position: relative;

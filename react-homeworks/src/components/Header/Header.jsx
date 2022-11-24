@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export default function Header() {
@@ -10,7 +12,7 @@ export default function Header() {
             <img src="./img/favicon.svg" alt="лого" height="35" />
           </div>
           <div className="header_style">
-            <span style={{ color: "#f52" }}>Мой</span>Маркет
+            <Link to='/' className="header_link"><span style={{color: "#f52"}}>Мой</span>Маркет</Link>
           </div>
         </div>
 

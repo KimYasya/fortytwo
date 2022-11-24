@@ -91,10 +91,12 @@ button {
   .product-preview__image {
       box-sizing: border-box;
       display: flex;
+      flex-wrap: nowrap;
       flex-direction: row;
       align-items: center;
       margin-top: 10px;
       gap: 5px;
+      overflow: scroll;
   }
 
   .product-preview__image-s {
@@ -132,7 +134,7 @@ button {
       justify-content: center;
       align-items: flex-start;
       gap: 10px;
-      font-size: 1.2rem;
+      font-size: 14px;
   }
 
   li::marker {
@@ -144,7 +146,7 @@ button {
 
   .product-info__description {
       box-sizing: border-box;
-      font-size: 0.45rem;
+      font-size: 14px;
   }
 
  
