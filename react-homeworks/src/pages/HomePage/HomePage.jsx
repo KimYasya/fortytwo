@@ -40,7 +40,7 @@ export default function HomePage() {
               <div className="product_description_btns">
                 <Link className="product_description_btn link_h" to="/product">Подробнее</Link>
 
-                <div className="sidebar__like" onClick={handleClickLikeBtn}>
+                <div className="sidebar__like_hp" onClick={handleClickLikeBtn}>
                   {likeBtn ?
                     <svg width="28" height="22" viewBox="0 0 28 22">
                       <path d="m 1.7952743,1.7234655 c 2.3937,-2.29795401 6.26159,-2.29795401 8.6552797,0 l 2.5598,2.45748 2.5599,-2.45748 
