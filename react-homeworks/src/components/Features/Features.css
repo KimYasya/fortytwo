@@ -1,0 +1,91 @@
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+
+  .headers {
+      font-weight: 700;
+      font-size: 14px;
+      padding: 0px 0px 20px 0px;
+      width: 100%;
+  }
+
+  .product-info__subsection {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .list-style {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+  }
+
+  li::marker {
+      color: #888888;
+      font-size: 1rem;
+  }
+}
+
+/* Tablet 1024px */
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+
+  .headers {
+      font-weight: 700;
+      font-size: 16px;
+      padding: 0px 0px 20px 0px;
+      width: 100%;
+  }
+
+  .product-info__subsection {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .list-style {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  li::marker {
+      color: #888888;
+      font-size: 1.2em;
+  }
+}
+
+/* Laptop >1500px */
+
+@media screen and (min-width: 1500px) {
+
+  .headers {
+      font-weight: 700;
+      font-size: 16px;
+      padding: 0px 0px 20px 0px;
+      width: 100%;
+  }
+
+  .product-info__subsection {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .list-style {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 10px;
+  }
+
+  li::marker {
+      color: #888888;
+      font-size: 1.2em;
+  }
+}

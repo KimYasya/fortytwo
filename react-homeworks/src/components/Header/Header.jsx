@@ -4,7 +4,6 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div>
     <header className="header-container">
       <div className="container header__container">
         <div className="header">
@@ -41,6 +40,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-    </div>
   )
 }

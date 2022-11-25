@@ -1,0 +1,145 @@
+.dontShow {
+  border: 0px;
+  margin: 0px 0px 40px 0px;
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+
+  .smallScreen {
+    display: none;
+  }
+
+  .reviewsLeft {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .reviewsNameRait {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews-block__border {
+    border-bottom: 2px dashed #888888;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .reviews-block__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .review-image {
+    height: 70px;
+  }
+
+  .reviews {
+    margin: 0px;
+  }
+
+  .review-name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    margin: 10px 0px 40px 0px;
+
+  }
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+
+  .bigScreen {
+    display: none;
+  }
+
+  .reviews-block__border {
+    border-bottom: 2px dashed #888888;
+    margin-bottom: 40px;
+  }
+
+  .reviews-block__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .review-image {
+    height: 100px;
+    flex-shrink: none;
+  }
+
+  .reviews {
+    margin: 0px;
+  }
+
+  .review-name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    margin: 10px 0px 40px 0px;
+
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+
+  .bigScreen {
+    display: none;
+  }
+
+  .reviews-block__border {
+    border-bottom: 2px dashed #888888;
+    margin-bottom: 40px;
+  }
+
+  .reviews-block__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .review-image {
+    height: 140px;
+    flex-shrink: none;
+  }
+
+  .reviews {
+    margin: 0px;
+  }
+
+  .review-name {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    margin: 10px 0px 40px 0px;
+
+  }
+}
