@@ -1,6 +1,6 @@
 import React from "react";
-import "./Breadcrumbs.css";
 import Breadcrumb from "../Breadcrumb/Breadcrumb";
+import styles from "./Breadcrumbs.module.css";
 
 export default function Breadcrumbs() {
 
@@ -27,11 +27,11 @@ export default function Breadcrumbs() {
     },
   ]
 
-  const className = "link";
+  const className = styles.link;
 
   return (
     <nav>
-      <div className="breadcrumbs">
+      <div className={styles.breadcrumbs}>
        
         {links.map(function (link) {
           return <div key={ link.id }> 
@@ -40,7 +40,7 @@ export default function Breadcrumbs() {
               href={ link.href }
               name={ link.name }
             />
-            <span className={`separator ${link.id === links.length ? "hidden" : ""}`}>{">"}</span>  
+            <span className={ `${styles.separator} ${link.id === links.length ? `${styles.hidden}` : ""}`}>{">"}</span>  
             </div>
            })}
       </div>

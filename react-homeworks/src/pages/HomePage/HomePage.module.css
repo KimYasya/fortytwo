@@ -1,39 +1,41 @@
-html {
-  font-family: "Inter";
+.body {
   font-size: 16px;
   font-style: normal;
   background: #F8FAFE;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 @font-face {
   font-family: "Inter";
-  src: url("/public/fonts/Inter-Regular.woff2");
+  src: url("/fonts/Inter-Regular.woff2");
 }
 
-.link_h {
+.linkH {
   text-decoration-line: none;
 }
 
 @media screen and (max-width: 1023px) and (min-width: 360px) {
-  .headers {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
-    width: 100%;
-  }
 
   .container {
-    max-width: 100%;
+    max-width: 360px;
     margin: 0 auto;
-    padding: 0px 50px 0px 50px;
-    font-size: 1em;
+    padding: 0px 15px 0px 15px;
+    flex-grow: 1;
+}
+
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background: #F8FAFE;
   }
 
-  .main_container {
-    min-height: 500px;
-  }
-
-  .product-choise {
+  .productChoice {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -41,30 +43,31 @@ html {
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 10px;
-    margin: 20px;
-
-
   }
 
-  .product_preview {
+  .productPreview {
     margin: 10px;
+    box-sizing: border-box;
+    display: flex;
+    width: 50%;
+
   }
 
-  .product_description {
+  .productDescription {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .product_description_text {
+  .text {
     box-sizing: border-box;
     display: flex;
     font-size: 18px;
     margin: 10px;
   }
 
-  .product_description_btn {
+  .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -79,19 +82,19 @@ html {
     border: 0;
   }
 
-  .product_description_btn:hover {
+  .btn:hover {
     background: #DA4A0C;
     cursor: pointer;
   }
 
-  .product_description_btns {
+  .btns {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: flex-end;
   }
 
-  .sidebar__like_hp {
+  .likeHP {
     fill: #888888;
     width: 28px;
     height: 22px;
@@ -107,25 +110,26 @@ html {
 
 
 @media screen and (max-width: 1499px) and (min-width: 1024px) {
-  .headers {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
-    width: 100%;
-  }
 
   .container {
-    max-width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
-    padding: 0px 50px 0px 50px;
-    font-size: 1em;
+    padding: 0px 15px 0px 15px;
+    flex-grow: 1;
+}
+
+
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background: #F8FAFE;
   }
 
-  .main_container {
-    min-height: 500px;
-  }
 
-  .product-choise {
+  .productChoice {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -133,19 +137,18 @@ html {
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 10px;
-    margin: 20px;
     width: 100%;
 
   }
 
-  .product_preview {
+  .productPreview {
     box-sizing: border-box;
     display: flex;
     height: 180px;
     margin: 10px;
   }
 
-  .product_description {
+  .productDescription {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -154,14 +157,14 @@ html {
     width: 100%;
   }
 
-  .product_description_text {
+  .text {
     box-sizing: border-box;
     display: flex;
     font-size: 18px;
     margin: 10px;
   }
 
-  .product_description_btn {
+  .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,12 +178,12 @@ html {
     border: 0;
   }
 
-  .product_description_btn:hover {
+  .btn:hover {
     background: #DA4A0C;
     cursor: pointer;
   }
 
-  .product_description_btns {
+  .btns {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -188,7 +191,7 @@ html {
     margin-right: 20px;
   }
 
-  .sidebar__like_hp {
+  .likeHP {
     fill: #888888;
     width: 28px;
     height: 22px;
@@ -203,25 +206,24 @@ html {
 
 @media screen and (min-width: 1500px) {
 
-  .headers {
-    font-weight: 700;
-    font-size: 16px;
-    padding: 0px 0px 20px 0px;
-    width: 100%;
-  }
-
   .container {
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px;
     font-size: 1em;
+    flex-grow: 1;
+}
+
+  .mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1500px;
+    gap: 10px;
+    background: #F8FAFE;
   }
 
-  .main_container {
-    min-height: 500px;
-  }
-
-  .product-choise {
+  .productChoice {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -229,19 +231,19 @@ html {
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding: 20px 10px;
-    margin: 20px;
+    margin-top: 20px;
     width: 100%;
 
   }
 
-  .product_preview {
+  .productPreview {
     box-sizing: border-box;
     display: flex;
     height: 180px;
     margin: 10px;
   }
 
-  .product_description {
+  .productDescription {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -250,14 +252,14 @@ html {
     width: 100%;
   }
 
-  .product_description_text {
+  .text {
     box-sizing: border-box;
     display: flex;
     font-size: 18px;
     margin: 10px;
   }
 
-  .product_description_btn {
+  .btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -271,12 +273,12 @@ html {
     border: 0;
   }
 
-  .product_description_btn:hover {
+  .btn:hover {
     background: #DA4A0C;
     cursor: pointer;
   }
 
-  .product_description_btns {
+  .btns {
     display: flex;
     flex-direction: column;
     width: 20%;
@@ -284,7 +286,7 @@ html {
     margin-right: 20px;
   }
 
-  .sidebar__like_hp {
+  .likeHP {
     fill: #888888;
     width: 28px;
     height: 22px;

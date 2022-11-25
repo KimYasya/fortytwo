@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Button from "../Button";
 import "./ReviewForm.css";
 
 export default function ReviewForm() {
@@ -84,6 +85,8 @@ export default function ReviewForm() {
     }
   };
 
+  const className = 'review-form__btn';
+
   return (
     <form className="review-form" onSubmit={handleSubmitForm} >
       <legend className="review-form__header">Добавить свой отзыв</legend>
@@ -119,9 +122,11 @@ export default function ReviewForm() {
           onInput={handleInputFormText}></textarea>
       </div>
 
-      <div>
-        <button type="submit" className="review-form__btn">Отправить отзыв</button>
-      </div>
+      <Button
+        type={`submit`}
+        className={className}
+        name={`Отправить отзыв`}
+      >{ }</Button>
 
     </form>
   )

@@ -1,11 +1,11 @@
 import React from "react";
-import "./Breadcrumb.css";
+import styles from "./Breadcrumb.module.css";
 
 export default function Breadcrumb(props) {
 
   const { href, id, name } = props;
 
-  const className = "link";
+  const className = styles.link;
 
   return (
    

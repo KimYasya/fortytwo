@@ -1,0 +1,54 @@
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+
+  .table-block {
+    visibility: hidden;
+    display: none;
+}
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+
+  .table-block {
+      visibility: hidden;
+      display: none;
+  }      
+  
+}
+
+@media screen and (min-width: 1500px) {
+
+  .table-block {
+      margin-bottom: 30px;
+  }
+    
+  .table-block__table {
+      box-sizing: border-box;
+      border-collapse: collapse;
+      border-spacing: 0px;
+      border: 1px solid black;
+      gap: 15px;
+  }
+    
+  .table-block__title {
+      font-weight: 700;
+      font-size: 16px;
+      text-align: left;
+      margin-bottom: 20px;
+  }
+    
+  .table-block__elements {
+      border: 1px solid black;
+      padding: 10px;
+      border-spacing: 0px;
+      text-align: center;
+  }
+    
+  .table-bottom {
+      border-bottom: none;
+      border-top: none;
+  }
+    
+  .table-block__tr_selection:hover {
+      background: #F2F2F2;
+  }
+}
