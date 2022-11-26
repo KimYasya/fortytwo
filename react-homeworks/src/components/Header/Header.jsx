@@ -1,8 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./Header.css";
 
 export default function Header() {
+
+  const count = useSelector((store) => store.cart.products.length);
+
+  
   return (
     <header className="header-container">
       <div className="container header__container">
@@ -35,7 +40,7 @@ export default function Header() {
           </div>
 
           <div className="header__cart-circle" id="header-count">
-            <span className="header__cart-count">0</span>
+            <span className="header__cart-count">{count}</span>
           </div>
         </div>
       </div>

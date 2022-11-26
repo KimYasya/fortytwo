@@ -41,7 +41,7 @@ export default function PageProduct() {
 
             </div>
 
-            <Sidebar />
+            <Sidebar product={{ id: 1225, name: "Apple IPhone 13" }} />
 
           </div>
 

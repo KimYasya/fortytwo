@@ -20,7 +20,7 @@ export default function HomePage() {
 
 
   return (
-    <body className={styles.body}>
+    <div className={styles.body}>
       <Header />
 
 
@@ -59,7 +59,7 @@ export default function HomePage() {
 
       </div>
       <Footer />
-    </body>
+    </div>
   )
 
 }

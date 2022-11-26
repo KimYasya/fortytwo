@@ -1,20 +1,34 @@
 import React from "react";
 import { useState } from "react";
-import "./Sidebar.css"
+import { useDispatch, useSelector } from "react-redux";
+import { addProduct, removeProduct } from "../../reducers/cart-reducer";
+import "./Sidebar.css";
 import Button from "../Button";
 import Like from "../Like/Like";
-import ActiveLike from "../Like/ActiveLike"; 
+import ActiveLike from "../Like/ActiveLike";
 
-export default function Sidebar() {
 
-  const [sidebarBtnIsActive, setSidebarBtnIsActive] = useState(false);
+export default function Sidebar(props) {
+
+  const { product } = props;
+
   const [sidebarLike, setSidebarLike] = useState(false);
+  const products = useSelector((store) => store.cart.products);
+  const hasInCart = products.some((prevProduct) => {
+    return prevProduct.id === product.id;
+  })
 
-  const sidebarBtnClasses = sidebarBtnIsActive ? "active-sidebar_btn" : "sidebar__button_buy";
+  const dispatch = useDispatch();
 
-  const handleClicksidebarBtn = () => {
-    setSidebarBtnIsActive(!sidebarBtnIsActive);
-  };
+
+  const handleClicksidebarBtn = (e, product) => {
+    dispatch(addProduct(product));
+    localStorage.setItem('product', product);
+  }
+
+  const handleRemoveBtn = (e, product) => {
+    dispatch(removeProduct(product));
+  }
 
   const handleClickSidebarLike = () => {
     setSidebarLike(!sidebarLike);
@@ -37,11 +51,9 @@ export default function Sidebar() {
 
           <div className="sidebar__like" onClick={handleClickSidebarLike}>
             {sidebarLike ?
-
-            <ActiveLike />
+              <ActiveLike />
               :
-            <Like />
-        
+              <Like />
             }
 
           </div>
@@ -55,13 +67,20 @@ export default function Sidebar() {
           <span>Самовывоз в четверг, 1 сентября — <b>бесплатно</b></span>
           <p>Курьером в четверг, 1 сентября — <b>бесплатно</b></p>
 
-          <Button
+          {hasInCart ? (<Button
             type={`submit`}
-            className={sidebarBtnClasses}
-            onClick={handleClicksidebarBtn}
-            name={sidebarBtnIsActive ? "Товар добавлен" : "Добавить в корзину"}
-          >{}
-          </Button>
+            className={"active-sidebar_btn"}
+            onClick={(e) => handleRemoveBtn(e, product)}
+            name={"Товар добавлен"}
+          >{ }
+          </Button>) :
+            (<Button
+              type={`submit`}
+              className={"sidebar__button_buy"}
+              onClick={(e) => handleClicksidebarBtn(e, product)}
+              name={"Добавить в корзину"}
+            >{ }
+            </Button>)}
 
         </div>
       </div>
