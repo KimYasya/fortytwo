@@ -1,80 +1,46 @@
 import React from "react";
 import "./Review.css";
 
-export default function Review() {
+export default function Review(props) {
 
-  const reviews = [
-    {
-      id: 1,
-      authorName: "Марк Г.",
-      photoUrl: "./img/photo1.png",
-      raiting: 5,
-      userExperience: "менее месяца",
-      dignity: `Это мой первый айфон после после огромного количества телефонов на андроиде. 
-      всё плавно, чётко и красиво. довольно шустрое устройство. 
-      камера весьма неплохая, ширик тоже на высоте.`,
-      limitations: `к самому устройству мало имеет отношение, 
-      но перенос данных с андроида - адская вещь) 
-      а если нужно переносить фото с компа, то это только через itunes, 
-      который урезает качество фотографий исходное`,
-    },
-    {
-      id: 2,
-      authorName: "Валерий Коваленко",
-      photoUrl: "./img/photo2.png",
-      raiting: 4,
-      userExperience: "менее месяца",
-      dignity: `OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго`,
-      limitations: `Плохая ремонтопригодность`,
-    },
-  ];
+  const { authorName, photoUrl, raiting, userExperience, dignity, limitations } = props
 
-  
   return (
-    <div>
+    <div className="reviews-block__content">
 
-      {reviews.map(function (review) {
-
-        return (
-
-          <div key={review.id} className={`"" ${review.id === reviews.length ? "dontShow" : "reviews-block__border"} `}>
-            <div className="reviews-block__content">
-
-              <div className="reviewsLeft bigScreen">
-                <img className="review-image" src={`${review.photoUrl}`} alt="фото автора" />
-                <div className="reviewsNameRait">
-                  <div className="review-name">{review.authorName}</div>
-                  <div>
-                  {review.raiting <= 1 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
-                  {review.raiting <= 2 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
-                  {review.raiting <= 3 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
-                  {review.raiting <= 4 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
-                  {review.raiting <= 5 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
-                  </div>
-                </div>
-              </div>
-
-              <img className="review-image smallScreen" src={`${review.photoUrl}`} alt="фото автора" />
-              <div className="reviews">
-                <div className="review-name smallScreen">{review.authorName}</div>
-                <div className="smallScreen">
-                  {review.raiting < 1 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
-                  {review.raiting < 2 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
-                  {review.raiting < 3 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
-                  {review.raiting < 4 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
-                  {review.raiting < 5 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
-                  </div>
-                <div className="review-content">
-                  <div><span className="boldText">{`Опыт использования:`}</span> {review.userExperience}</div>
-                  <div><span className="boldText">{`Достоинства:`}</span> <br /> {review.dignity}</div>
-                  <div><span className="boldText">{`Недостатки:`}</span> <br /> {review.limitations}</div>
-                </div>
-              </div>
-            </div>
+      <div className="reviewsLeft bigScreen">
+        <img className="review-image" src={`${photoUrl}`} alt="фото автора" />
+        <div className="reviewsNameRait">
+          <div className="review-name">{authorName}</div>
+          <div>
+            {raiting <= 1 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+            {raiting <= 2 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+            {raiting <= 3 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+            {raiting <= 4 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+            {raiting <= 5 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
           </div>
-        );
-      })}
+        </div>
+      </div>
 
+      <img className="review-image smallScreen" src={`${photoUrl}`} alt="фото автора" />
+      <div className="reviews">
+        <div className="review-name smallScreen">{authorName}</div>
+        <div className="smallScreen">
+          {raiting < 1 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+          {raiting < 2 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+          {raiting < 3 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+          {raiting < 4 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+          {raiting < 5 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+        </div>
+        <div className="review-content">
+          <div><span className="boldText">{`Опыт использования:`}</span> {userExperience}</div>
+          <div><span className="boldText">{`Достоинства:`}</span> <br /> {dignity}</div>
+          <div><span className="boldText">{`Недостатки:`}</span> <br /> {limitations}</div>
+        </div>
+      </div>
     </div>
+
   );
 }
+
+
