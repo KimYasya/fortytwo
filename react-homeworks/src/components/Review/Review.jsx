@@ -31,6 +31,13 @@ export default function Review() {
     },
   ];
 
+  const ratingArr = [];
+  for (let i = 1; i <= 5; i++) {
+    if (i <= reviews.rating) ratingArr.push(true);
+    else ratingArr.push(false);
+  }
+
+
   return (
     <div>
 
@@ -38,16 +45,20 @@ export default function Review() {
 
         return (
 
-          <div key={review.id} className={`"" ${ review.id === reviews.length ? "dontShow" : "reviews-block__border"} `}>
+          <div key={review.id} className={`"" ${review.id === reviews.length ? "dontShow" : "reviews-block__border"} `}>
             <div className="reviews-block__content">
-              
+
               <div className="reviewsLeft bigScreen">
                 <img className="review-image" src={`${review.photoUrl}`} alt="фото автора" />
                 <div className="reviewsNameRait">
                   <div className="review-name">{review.authorName}</div>
-                  <div>{review.raiting < 5 ? <RaitingFour /> : <RaitingFive />}</div>
+                  <div>{ratingArr.map((item, index) => {
+                    if (item) return <img src="img/star.svg" alt="star" key={index} />;
+                    else return <img src="img/g star.svg" alt="star" key={index} />;
+                  })}
+                  </div>
                 </div>
-              </div> 
+              </div>
 
               <img className="review-image smallScreen" src={`${review.photoUrl}`} alt="фото автора" />
               <div className="reviews">

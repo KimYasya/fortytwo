@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct, removeProduct } from "../../reducers/cart-reducer";
+import { addProduct, removeProduct } from "../../store/reducers/cart-reducer";
 import "./Sidebar.css";
 import Button from "../Button";
 import Like from "../Like/Like";

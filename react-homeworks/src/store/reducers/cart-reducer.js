@@ -4,7 +4,7 @@ export const cartSlice = createSlice({
   name: "cart",
 
   initialState: {
-    products: [],
+    products: JSON.parse(localStorage.getItem('cartSliceProducts')) || [],
   },
 
   reducers: {
@@ -13,6 +13,7 @@ export const cartSlice = createSlice({
 
       const product = action.payload;
       const hasInCart = prevState.products.some((prevProduct) => prevProduct.id === product.id);
+      localStorage.setItem('cartSliceProducts', JSON.stringify([...prevState.products, action.payload]))
       
       if (hasInCart) {
         return { ...prevState }
@@ -28,6 +29,7 @@ export const cartSlice = createSlice({
 
     removeProduct: (prevState, action) => {
       const product = action.payload;
+      localStorage.removeItem('cartSliceProducts', JSON.stringify(prevState.products.filter((item) => item === action.payload)))
      
 
       return {
