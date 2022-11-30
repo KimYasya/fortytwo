@@ -6,6 +6,7 @@ import "./Header.css";
 export default function Header() {
 
   const count = useSelector((store) => store.cart.products.length);
+  const countFav = useSelector((store) => store.fav.products.length);
 
   
   return (
@@ -27,8 +28,8 @@ export default function Header() {
             </svg>
           </div>
 
-          <div className="header__like-circle">
-            <span className="header__like-count">10</span>
+          <div className={countFav === 0 ? "header-count__first-visit" : "header__like-circle"}>
+            <span className="header__like-count">{countFav}</span>
           </div>
         </div>
 
@@ -39,7 +40,7 @@ export default function Header() {
             </svg>
           </div>
 
-          <div className="header__cart-circle" id="header-count">
+          <div className={count === 0 ? "header-count__first-visit" : "header__cart-circle"} id="header-count">
             <span className="header__cart-count">{count}</span>
           </div>
         </div>

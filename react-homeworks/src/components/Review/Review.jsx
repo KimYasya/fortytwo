@@ -1,6 +1,4 @@
 import React from "react";
-import RaitingFive from "../RaitingList/RaitingFive";
-import RaitingFour from "../RaitingList/RaitingFour";
 import "./Review.css";
 
 export default function Review() {
@@ -31,13 +29,7 @@ export default function Review() {
     },
   ];
 
-  const ratingArr = [];
-  for (let i = 1; i <= 5; i++) {
-    if (i <= reviews.rating) ratingArr.push(true);
-    else ratingArr.push(false);
-  }
-
-
+  
   return (
     <div>
 
@@ -52,10 +44,12 @@ export default function Review() {
                 <img className="review-image" src={`${review.photoUrl}`} alt="фото автора" />
                 <div className="reviewsNameRait">
                   <div className="review-name">{review.authorName}</div>
-                  <div>{ratingArr.map((item, index) => {
-                    if (item) return <img src="img/star.svg" alt="star" key={index} />;
-                    else return <img src="img/g star.svg" alt="star" key={index} />;
-                  })}
+                  <div>
+                  {review.raiting <= 1 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+                  {review.raiting <= 2 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+                  {review.raiting <= 3 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+                  {review.raiting <= 4 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+                  {review.raiting <= 5 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
                   </div>
                 </div>
               </div>
@@ -63,7 +57,13 @@ export default function Review() {
               <img className="review-image smallScreen" src={`${review.photoUrl}`} alt="фото автора" />
               <div className="reviews">
                 <div className="review-name smallScreen">{review.authorName}</div>
-                <div className="smallScreen">{review.raiting < 5 ? <RaitingFour /> : <RaitingFive />}</div>
+                <div className="smallScreen">
+                  {review.raiting < 1 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star" />}
+                  {review.raiting < 2 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
+                  {review.raiting < 3 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
+                  {review.raiting < 4 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
+                  {review.raiting < 5 ? <img src="/img/g star.png" alt="star" /> : <img src="/img/star.png" alt="star"/>}
+                  </div>
                 <div className="review-content">
                   <div><span className="boldText">{`Опыт использования:`}</span> {review.userExperience}</div>
                   <div><span className="boldText">{`Достоинства:`}</span> <br /> {review.dignity}</div>
