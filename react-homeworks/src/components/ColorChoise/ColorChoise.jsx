@@ -5,7 +5,7 @@ import ColorButton from "./ColorButton";
 
 export default function ColorChoise() {
 
-  const [selectedButton, setSelectedButton] = useState("");
+  const [selectedButton, setSelectedButton] = useState("Синий");
 
   const imgs = [
     {

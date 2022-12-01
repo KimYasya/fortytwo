@@ -21,7 +21,7 @@ export default function ConfigList() {
     },
   ];
 
-  const [activedButton, setActivedButton] = useState("");
+  const [activedButton, setActivedButton] = useState("128 Гб");
 
   return (
     <div className="product-info__subsection">
