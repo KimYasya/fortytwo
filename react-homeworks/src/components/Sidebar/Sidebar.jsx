@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addProduct, removeProduct } from "../../reducers/cart-reducer";
+import { addProduct, removeProduct } from "../../store/reducers/cart-reducer";
+import { addProductToFav, removeProductFromFav } from "../../store/reducers/fav-reducer";
 import "./Sidebar.css";
 import Button from "../Button";
 import Like from "../Like/Like";
@@ -17,13 +18,13 @@ export default function Sidebar(props) {
   const hasInCart = products.some((prevProduct) => {
     return prevProduct.id === product.id;
   })
-
+  const currentFavProducts = useSelector((store) => store.fav.products)
+  
   const dispatch = useDispatch();
 
-
+  
   const handleClicksidebarBtn = (e, product) => {
     dispatch(addProduct(product));
-    localStorage.setItem('product', product);
   }
 
   const handleRemoveBtn = (e, product) => {
@@ -31,7 +32,11 @@ export default function Sidebar(props) {
   }
 
   const handleClickSidebarLike = () => {
-    setSidebarLike(!sidebarLike);
+    dispatch(addProductToFav(product))
+    setSidebarLike(!sidebarLike)
+    if (currentFavProducts.length > 0 ) {
+      dispatch(removeProductFromFav(product))
+    } 
   }
 
   return (
@@ -50,7 +55,7 @@ export default function Sidebar(props) {
           </div>
 
           <div className="sidebar__like" onClick={handleClickSidebarLike}>
-            {sidebarLike ?
+            {currentFavProducts.length > 0 ?
               <ActiveLike />
               :
               <Like />
