@@ -40,7 +40,7 @@ export default function ColorChoise() {
     },
   ];
 
-  const handleClickSelectedBtn = useCallback(() => (item) =>{
+  const handleClickSelectedBtn = useCallback((item) =>{
     setSelectedButton(item)
   }, [selectedButton])
 
