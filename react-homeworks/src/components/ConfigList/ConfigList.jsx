@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import "./ConfigList.css";
 import ConfigButton from "./ConfigButton";
 
@@ -21,7 +21,12 @@ export default function ConfigList() {
     },
   ];
 
-  const [activedButton, setActivedButton] = useState("");
+  const [activedButton, setActivedButton] = useState("128 Гб");
+
+  const handleClickActivedBtn = useMemo(() => (item) => {
+    setActivedButton(item)
+  }, [activedButton])
+  
 
   return (
     <div className="product-info__subsection">
@@ -38,7 +43,7 @@ export default function ConfigList() {
           return <ConfigButton
                     key={ memoryButton.id }
                     className={ className }
-                    onClick={() => { setActivedButton(memoryButton.memory) }}
+                    onClick={() => {handleClickActivedBtn(memoryButton.memory)}}
                     memory= { memoryButton.memory }
                  />
         })}

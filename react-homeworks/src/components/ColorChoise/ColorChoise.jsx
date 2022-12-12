@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import "./ColorChoise.css";
 import ColorButton from "./ColorButton";
 
 export default function ColorChoise() {
 
-  const [selectedButton, setSelectedButton] = useState("");
+  const [selectedButton, setSelectedButton] = useState("Синий");
 
   const imgs = [
     {
@@ -40,6 +40,10 @@ export default function ColorChoise() {
     },
   ];
 
+  const handleClickSelectedBtn = useCallback((item) =>{
+    setSelectedButton(item)
+  }, [selectedButton])
+
   return (
 
     <div className="subsection">
@@ -56,7 +60,7 @@ export default function ColorChoise() {
           return <ColorButton
             key={ img.id }
             className={ className }
-            onClick={ () => { setSelectedButton(img.color) } }
+            onClick={ ( ) => {handleClickSelectedBtn(img.color)} }
             src={ img.src }
           />
         })}

@@ -23,6 +23,7 @@ export default function PageNotFound() {
     flex-direction: column;
     margin-top: 100px;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     flex-grow: 1;
   `
@@ -43,7 +44,7 @@ export default function PageNotFound() {
 
 
   return (
-    <body>
+    <>
       <Header />
 
       <Container>
@@ -60,7 +61,7 @@ export default function PageNotFound() {
       </Container>
 
       <Footer />
-    </body>
+    </>
   )
 
 }

@@ -15,14 +15,15 @@ export default function Sidebar(props) {
 
   const [sidebarLike, setSidebarLike] = useState(false);
   const products = useSelector((store) => store.cart.products);
-  const hasInCart = products.some((prevProduct) => {
+
+  const hasInCart =  products.some((prevProduct) => {
     return prevProduct.id === product.id;
-  })
+  });
+
   const currentFavProducts = useSelector((store) => store.fav.products)
   
   const dispatch = useDispatch();
 
-  
   const handleClicksidebarBtn = (e, product) => {
     dispatch(addProduct(product));
   }
