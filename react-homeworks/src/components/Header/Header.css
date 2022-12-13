@@ -29,6 +29,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
+        background: #F8FAFE;
 
     }
 
@@ -179,6 +180,7 @@
         justify-content: space-between;
         width: 100%;
         gap: 10px;
+        background: #F8FAFE;
     }
 
 
@@ -318,6 +320,7 @@
         position: sticky;
         left: 0px;
         top: 0px;
+        background: #F8FAFE;
     }
 
     .header__container {

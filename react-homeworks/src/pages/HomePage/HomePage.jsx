@@ -1,60 +1,69 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
-import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
+import React from "react";
+import Project from "../../components/Project/Project";
 import Footer from "../../components/Footer/Footer";
-import Header from "../../components/Header/Header";
-import Like from "../../components/Like/Like";
-import ActiveLike from "../../components/Like/ActiveLike"; 
+import HeaderApp from "../../components/HeaderApp/HeaderApp";
 
 import styles from "./HomePage.module.css";
+import AboutMe from "../../components/AboutMe/AboutMe";
 
 export default function HomePage() {
 
-  const [likeBtn, setLikeBtn] = useState(false);
-
-
-  const handleClickLikeBtn = () => {
-    setLikeBtn(!likeBtn);
-  }
-
-
+  
 
   return (
     <div className={styles.body}>
-      <Header />
+      <HeaderApp text={`Kim`} 
+                 textTwo={`Yana`}
+                 contactOne={<a href="https://instagram.com/_yana.kim" target="_blank" rel="noopener noreferrer"><img className={styles.imgLogo} src="./img/insta-logo.png" alt="insta logo"/></a>}
+                 contactTwo={<a href="https://t.me/Yana_Kim89" target="_blank" rel="noopener noreferrer"><img className={styles.imgLogo} src="./img/telegram-logo.png" alt="telegram logo"/></a>}
+      />
 
 
       <div className={styles.container}>
 
-        <Breadcrumbs />
-
         <div className={styles.mainContainer}>
 
-          <div className={styles.productChoice}>
-            <img className={styles.productPreview} src="./img/image-1.webp" alt="изображение айфона анфас" />
+          
 
+          <div className={styles.projects}>
 
-            <div className={styles.productDescription}>
-              <span className={styles.text}>Cмартфон Apple iPhone 13, синий
-                [6.1, 128 ГБ, IOS 15, NFC, Bluetooth, Wi-Fi, Apple A15 Bionic] 173 г
-              </span>
+            <AboutMe />
 
-              <div className={styles.btns}>
-                <Link className={`${styles.btn} ${styles.linkH}`} to="/product">Подробнее</Link>
-
-                <div className={styles.likeHP} onClick={handleClickLikeBtn}>
-                  {likeBtn ?
-                    <ActiveLike />
-                    :
-                    <Like />
-                  }
-
-                </div>
-
-              </div>
-
+            <div className={styles.projectItem}>
+            <div className={styles.projectText}>Итак, вот что я умею</div>
+              <Project projectName={`Резюме`} 
+                       projectAbout={`Немного обо мне, моих навыках и опыте`}
+                       link={"/todo-app"}
+                       linkText={`Ознакомиться с резюме`}
+              />
             </div>
+
+            <div className={styles.projectItem}>
+            <div className={styles.projectText}>Страница товара интернет-магазина</div>
+              <Project projectName={`Cмартфон Apple iPhone 13, синий`} 
+                       projectAbout={<span className={styles.text}>
+                                    [6.1, 128 ГБ, IOS 15, NFC, Bluetooth, Wi-Fi, Apple A15 Bionic] 173 г
+                                    </span>} 
+                       link={"/product"}
+                       linkText={`Купить`}             
+              />
+            </div>
+
+            <div className={styles.projectItem}>
+            <div className={styles.projectText}>Приложение ToDo</div>
+              <Project projectName={`ToDo List`} 
+                       projectAbout={`Небольшое приложение с использованием модальных окон и drag-n-drop`}
+                       link={"/todo-app"}
+                       linkText={`К приложению`}
+              />
+            </div>
+                  
+           
+            
+       
+
           </div>
+
         </div>
 
       </div>
