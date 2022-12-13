@@ -30,7 +30,7 @@ export default function HomePage() {
             <AboutMe />
 
             <div className={styles.projectItem}>
-            <div className={styles.projectText}>Итак, вот что я умею</div>
+            <div className={styles.projectText}>Итак, вот что я умею {`=)`}</div>
               <Project projectName={`Резюме`} 
                        projectAbout={`Немного обо мне, моих навыках и опыте`}
                        link={"/todo-app"}
