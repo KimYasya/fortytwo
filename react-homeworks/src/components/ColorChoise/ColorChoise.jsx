@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./ColorChoise.css";
 import ColorButton from "./ColorButton";
+import { useDispatch, useSelector } from "react-redux";
+import { addProduct, removeProduct } from "../../store/reducers/selectedItem-reducer";
 
 export default function ColorChoise() {
 
@@ -40,8 +42,21 @@ export default function ColorChoise() {
     },
   ];
 
+  const products = useSelector((store) => store.selectedItem.products);
+
+  const currentSelectedItem =  products.some((prevProduct) => {
+    return prevProduct === selectedButton;
+  });
+
+  const dispatch = useDispatch();
+
+
   const handleClickSelectedBtn = (item) =>{
-    setSelectedButton(item)
+    setSelectedButton(item);
+    if (currentSelectedItem) {
+      dispatch(removeProduct(selectedButton))
+    } 
+    dispatch(addProduct(item));
   }
 
   return (
