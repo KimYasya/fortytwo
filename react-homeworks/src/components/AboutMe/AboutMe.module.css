@@ -1,0 +1,10 @@
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}  
+
+.myPhoto {
+  height: 200px;
+}

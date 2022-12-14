@@ -1,0 +1,143 @@
+a {
+  text-decoration-line: none;
+}
+
+
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+
+
+  .project__choise {
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #cccccc;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+  }
+
+  .project__info {
+    font-size: 14px;
+    margin: 20px;
+  }
+
+  .project__header {
+    color: #5E81FE;
+  }
+
+  .linkBtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #3D4F9F;
+    border: 0;
+    border-radius: 4px;
+    align-self: stretch;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-left: 70%;
+    white-space: nowrap;
+  }
+
+  .linkBtn:hover {
+    background: #5E81FE;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+
+
+  .project__choise {
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #cccccc;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+  }
+
+  .project__info {
+    font-size: 16px;
+    margin: 30px;
+  }
+
+  .project__header {
+    color: #5E81FE;
+  }
+
+  .linkBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    background: #3D4F9F;
+    border: 0;
+    border-radius: 4px;
+    align-self: stretch;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 80%;
+  }
+
+  .linkBtn:hover {
+    background: #5E81FE;
+    cursor: pointer;
+  }
+}
+
+
+
+@media screen and (min-width: 1500px) {
+
+
+  .project__choise {
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px #cccccc;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FFFFFF;
+  
+  }
+
+  .project__info {
+    font-size: 16px;
+    margin: 30px;
+  
+  }
+
+  .project__header {
+    color: #5E81FE;
+  }
+
+  .linkBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 20%;
+    background: #3D4F9F;
+    border-radius: 4px;
+    border: 0;
+    align-self: stretch;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 80%;
+  }
+
+  .linkBtn:hover {
+    background: #5E81FE;
+    cursor: pointer;
+  }
+
+}

@@ -1,0 +1,213 @@
+/* Mobile */
+
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+
+   /* Заголовок */
+
+   .header-containerApp {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+      left: 0px;
+      top: 0px;
+      background-color: #F4F7FF;
+      padding: 15px 0px;
+   }
+
+   .header__containerApp {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+   }
+
+   .header__contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+   }
+
+   .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+   }
+
+
+   .header_link {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 53px;
+      text-decoration-line: none;
+   }
+
+
+   .header_link:visited {
+      text-decoration: none;
+      color: #000000;
+   }
+
+   .header_text {
+      color: "#f52"
+   }
+
+   .header__style {
+      left: -3px;
+      top: 18px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+
+   /* Заголовок */
+
+   .header-containerApp {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+      left: 0px;
+      top: 0px;
+      background-color: #F4F7FF;
+      padding: 15px 0px;
+   }
+
+   .header__containerApp {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+   }
+
+
+   .header_link {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 53px;
+      text-decoration-line: none;
+   }
+
+   .header__contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+   }
+
+
+   .header_link:visited {
+      text-decoration: none;
+      color: #000000;
+   }
+
+   .header_text {
+      color: "#f52"
+   }
+
+   .header__style {
+      left: -3px;
+      top: 18px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+   }
+
+
+
+   .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+   }
+
+
+}
+
+@media screen and (min-width: 1500px) {
+
+   /* Заголовок */
+
+   .header-containerApp {
+      display: flex;
+      flex-direction: row;
+      position: sticky;
+      left: 0px;
+      top: 0px;
+      padding: 15px 0px;
+      background-color: #F4F7FF;
+   }
+
+   .header__containerApp {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: 10px;
+   }
+
+   .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+   }
+
+   .header__contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+   }
+
+
+   .header_link {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 53px;
+      text-decoration-line: none;
+      ;
+   }
+
+
+   .header_link:visited {
+      text-decoration: none;
+      color: #000000;
+   }
+
+   .header_text {
+      color: "#f52"
+   }
+
+   .header__style {
+      left: -3px;
+      top: 18px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+   }
+}
