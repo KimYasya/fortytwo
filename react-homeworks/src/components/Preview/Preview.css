@@ -2,6 +2,8 @@
 
   .product-preview {
       margin-left: 0px;
+      visibility: hidden;
+      display: none;
   }
 
   .product-preview__name {
@@ -26,6 +28,34 @@
   .product-preview__image-s {
       height: 250px;
   }
+
+  .red {
+    display: block;
+  }
+
+  .green {
+    display: block;
+  }
+
+  .pink {
+    display: block;
+  }
+
+  .blue {
+    display: block;
+  }
+
+  .blueState {
+    display: block;
+  }
+
+  .white {
+    display: block;
+  }
+
+  .black {
+    display: block;
+  }
 }
 
 /* Tablet 1024px */
@@ -34,12 +64,13 @@
 
   .product-preview {
       margin-left: 0px;
+      visibility: hidden;
+      display: none;
   }
 
   .product-preview__name {
       box-sizing: border-box;
-      width: 539px;
-      height: 39px;
+      width: 100%;
       font-weight: 700;
       font-size: 32px;
       line-height: 39px;
@@ -60,6 +91,34 @@
   .product-preview__image-s {
       height: 270px;
   }
+
+  .red {
+    display: block;
+  }
+
+  .green {
+    display: block;
+  }
+
+  .pink {
+    display: block;
+  }
+
+  .blue {
+    display: block;
+  }
+  
+  .blueState {
+    display: block;
+  }
+
+  .white {
+    display: block;
+  }
+
+  .black {
+    display: block;
+  }
 }
 
 /* Laptop >1500px */
@@ -68,12 +127,14 @@
 
   .product-preview {
       margin-left: 0px;
+      visibility: hidden;
+      display: none;
+
   }
 
   .product-preview__name {
       box-sizing: border-box;
-      width: 539px;
-      height: 39px;
+      width: 100%;
       font-weight: 700;
       font-size: 32px;
       line-height: 39px;
@@ -94,4 +155,40 @@
   .product-preview__image-s {
       height: 380px;
   }
+
+  .red {
+    display: block;
+    visibility: visible;
+  }
+
+  .green {
+    display: block;
+    visibility: visible;
+  }
+
+  .pink {
+    display: block;
+    visibility: visible;
+  }
+
+  .blue {
+    display: block;
+    visibility: visible;
+  }
+
+  .blueState {
+    display: block;
+    visibility: visible;
+  }
+
+  .white {
+    display: block;
+    visibility: visible;
+  }
+
+  .black {
+    display: block;
+    visibility: visible;
+  }
+
 }
