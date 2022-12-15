@@ -67,6 +67,14 @@
 
 }
 
+.pressed {
+  background-color: #7c7f91;
+}
+
+.pressed:hover {
+  background-color: #656770;
+}
+
 .popup-content {
 
   width: fit-content;
@@ -275,6 +283,31 @@
   cursor: pointer;
 }
 
+.pressed {
+  background-color: #7c7f91;
+}
+
+.popup-element__btn:hover {
+  background-color: #5E81FE;
+  cursor: pointer;
+}
+
+.pressed:hover {
+  background-color: #656770;
+}
+
+.popup-text__edit {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #d2d7e6;
+  border-radius: 4px;
+  margin-top: 20px;
+  min-height: 50px;
+  
+}
+
 .popup-content {
   width: 90%;
   max-height: 100%;
@@ -380,7 +413,11 @@
   cursor: pointer;
 }
 
-
+.footer__datas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .popup-close {
   cursor: pointer;

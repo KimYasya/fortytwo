@@ -1,12 +1,13 @@
 .addtask {
  display: flex;
  flex-direction: column;
- width: 90%;
+ width: 100%;
  gap: 20px;
 }
 
 .addtask__title {
   display: flex;
+  box-sizing: border-box;
   padding: 10px;
   width: 100%;
   border: 1px solid #d2d7e6;
@@ -15,6 +16,7 @@
 }
 
 .addtask__priority {
+  box-sizing: border-box;
   display: flex;
   padding: 10px;
   width: 100%;
@@ -25,6 +27,7 @@
 }
 
 .addtask__description {
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   padding: 10px;
