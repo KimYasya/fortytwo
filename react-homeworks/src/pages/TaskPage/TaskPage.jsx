@@ -3,71 +3,34 @@ import Footer from "../../components/Footer/Footer";
 import HeaderApp from "../../components/HeaderApp/HeaderApp";
 import Popup from "../../components/Popup/Popup";
 import Modal from "../../components/Modal/Modal";
+import { useSelector } from "react-redux";
 import "./TaskPage.css";
 
 
 
 export default function TaskPage() {
 
+  const toDoList = useSelector(store => store.toDo.toDoList);
+  console.log(toDoList)
+
   const [boards, setBoards] = useState([
     {
       id: 1,
-      title: `Queue`,
-      items: [{
-        id: 1,
-        title: "Сделать деплой приложения",
-        content: "Описание задачи 1",
-        footer: `Дата завершения: 1 декабря`,
-        creationDate: "Дата создания: 21 ноября 2022 г.",
-        priority: "High",
-        status: "In process",
-      },
-      {
-        id: 2,
-        title: "Найти материалы",
-        content: "Описание задачи 2",
-        footer: `дата завершения: 2 декабря`,
-        creationDate: "Дата создания: 22 ноября 2022 г.",
-        priority: "Middle",
-        status: "In process",
-      },
-      {
-        id: 3,
-        title: "Изучить недостающие темы",
-        content: "Описание задачи 3",
-        footer: `дата завершения: 3 декабря`,
-        creationDate: "Дата создания: 23 ноября 2022 г.",
-        priority: "High",
-        status: "In process",
-      }]
+      title: `Неначатое`,
+      items: [],
     },
     {
-      id: 5,
-      title: `Development`,
-      items: [{
-        id: 4,
-        title: "Code review",
-        content: "Описание задачи 4",
-        footer: `дата завершения: 4 декабря`,
-        creationDate: "Дата создания: 24 ноября 2022 г.",
-        priority: "High",
-        status: "In process",
-      }]
+      id: 2,
+      title: `В работе`,
+      items: [],
     },
     {
-      id: 7,
-      title: `Done`,
-      items: [{
-        id: 5,
-        title: "Создать ToDo приложение",
-        content: "Описание задачи 5",
-        footer: `дата завершения: 5 декабря`,
-        creationDate: "Дата создания: 24 ноября 2022 г.",
-        priority: "Low",
-        status: "In process",
-      }]
+      id: 3,
+      title: `Завершенное`,
+      items: [],
     },
   ])
+
 
   const [currentBoard, setCurrentBoard] = useState(null);
   const [currentItem, setCurrentItem] = useState(null);
@@ -75,7 +38,7 @@ export default function TaskPage() {
   const [popupContent, setPopupContent] = useState({})
   const [isModal, setModal] = useState(false);
 
- 
+
   function handleClickPopup(e, item) {
     setPopupContent(item);
     setPopup(true);
@@ -135,7 +98,7 @@ export default function TaskPage() {
     e.target.style.boxShadow = "none"
   }
 
-  
+
   return (
     <div>
 
@@ -154,7 +117,7 @@ export default function TaskPage() {
                 onClose={() => setModal(false)}
               /></div>
 
-           
+
           </div>
 
           <div className="boards">
@@ -165,31 +128,31 @@ export default function TaskPage() {
                 className="tasks">
                 <div className="tasks__title">{board.title}</div>
                 {board.items.map(item =>
-
-                  <button
-                    key={item.id}
-                    onClick={(e) => handleClickPopup(e, item)}
-                    className="item"
-                    onDragStart={(e) => dragStartHandler(e, board, item)}
-                    onDragLeave={(e) => dragLeaveHandler(e)}
-                    onDragEnd={(e) => dragEndHandler(e)}
-                    onDragOver={(e) => dragOverHandler(e)}
-                    onDrop={(e) => dropHandler(e, board, item)}
-                    draggable={"true"}>{item.title}</button>
-
+                  <div>
+                    {item.title ? <button
+                      key={item.id}
+                      onClick={(e) => handleClickPopup(e, item)}
+                      className="item"
+                      onDragStart={(e) => dragStartHandler(e, board, item)}
+                      onDragLeave={(e) => dragLeaveHandler(e)}
+                      onDragEnd={(e) => dragEndHandler(e)}
+                      onDragOver={(e) => dragOverHandler(e)}
+                      onDrop={(e) => dropHandler(e, board, item)}
+                      draggable={"true"}>{item.title}</button> : <div></div>}
+                  </div>
                 )}
-
+               
               </div>
             )}
+            
             <Popup key={popupContent.id}
               isVisible={isPopup}
-              popupContent={popupContent.content}
+              popupContent={popupContent.description}
               title={popupContent.title}
-              footer={popupContent.footer}
-              number={popupContent.id}
-              creationDate={popupContent.creationDate}
+              deadline={popupContent.deadline}
+              number={`${popupContent.title}${popupContent.time}`}
+              creationDate={popupContent.time}
               priority={popupContent.priority}
-              status={popupContent.status}
               onClose={(e) => { setPopupContent({}); setPopup(false) }}
             />
           </div>

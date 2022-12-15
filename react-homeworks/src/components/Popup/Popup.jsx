@@ -2,25 +2,21 @@ import React, { useState, useEffect } from "react";
 import SubTask from "../SubTask/SubTask";
 import SubTaskField from "../SubTaskField/SubTaskField";
 import { DropZone } from "../DragDrop/DropZone";
-import { useCurrentDate } from "@kundinos/react-hooks";
 import "./Popup.css";
 
 
 
-const Popup = ({ isVisible = false, popupContent, number, creationDate, priority, status, title, footer, onClose }) => {
+const Popup = ({ isVisible = false, popupContent, number, creationDate, priority, title, deadline, onClose }) => {
 
    // localStorage.clear()
 
    const text = [
-      { isEdit: false, text: 'Создать тестовое ToDo приложение' },
+      { isEdit: false, text: '' },
    ]
    const [objArr, setObjArr] = useState(text);
    const [btnStart, setBtnStart] = useState(localStorage.getItem("btnStart") || false);
    const [todos, setTodos] = useState([]);
    const [todo, setTodo] = useState("");
-   const [ startHour, setStartHour ] = useState();
-   const [ startMinute, setStartMinute ] = useState();
-   const [ startDay, setStartDay ] = useState();
 
 
    const addTodo = () => {
@@ -59,16 +55,9 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
       setObjArr(copy);
    }
 
-   const currentDate = useCurrentDate();
-   const hours = currentDate.getHours();
-   const minutes = currentDate.getMinutes();
-   const date = currentDate.getDate();
 
    function handleClickStart(e) {
       setBtnStart(!btnStart);
-      setStartDay(date)
-      setStartHour(hours);
-      setStartMinute(minutes)
       localStorage.setItem("btnStart", btnStart)
    }
 
@@ -81,12 +70,12 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
 
       let element;
       if (obj.isEdit) {
-         element = <div>
-            <input
-               value={obj.text}
-               onChange={(e) => editSave(e, index)}
+         element = <div className="popup-element">
+            <textarea className="popup-text__edit"
+                   value={obj.text}
+                   onChange={(e) => editSave(e, index)}
             />
-            <button onClick={() => editEnd(index)} className="popup-footer__btn">Завершить редактирование</button>
+            <button onClick={() => editEnd(index)} className="popup-element__btn pressed">Сохранить</button>
          </div>
       } else {
          element = <div className="popup-element">
@@ -122,7 +111,7 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
       <div className="popup" onClick={onClose}>
          <div className="popup-dialog" onClick={e => e.stopPropagation()}>
             <div className="popup-number">
-               <span>Задача №{number} - {status}</span>
+               <span>Задача № {number} - {btnStart ? `В работе` : `Ожидает выполнения` }</span>
             </div>
             <div className="popup-header">
 
@@ -146,19 +135,25 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
                   <SubTaskField list={todos} remove={deleteTodo} />
                </div>
             </div>
-            {footer && <div className="popup-footer">
+            <footer> <div className="popup-footer">
 
                <div className="popup-footer__btns">
                   <button type="button" onClick={handleClickStart} className={!btnStart ? "popup-footer__btn" : "popup-footer__btn_active"}>{!btnStart ? "Начать выполнение" : "В работе"}</button>
                   <button onClick={onClose} className="popup-footer__btn">Закрыть</button></div>
 
                <div className="popup-footer__datas">
-                  {creationDate}
-                  <span>Время в работе: {date - startDay} дней {hours - startHour} часов {minutes - startMinute} мин. </span>
-                  {footer}
+                  <div className="footer__datas">
+                     <span>Дата начала работы</span>
+                     {creationDate}
+                  </div>
+
+                  <div className="footer__datas">
+                     <span>Дата окончания работы</span>
+                     {deadline}
+                  </div>
                </div>
             </div>
-            }
+            </footer>
          </div>
 
       </div>
