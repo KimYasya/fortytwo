@@ -17,6 +17,7 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
    const [btnStart, setBtnStart] = useState(localStorage.getItem("btnStart") || false);
    const [todos, setTodos] = useState([]);
    const [todo, setTodo] = useState("");
+   const [ btnDone, setBtnDone] = useState(localStorage.getItem("btnDone") || false);
 
 
    const addTodo = () => {
@@ -59,6 +60,11 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
    function handleClickStart(e) {
       setBtnStart(!btnStart);
       localStorage.setItem("btnStart", btnStart)
+   }
+
+   function handleClickDone(e) {
+      setBtnDone(!btnDone)
+      localStorage.setItem("btnDone", btnDone)
    }
 
    if (!btnStart) {
@@ -111,7 +117,8 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
       <div className="popup" onClick={onClose}>
          <div className="popup-dialog" onClick={e => e.stopPropagation()}>
             <div className="popup-number">
-               <span>Задача № {number} - {btnStart ? `В работе` : `Ожидает выполнения` }</span>
+               <span>Задача № {number} - {btnStart && btnDone ? `Выполнено` : 
+                                          btnStart ? `В работе` : "Ожидает выполнения" }</span>
             </div>
             <div className="popup-header">
 
@@ -138,7 +145,10 @@ const Popup = ({ isVisible = false, popupContent, number, creationDate, priority
             <footer> <div className="popup-footer">
 
                <div className="popup-footer__btns">
-                  <button type="button" onClick={handleClickStart} className={!btnStart ? "popup-footer__btn" : "popup-footer__btn_active"}>{!btnStart ? "Начать выполнение" : "В работе"}</button>
+                  <div className="popup__process-btns">
+                  <button type="button" onClick={handleClickStart} className={!btnStart ? "popup-footer__btn" : "popup-footer__btn_active"} disabled={btnDone ? "true" : ""}>{!btnStart ? "Начать выполнение" : "В работе"}</button>
+                  {btnStart ? <button type="button" onClick={handleClickDone} className="popup-footer__btn" disabled={btnDone ? "true" : ""}>Выполнено</button> : "" }
+                  </div>
                   <button onClick={onClose} className="popup-footer__btn">Закрыть</button></div>
 
                <div className="popup-footer__datas">

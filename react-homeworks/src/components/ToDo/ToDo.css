@@ -1,0 +1,148 @@
+@media screen and (max-width: 1023px) and (min-width: 360px) {
+  .item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 5px;
+    cursor: pointer;
+    background-color: #ECF1FC;
+    border: 5px solid #E1EAFF;
+    font-size: 16px;
+    color: #52248b;
+  }
+
+  .item:hover {
+    background-color: #E1EAFF;
+  }
+
+
+  .btn__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  }
+
+  .todo__items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .action__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+
+  .svg {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+  .item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 5px;
+    cursor: pointer;
+    background-color: #ECF1FC;
+    border: 5px solid #E1EAFF;
+    font-size: 16px;
+    color: #52248b;
+  }
+
+  .item:hover {
+    background-color: #E1EAFF;
+  }
+
+
+  .btn__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  }
+
+  .todo__items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .action__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .svg {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+  }
+}
+
+
+@media screen and (min-width: 1500px) {
+  .item {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 5px 5px;
+    cursor: pointer;
+    background-color: #ECF1FC;
+    border: 5px solid #E1EAFF;
+    font-size: 16px;
+    color: #52248b;
+  }
+
+  .item:hover {
+    background-color: #E1EAFF;
+  }
+
+
+  .btn__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  }
+
+  .todo__items {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+  }
+
+  .action__btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .svg {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+  }
+}

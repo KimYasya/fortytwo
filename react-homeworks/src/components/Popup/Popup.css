@@ -433,6 +433,12 @@
   padding: 1rem;
 }
 
+.popup__process-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 }
 
 @keyframes appear {

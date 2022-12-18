@@ -58,9 +58,17 @@ export default function HomePage() {
               />
             </div>
                   
-           
-            
-       
+            <div className={styles.projectItem}>
+            <div className={styles.projectText}>Немного кода</div>
+              <Project projectName={`GitHub`} 
+                       projectAbout={`Тут можно посмотреть код проектов`}
+                       link={"https://github.com/KimYasya/fortytwo"}
+                       target={"_blank"}
+                       rel={"noopener noreferrer"}
+                       linkText={`Перейти на GitHub`}
+              />
+            </div>
+                   
 
           </div>
 

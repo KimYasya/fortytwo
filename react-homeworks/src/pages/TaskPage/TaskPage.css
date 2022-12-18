@@ -11,21 +11,19 @@ html {
 @media screen and (max-width: 1023px) and (min-width: 360px) {
 
   .containerTodo {
-    max-width: 100%;
+    width: 100%;
     padding: 0px 5px 0px 5px;
-    font-size: 10px;
+    font-size: 14px;
     display: flex;
     flex-grow: 1;
-
   }
 
   .main__containerTodo {
-
     width: 100%;
     height: 100%;
     margin-top: 20px;
-
   }
+
   .tasks {
     display: flex;
     flex-direction: column;
@@ -42,6 +40,7 @@ html {
   .tasks__title {
     font-size: 1.5rem;
     font-weight: 700;
+    color: #52248b;
   }
 
   .item {
@@ -54,36 +53,119 @@ html {
     background-color: #845eb4;
   }
 
-.add-task {
+  .add-task {
     margin: 20px;
-  align-items: left;
-}
+    align-items: left;
+  }
 
-.add-task__btn {
+  .add-task__btn {
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     background-color: #845eb4;
     border: 2px solid #52248b;
+    color: #FFFFFF
+  }
+
+  .boards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .first-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .currentDate {
+    font-size: 16px;
+    font-weight: 500;
+    color: #52248b;
+  }
 }
 
-.boards {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
+@media screen and (max-width: 1499px) and (min-width: 1024px) {
+  .containerTodo {
+    display: flex;
+    flex-grow: 1;
+    max-width: 1024px;
+    padding: 0px 50px 0px 50px;
+    font-size: 1em;
+    margin: 0 auto;
 
-.first-block {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
+  }
 
+  .main__containerTodo {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 73vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tasks {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: #F5F8FF;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid #845eb4;
+    min-height: 400px;
+    min-width: 320px;
+  }
+
+  .tasks__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #52248b;
+  }
+
+  .add-task {
+    margin: 20px;
+  }
+
+  .add-task__btn {
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #845eb4;
+    border: 2px solid #52248b;
+    color: #FFFFFF;
+  }
+
+  .boards {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .first-block {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .currentDate {
+    font-size: 20px;
+    font-weight: 600;
+    color: #52248b;
+  }
 
 }
 
@@ -100,14 +182,11 @@ html {
   }
 
   .main__containerTodo {
-
     width: 100vw;
-    min-height: 65vh;
+    min-height: 73vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
   }
 
   .tasks {
@@ -120,52 +199,50 @@ html {
     border-radius: 10px;
     border: 5px solid #845eb4;
     min-height: 400px;
-    min-width: 300px;
+    min-width: 360px;
   }
 
   .tasks__title {
     font-size: 1.5rem;
     font-weight: 700;
+    color: #52248b;
   }
 
-  .item {
-    width: 90%;
-    border: 2px solid #52248b;
-    padding: 10px;
-    border-radius: 6px;
-    margin: 5px 5px;
-    cursor: grab;
-    background-color: #845eb4;
-  }
-
-.add-task {
+  .add-task {
     margin: 20px;
-  align-items: left;
-}
+  }
 
-.add-task__btn {
+  .add-task__btn {
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     background-color: #845eb4;
     border: 2px solid #52248b;
-}
+    color: #FFFFFF;
+  }
 
-.boards {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
+  .boards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.first-block {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
+  .first-block {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+
+  .currentDate {
+    font-size: 20px;
+    font-weight: 600;
+    color: #52248b;
+  }
 
 }

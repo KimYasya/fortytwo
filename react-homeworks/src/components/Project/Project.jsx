@@ -1,10 +1,9 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import "./Project.css";
 
 export default function Project(props) {
 
-  const { projectName, projectAbout, link, linkText } = props;
+  const { projectName, projectAbout, link, linkText, target, rel } = props;
 
   return (
     <div className="project__choise">
@@ -12,7 +11,7 @@ export default function Project(props) {
         <h3 className="project__header">{projectName}</h3>
         <div className="project__text">
         <p>{projectAbout}</p>
-        <Link className="linkBtn" to={link}>{linkText}</Link>
+        <a className="linkBtn" href={link} target={target} rel={rel}>{linkText}</a>
         </div>
       </div>
     </div>

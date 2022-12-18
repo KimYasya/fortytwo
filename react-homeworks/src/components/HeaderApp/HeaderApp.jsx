@@ -7,8 +7,9 @@ export default function HeaderApp(props) {
   const { text, textTwo, contactOne, contactTwo } = props;
   
   return (
-
+  
     <header className="header-containerApp">
+      
       <div className="container header__containerApp">
         <div className="header">
         
@@ -26,6 +27,7 @@ export default function HeaderApp(props) {
 
        
       </div>
+      
     </header>
 
   )
