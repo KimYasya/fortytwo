@@ -37,10 +37,44 @@ export const toDoSlice = createSlice({
       }
 
     },
+
+    removeToDo: (state, action) => {
+     
+      const toDoList = localStorage.getItem("toDoList");
+
+      if (toDoList) {
+        const toDoListArr = JSON.parse(toDoList);
+        toDoListArr.forEach((toDo, index) => {
+          if (toDo.id !== action.payload) {
+            toDoListArr.splice(index, 1);
+          }
+        });
+        localStorage.setItem("toDoList", JSON.stringify(toDoListArr));
+        state.toDoList = toDoListArr;
+      }
+    },
+
+    updateToDo: (state, action) => {
+      const toDoList = localStorage.getItem("toDoList");
+      if (toDoList) {
+        const toDoListArr = JSON.parse(toDoList);
+        toDoListArr.forEach((toDo, index) => {
+          if (toDo.id === action.payload.id) {
+            toDo.title = action.payload.title;
+            toDo.status = action.payload.status;
+            toDo.priority = action.payload.priority;
+            toDo.deadline = action.payload.deadline;
+            toDo.description = action.payload.description;
+          }
+        });
+        localStorage.setItem("toDoList", JSON.stringify(toDoListArr));
+        state.toDoList = toDoListArr;
+      }
+    }
   },
 });
 
-export const { addToDo } = toDoSlice.actions;
+export const { addToDo, removeToDo, updateToDo } = toDoSlice.actions;
 
 export default toDoSlice.reducer;
 

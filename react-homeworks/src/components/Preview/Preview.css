@@ -31,30 +31,37 @@
 
   .red {
     display: block;
+    visibility: visible;
   }
 
   .green {
     display: block;
+    visibility: visible;
   }
 
   .pink {
     display: block;
+    visibility: visible;
   }
 
   .blue {
     display: block;
+    visibility: visible;
   }
 
   .blueState {
     display: block;
+    visibility: visible;
   }
 
   .white {
     display: block;
+    visibility: visible;
   }
 
   .black {
     display: block;
+    visibility: visible;
   }
 }
 
@@ -94,30 +101,37 @@
 
   .red {
     display: block;
+    visibility: visible;
   }
 
   .green {
     display: block;
+    visibility: visible;
   }
 
   .pink {
     display: block;
+    visibility: visible;
   }
 
   .blue {
     display: block;
+    visibility: visible;
   }
   
   .blueState {
     display: block;
+    visibility: visible;
   }
 
   .white {
     display: block;
+    visibility: visible;
   }
 
   .black {
     display: block;
+    visibility: visible;
   }
 }
 
