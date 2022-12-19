@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import Modal from "../Modal/Modal";
 
 
+
 import "./ToDo.css";
 
 
@@ -16,8 +17,10 @@ export default function ToDo({ toDo }) {
   const [updateModalOpen, setUpdateModalOpen] = useState(false);
   const dispatch = useDispatch();
 
-  const deleteToDo = (e, toDo) => {
-    dispatch(removeToDo(toDo));
+  const deleteToDo = (e) => {
+    dispatch(removeToDo({
+      ...toDo,
+    }));
   }
 
   const updateToDo = (e, toDo) => {

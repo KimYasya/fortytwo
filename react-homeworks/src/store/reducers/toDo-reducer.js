@@ -45,7 +45,7 @@ export const toDoSlice = createSlice({
       if (toDoList) {
         const toDoListArr = JSON.parse(toDoList);
         toDoListArr.forEach((toDo, index) => {
-          if (toDo.id !== action.payload) {
+          if (toDo.id === action.payload.id) {
             toDoListArr.splice(index, 1);
           }
         });
