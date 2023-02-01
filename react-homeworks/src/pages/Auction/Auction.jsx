@@ -36,7 +36,7 @@ export default function Auction() {
     },
   ]
 
-  const [[hours, minutes, seconds], setTime] = useState([0, 2, 0]);
+  const [[hours, minutes, seconds], setTime] = useState([0, 0, 5]);
   const [index, setIndex] = useState(1)
 
   const tick = () => {
@@ -53,9 +53,9 @@ export default function Auction() {
   }
 
   const reset = () => {
-    setTime([0, 2, 0]);
+    setTime([0, 0, 5]);
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < users.length; i++) {
       if (index < users.length) {
       setIndex(index + 1);
       break 
