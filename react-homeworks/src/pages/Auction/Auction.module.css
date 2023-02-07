@@ -1,5 +1,9 @@
 .container {
-  margin: 50px;
+
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0px 50px 0px 50px;
+  font-size: 1em;
 }
 
 .text {

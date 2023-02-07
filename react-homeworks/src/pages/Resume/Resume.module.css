@@ -224,7 +224,7 @@ body {
 
 @media screen and (max-width: 1499px) and (min-width: 1024px) {
   .container {
-    max-width: 1500px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: 0px 50px;
     flex-grow: 1;
@@ -248,7 +248,7 @@ body {
     background-color: #b4c4fc;
     width: 260px;
     margin: 10px;
-    height: 155vh;
+height: 100%;
   }
   
   .exp {

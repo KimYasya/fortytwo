@@ -57,6 +57,15 @@ export default function HomePage() {
                        linkText={`К приложению`}
               />
             </div>
+
+            <div className={styles.projectItem}>
+            <div className={styles.projectText}>Таймер для аукциона</div>
+              <Project projectName={`Таймер с переходом хода`} 
+                       projectAbout={`Таймер с переходом хода, работает даже если нет ни одного участника`} 
+                       link={"/auction"}
+                       linkText={`Перейти`}             
+              />
+            </div>
                   
             <div className={styles.projectItem}>
             <div className={styles.projectText}>Немного кода</div>

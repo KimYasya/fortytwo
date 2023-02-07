@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import HeaderApp from "../../components/HeaderApp/HeaderApp";
 import HeaderLOTOS from "../../components/HeaderLOTOS/HeaderLOTOS";
 import Timer from "../../components/Timer/Timer";
 import styles from "./Auction.module.css";
@@ -75,6 +76,7 @@ export default function Auction() {
 
   return (
     <>
+      <HeaderApp text={`Таймер`} textTwo={``}/>
       <HeaderLOTOS />
       <div className={styles.container}>
 
