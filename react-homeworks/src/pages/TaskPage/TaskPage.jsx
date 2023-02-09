@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import HeaderApp from "../../components/HeaderApp/HeaderApp";
-import { useCurrentDate } from "@kundinos/react-hooks";
 
 import { useSelector } from 'react-redux';
 
@@ -34,12 +33,7 @@ export default function TaskPage() {
     },
   ])
 
-  const currentDate = useCurrentDate();
-
-  // Получаем компоненты текущей даты
-  const month = currentDate.getMonth();
-  const date = currentDate.getDate();
-  const fullYear = currentDate.getFullYear();
+  const currentDate = (new Date()).toISOString().slice(0,10)
   
 
   return (
@@ -57,7 +51,7 @@ export default function TaskPage() {
                 type="add"
                 onClose={() => setModal(false)}
               /></div>
-              <div className="currentDate">{month+1}.{date}.{fullYear}</div>
+              <div className="currentDate">{currentDate}</div>
           </div>
           <div className="boards">
             {boards.map(board => (

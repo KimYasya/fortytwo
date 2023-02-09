@@ -79,14 +79,15 @@ export default function Resume() {
               <div className={styles.contact}>
                 <ul className={styles.skillsList}>
                   <li>HTML5, CSS3</li>
+                  <li>JavaScript</li>
                   <li>React</li>
                   <li>Redux</li>
-                  <li>Javascript</li>
                   <li>Git</li>
                   <li>Figma</li>
                   <li>Npm</li>
                   <li>Flex</li>
                   <li>BEM</li>
+                  <li>ООП</li>
                   <li>Адаптивная верстка</li>
                   <li>Работоспособность</li>
                   <li>Тяга к знаниям</li>
@@ -154,7 +155,7 @@ export default function Resume() {
                   <p><b>Университет Иннополис</b></p>
                   <p>Стек технологий: HTML, CSS, JavaScript, React, Redux, ReactRouter</p>
                   <p>Работа над проектом для диплома: <br/> 
-                    Страничка товара интернет-магазина с возможноcтью добавлять товары в корзину и избранноеб выбирать цвет и конфигурацию товара.</p>
+                    Страничка товара интернет-магазина с возможноcтью добавлять товары в корзину и избранное и выбирать цвет и конфигурацию товара.</p>
                 </div>
               </div>
               <div className={styles.expText}> 
@@ -197,7 +198,7 @@ export default function Resume() {
                 <p><b>2006 <br/>
                   2011</b></p>
                 <div className={styles.expSubText}>
-                  <p><b>Санкт-Петербургский государственный инженерно-экономический университет "ИНЖЭКОН", Санкт-Петербург</b></p>
+                  <p><b>Санкт-Петербургский государственный инженерно-экономический университет, "ИНЖЭКОН"</b></p>
                   <p>Гуманитарный Факультет</p>
                   <p>Специальность: Связи с общественностью</p>
                 </div>
@@ -236,7 +237,7 @@ export default function Resume() {
                   <p>Основы Frontend-разработки</p>
                   <p>Специальность: младший фронтенд-разработчик</p>
                 </div>
-                <a href="https://disk.yandex.ru/i/3uZ-3Vd5ol9h0g" target="_blank" rel="noopener noreferrer" className={styles.smallScreen}><img src="./img/diploma_preview.png" alt="" /></a>
+                <a href="https://disk.yandex.ru/i/3uZ-3Vd5ol9h0g" target="_blank" rel="noopener noreferrer" className={styles.smallScreen}><img src="/img/diploma_preview.png" alt="diploma" /></a>
               </div>
             </div>
 

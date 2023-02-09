@@ -34,7 +34,18 @@ export default function HomePage() {
               <Project projectName={`Резюме`} 
                        projectAbout={`Немного обо мне, моих навыках и опыте`}
                        link={"/resume"}
-                       linkText={`Ознакомиться с резюме`}
+                       linkText={`Посмотреть резюме`}
+              />
+            </div>
+
+            <div className={styles.projectItem}>
+            <div className={styles.projectText}>Код</div>
+              <Project projectName={`GitHub`} 
+                       projectAbout={`Тут можно посмотреть код всех нижеперечисленных проектов`}
+                       link={"https://github.com/KimYasya/fortytwo"}
+                       target={"_blank"}
+                       rel={"noopener noreferrer"}
+                       linkText={`Перейти на GitHub`}
               />
             </div>
 
@@ -52,7 +63,7 @@ export default function HomePage() {
             <div className={styles.projectItem}>
             <div className={styles.projectText}>Приложение ToDo</div>
               <Project projectName={`ToDo List`} 
-                       projectAbout={`Небольшое приложение с использованием модальных окон и drag-n-drop`}
+                       projectAbout={`Небольшое приложение с использованием модальных окон и drag-n-drop. Умеет сохранять информацию в localStorage`}
                        link={"/todo-app"}
                        linkText={`К приложению`}
               />
@@ -66,18 +77,18 @@ export default function HomePage() {
                        linkText={`Перейти`}             
               />
             </div>
-                  
+
             <div className={styles.projectItem}>
-            <div className={styles.projectText}>Немного кода</div>
-              <Project projectName={`GitHub`} 
-                       projectAbout={`Тут можно посмотреть код проектов`}
-                       link={"https://github.com/KimYasya/fortytwo"}
-                       target={"_blank"}
-                       rel={"noopener noreferrer"}
-                       linkText={`Перейти на GitHub`}
+            <div className={styles.projectText}>Форма изменения пароля</div>
+              <Project projectName={`Форма с валидацией`} 
+                       projectAbout={`Форма изменения пароля с валидацией по контрольному слову, длине пароля и совпадении паролей. Все поля до полной отправки формы хранит в localStorage.
+                       Контрольное слово - "тест"`} 
+                       link={"/change_password"}
+                       linkText={`Перейти`}             
               />
             </div>
-                   
+                  
+                            
 
           </div>
 
