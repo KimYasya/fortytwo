@@ -82,6 +82,7 @@ export default function Resume() {
                   <li>JavaScript</li>
                   <li>React</li>
                   <li>Redux</li>
+                  <li>Vue</li>
                   <li>Git</li>
                   <li>Figma</li>
                   <li>Npm</li>

@@ -124,7 +124,7 @@
   .active {
     border: 2px solid #F36223;
   }
-  
+
   .formRaiting-error {
     min-height: 25px;
     background: #f36223;
@@ -257,7 +257,7 @@
   .active {
     border: 2px solid #F36223;
   }
-  
+
   .formRaiting-error {
     min-height: 25px;
     background: #f36223;
@@ -319,7 +319,7 @@
     height: 50px;
   }
 
-   .review-form__name:hover {
+  .review-form__name:hover {
     border: 1px solid #000000;
   }
 
@@ -363,11 +363,11 @@
     background: #DA4A0C;
     cursor: pointer;
   }
-  
+
   .review-form__btn:active {
     background: #A93A09;
   }
-  
+
   .formName-error {
     min-height: 25px;
     background: #f36223;
@@ -379,7 +379,7 @@
   .active {
     border: 2px solid #F36223;
   }
-  
+
   .formRaiting-error {
     min-height: 25px;
     background: #f36223;

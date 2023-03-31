@@ -4,14 +4,18 @@ import Button from "../Button";
 import "./ReviewForm.css";
 
 export default function ReviewForm() {
-
-  const [formName, setFormName] = useState(localStorage.getItem("formName") || "");
-  const [formRaiting, setFormRaiting] = useState(localStorage.getItem("formRaiting") || "");
-  const [formText, setFormText] = useState(localStorage.getItem("formText") || "");
+  const [formName, setFormName] = useState(
+    localStorage.getItem("formName") || ""
+  );
+  const [formRaiting, setFormRaiting] = useState(
+    localStorage.getItem("formRaiting") || ""
+  );
+  const [formText, setFormText] = useState(
+    localStorage.getItem("formText") || ""
+  );
 
   const [formNameErrorStr, setFormNameErrorStr] = useState("");
   const [formRaitingErrorStr, setFormRaitingErrorStr] = useState("");
-
 
   // Сброс информеров ошибок при повторном вводе после неуспешной валидации
   const handleFocusFormName = () => {
@@ -58,10 +62,14 @@ export default function ReviewForm() {
       setFormRaitingErrorStr("Поле не заполнено: Оценка должна быть от 1 до 5");
       return false;
     } else if (!formRaiting.match(/^\d+$/)) {
-      setFormRaitingErrorStr("В поле введены буквы: Оценка должна быть от 1 до 5");
+      setFormRaitingErrorStr(
+        "В поле введены буквы: Оценка должна быть от 1 до 5"
+      );
       return false;
     } else if (!formRaiting.match(/^[1-5]$/)) {
-      setFormRaitingErrorStr("Вы ввели цифры больше 5 или меньше 1: Оценка должна быть от 1 до 5");
+      setFormRaitingErrorStr(
+        "Вы ввели цифры больше 5 или меньше 1: Оценка должна быть от 1 до 5"
+      );
       return false;
     } else {
       setFormRaitingErrorStr("");
@@ -81,53 +89,62 @@ export default function ReviewForm() {
       localStorage.removeItem("formRaiting");
       localStorage.removeItem("formText");
 
-      alert("Ваш отзыв был успешно отправлен и будет отображён после модерации");
+      alert(
+        "Ваш отзыв был успешно отправлен и будет отображён после модерации"
+      );
     }
   };
 
-  const className = 'review-form__btn';
+  const className = "review-form__btn";
 
   return (
-    <form className="review-form" onSubmit={handleSubmitForm} >
+    <form className="review-form" onSubmit={handleSubmitForm}>
       <legend className="review-form__header">Добавить свой отзыв</legend>
       <div className="review-form__first">
         <div className="review-form__name-block">
-          <input className={`review-form__name ${formNameErrorStr ? "active" : ""}`}
+          <input
+            className={`review-form__name ${formNameErrorStr ? "active" : ""}`}
             type="text"
             placeholder="Имя и фамилия"
             value={formName}
             onInput={handleInputFormName}
-            onFocus={handleFocusFormName} />
-          {formNameErrorStr && <div className="formName-error">{formNameErrorStr}</div>}
-
+            onFocus={handleFocusFormName}
+          />
+          {formNameErrorStr && (
+            <div className="formName-error">{formNameErrorStr}</div>
+          )}
         </div>
 
         <div className="review-form__raiting-block">
-          <input className={`review-form__raiting ${formRaitingErrorStr ? "active" : ""}`}
+          <input
+            className={`review-form__raiting ${
+              formRaitingErrorStr ? "active" : ""
+            }`}
             type="text"
             placeholder="Оценка"
             value={formRaiting}
             onInput={handleInputFormRaiting}
             onFocus={handleFocusFormRaiting}
           />
-          {!formNameErrorStr && formRaitingErrorStr && <div className="formRaiting-error">{formRaitingErrorStr}</div>}
+          {!formNameErrorStr && formRaitingErrorStr && (
+            <div className="formRaiting-error">{formRaitingErrorStr}</div>
+          )}
         </div>
       </div>
 
       <div className="review-form__second">
-        <textarea className="review-form__text"
+        <textarea
+          className="review-form__text"
           type="text"
           placeholder="Текст отзыва"
           value={formText}
-          onInput={handleInputFormText}></textarea>
+          onInput={handleInputFormText}
+        ></textarea>
       </div>
 
-      <Button
-        type={`submit`}
-        className={className}
-        name={`Отправить отзыв`}
-      >{ }</Button>
-
+      <Button type={`submit`} className={className} name={`Отправить отзыв`}>
+        {}
+      </Button>
     </form>
-  )
+  );
 }
